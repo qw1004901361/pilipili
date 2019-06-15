@@ -68,7 +68,7 @@ def edit_tag():
 def list_tag():
     form = TagListForm().validate_for_api()
     page_data = Tag.query.filter(Tag.parent_id == 0). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["PER_TAG_PAGE"]))
+        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_TAG_PAGE"]))
     tags = []
     for i in page_data.items:
         sub_tags = Tag.query.filter(Tag.parent_id == i.id).all()
@@ -121,7 +121,7 @@ def view_tag():
     form = SearchForm().validate_for_api()
     q = form.q.data
     page_data = Tag.query.filter(Tag.parent_id != None, or_(Tag.name.like("%" + q + "%"), Tag.id == q)). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["PER_BASE_PAGE"]))
+        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_TAG_PAGE"]))
     tags = []
     for i in page_data.items:
         sub_tags = Tag.query.filter(Tag.parent_id == i.id).all()

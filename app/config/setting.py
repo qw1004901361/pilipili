@@ -27,6 +27,7 @@ JSON_AS_ASCII = False
 IMAGE_ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 # 允许视频扩展名
 VIDEO_ALLOWED_EXTENSIONS = ['mp4', 'avi', 'flv', 'wmv']
+
 # 管理员界面每页评论数
 ADMIN_PER_COM_PAGE = 15
 # 管理员界面每页轮播图数
@@ -39,3 +40,7 @@ ADMIN_PER_ROLE_PAGE = 15
 ADMIN_PER_USER_PAGE = 15
 # 管理员界面每页视频数
 ADMIN_PER_VIDEO_PAGE = 15
+# 管理员界面每页模块数
+ADMIN_PER_MODULE_PAGE = 15
+# 管理严界面每页标签数 = 15
+ADMIN_PER_TAG_PAGE = 15
