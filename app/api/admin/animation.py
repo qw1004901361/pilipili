@@ -57,7 +57,7 @@ def add_animation():
 @swag_from("../../yml/admin/animation/list_animation.yml")
 def list_animation():
     """列出轮播图"""
-    form = AnimationListForm().validate_for_api()
+    form = PageForm().validate_for_api()
     if form.tag_id.data == -1:
         page_data = Animation.query.order_by(Animation.create_time.desc()). \
             paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
@@ -99,31 +99,31 @@ def del_animation():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
-@animation.route("/edit", methods=["POST"])
-@swag_from("../../yml/admin/animation/edit_animation.yml", methods=['POST'])
-def edit_animation():
-    """编辑轮播图"""
-    form = AnimationEditForm().validate_for_api()
-    animation = form.obj
-    with db.auto_commit():
-        if form.name.data:
-            animation.name = form.name.data
-        try:
-            file = request.files[form.logo.name]
-            if not allowed_image_file(file.filename):
-                return ReturnObj.get_response(ReturnEnum.IMAGE_TYPE_ERROR.value, "只允许上传png jpg jpeg gif格式")
-            file_logo = secure_filename(file.filename)
-            logo = change_filename(file_logo)
-            file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            animation.logo = urljoin("http://localhost:5000/static/logo/", logo)
-        except Exception as e:
-            pass
-        if form.url.data:
-            animation.url = form.url.data
-        if form.tag_id.data:
-            animation.tag_id = form.tag_id.data
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
+# @animation.route("/edit", methods=["POST"])
+# @swag_from("../../yml/admin/animation/edit_animation.yml", methods=['POST'])
+# def edit_animation():
+#     """编辑轮播图"""
+#     form = AnimationEditForm().validate_for_api()
+#     animation = form.obj
+#     with db.auto_commit():
+#         if form.name.data:
+#             animation.name = form.name.data
+#         try:
+#             file = request.files[form.logo.name]
+#             if not allowed_image_file(file.filename):
+#                 return ReturnObj.get_response(ReturnEnum.IMAGE_TYPE_ERROR.value, "只允许上传png jpg jpeg gif格式")
+#             file_logo = secure_filename(file.filename)
+#             logo = change_filename(file_logo)
+#             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
+#             animation.logo = urljoin("http://localhost:5000/static/logo/", logo)
+#         except Exception as e:
+#             pass
+#         if form.url.data:
+#             animation.url = form.url.data
+#         if form.tag_id.data:
+#             animation.tag_id = form.tag_id.data
+#     write_oplog()
+#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
 @animation.route("/view")

@@ -35,7 +35,7 @@ def list_admin():
     page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id)
     # 判断是否搜索
     if form.q.data:
-        page_data = page_data.filter(or_(BaseUser.id == form.q.data, BaseUser.name == "%" + form.q.data + "%"))
+        page_data = page_data.filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
     page_data = page_data.paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     admins = []
     for i in page_data.items:

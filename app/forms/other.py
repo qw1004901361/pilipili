@@ -19,7 +19,22 @@ class PageForm(BaseForm):
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
     pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
     q = StringField("搜索关键字")
-    tag_id = IntegerField("标签或者分类或者分区")
+    tag_id = IntegerField("标签或者分类或者分区", default=-1)
+
+
+class ListComForm(BaseForm):
+    page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
+    q = StringField("搜索关键字")
+    video_id = IntegerField("视频ID")
+
+
+class ListOpLogForm(BaseForm):
+    page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
+    q = StringField("搜索关键字")
+    start_date = DateField("查询开始日期")
+    end_date = DateField("查询结束日期", default=datetime.datetime.now)
 
 
 class LoadComForm(BaseForm):
@@ -34,11 +49,11 @@ class CommentAddForm(BaseForm):
     content = StringField("内容", validators=[DataRequired("评论内容不能为空")])
 
 
-class ListComForm(BaseForm):
-    start_time = DateField("搜索开始时间")
-    end_time = DateField("搜索结束时间")
-    order_by = StringField("排序方式", default=Comment.create_time.asc())
-    page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+# class ListComForm(BaseForm):
+#     start_time = DateField("搜索开始时间")
+#     end_time = DateField("搜索结束时间")
+#     order_by = StringField("排序方式", default=Comment.create_time.asc())
+#     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
 
 
 # class ListLogForm(BaseForm):
@@ -147,7 +162,9 @@ class AnimationAddForm(BaseForm):
 
 class AnimationListForm(BaseForm):
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
-    tag_id = IntegerField("所属类别", default=-1)  # 默认全部
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
+    q = StringField("搜索关键字")
+    tag_id = IntegerField("标签或者分类或者分区", default=-1)
 
 
 class AnimationEditForm(BaseForm):

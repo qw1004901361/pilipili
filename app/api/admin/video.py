@@ -50,7 +50,6 @@ def add_video():
     with db.auto_commit():
         video = Video()
         video.name = form.name.data
-
         try:
             file = request.files[form.url.name]
             if not allowed_video_file(file.filename):
@@ -84,6 +83,7 @@ def add_video():
         video.info = form.info.data
         # 默认所属标签为连载动画
         video.tag_id = 18
+        db.session.add(video)
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
@@ -93,7 +93,7 @@ def add_video():
 # @user_auth
 @swag_from("../../yml/admin/video/list_video.yml")
 def list_video():
-    form = ListVideoForm().validate_for_api()
+    form = PageForm().validate_for_api()
     page_data = Video.query
     if form.tag_id.data == -1:
         pass
@@ -197,50 +197,50 @@ def del_video():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
-@video.route("/view")
-@login_required
-# @user_auth
-@swag_from("../../yml/admin/video/view_video.yml")
-def view_video():
-    """通过视频ID或者视频名搜索"""
-    form = SearchForm().validate_for_api()
-    q = form.q.data
-    select = Video.query.filter(or_(Video.id == q, Video.name.like("%" + q + "%")))
-    # # 如果有标签，则加上标签查询
-    # if form.tag_id.data:
-    #     page_data = page_data.join(Tag, Video.tag_id == Tag.id).filter(Video.tag_id == form.tag_id.data)
-    # 分页查询
-    page_data = select.paginate(error_out=False, page=int(form.page.data),
-                                per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
-    videos = []
-    for i in page_data.items:
-        tag = Tag.query.filter(Tag.id == i.tag_id).first()
-        video = {
-            "id": i.id,
-            "name": i.name,
-            "logo": i.logo,
-            "playnum": i.playnum,
-            "commentnum": i.commentnum,
-            "danmunum": i.danmunum,
-            "colnum": i.colnum,
-            "url": i.url,
-            "tag": {
-                "id": tag.id if tag else "未知",
-                "name": tag.name if tag else "未知",
-            },
-            "release_time": i.release_time.release_time.strftime("%Y-%m-%d %H:%M:%S"),
-        }
-        videos.append(video)
-    r = {
-        "has_next": page_data.has_next,
-        "has_prev": page_data.has_prev,
-        "pages": page_data.pages,
-        "page": page_data.page,
-        "total": page_data.total,
-        "videos": videos
-    }
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
+# @video.route("/view")
+# @login_required
+# # @user_auth
+# @swag_from("../../yml/admin/video/view_video.yml")
+# def view_video():
+#     """通过视频ID或者视频名搜索"""
+#     form = SearchForm().validate_for_api()
+#     q = form.q.data
+#     select = Video.query.filter(or_(Video.id == q, Video.name.like("%" + q + "%")))
+#     # # 如果有标签，则加上标签查询
+#     # if form.tag_id.data:
+#     #     page_data = page_data.join(Tag, Video.tag_id == Tag.id).filter(Video.tag_id == form.tag_id.data)
+#     # 分页查询
+#     page_data = select.paginate(error_out=False, page=int(form.page.data),
+#                                 per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+#     videos = []
+#     for i in page_data.items:
+#         tag = Tag.query.filter(Tag.id == i.tag_id).first()
+#         video = {
+#             "id": i.id,
+#             "name": i.name,
+#             "logo": i.logo,
+#             "playnum": i.playnum,
+#             "commentnum": i.commentnum,
+#             "danmunum": i.danmunum,
+#             "colnum": i.colnum,
+#             "url": i.url,
+#             "tag": {
+#                 "id": tag.id if tag else "未知",
+#                 "name": tag.name if tag else "未知",
+#             },
+#             "release_time": i.release_time.strftime("%Y-%m-%d %H:%M:%S"),
+#         }
+#         videos.append(video)
+#     r = {
+#         "has_next": page_data.has_next,
+#         "has_prev": page_data.has_prev,
+#         "pages": page_data.pages,
+#         "page": page_data.page,
+#         "total": page_data.total,
+#         "videos": videos
+#     }
+#     write_oplog()
+#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
 
 
 @video.route("/list_uploadvideo")

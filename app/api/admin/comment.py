@@ -5,7 +5,7 @@ from flask import current_app
 from flask_login import current_user, login_required
 from sqlalchemy import or_
 
-from app.forms.other import PageForm, IdForm, SearchForm
+from app.forms.other import PageForm, IdForm, SearchForm, ListComForm
 from app.libs.auth import user_auth
 from app.libs.enums import ReturnEnum
 from app.libs.redprint import Redprint
@@ -31,9 +31,15 @@ comment = Redprint("comment")
 @swag_from("../../yml/admin/comment/list_comment.yml")
 def list_comment():
     """列出评论"""
-    form = PageForm().validate_for_api()
-    page_data = Comment.query.paginate(error_out=False, page=int(form.page.data),
-                                       per_page=int(current_app.config["ADMIN_PER_COM_PAGE"]))
+    form = ListComForm().validate_for_api()
+    page_data = Comment.query
+    if form.video_id.data:
+        page_data = page_data.filter(Comment.video_id == form.video_id.data)
+    if form.q.data:
+        page_data = page_data.filter(or_(Comment.id == form.q.data, Comment.content.like("%" + form.q.data + "%")))
+    page_data = page_data.paginate(error_out=False, page=int(form.page.data),
+                                   per_page=int(form.pagesize.data))
+
     comments = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()

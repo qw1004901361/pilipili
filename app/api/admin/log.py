@@ -2,9 +2,10 @@
 from flasgger import swag_from
 from flask import current_app
 from flask_login import login_required
+from sqlalchemy import or_
 
 from app.forms.other import PageForm, SearchOpLogForm, ListLoginLogForm, SearchLoginLogForm, \
-    SearchViewLogForm
+    SearchViewLogForm, ListOpLogForm
 from app.libs.auth import user_auth
 from app.libs.enums import ReturnEnum
 from app.libs.redprint import Redprint
@@ -34,9 +35,18 @@ log = Redprint("log")
 @swag_from("../../yml/admin/log/list_oplog.yml")
 def list_oplog():
     """列出操作日志"""
-    form = PageForm().validate_for_api()
-    page_data = OpLog.query.order_by(OpLog.create_time.desc()). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+    form = ListOpLogForm().validate_for_api()
+    page_data = OpLog.query
+    if form.q.data:
+        page_data = page_data.join(BaseUser, BaseUser.id == OpLog.admin_id). \
+            filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
+    page_data = page_data.order_by(OpLog.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
+    if form.start_date.data:
+        page_data = page_data.filter(OpLog.create_time.between(
+            form.start_date.data, form.end_date.data
+        ))
+    page_data = page_data.paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     logs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.admin_id).first()
@@ -78,7 +88,7 @@ def view_oplog():
             form.start_date.data, form.end_date.data
         ))
     page_data = select.order_by(OpLog.create_time.desc()). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
     logs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.admin_id).first()
@@ -120,7 +130,7 @@ def list_loginlog():
     elif form.tag_id.data == 1:
         select = select.join(Admin, Admin.id == LoginLog.user_id)
     page_data = select.order_by(LoginLog.create_time.desc()). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
     loginlogs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.baseuser_id == i.admin_id).first()
@@ -165,7 +175,7 @@ def view_loginlog():
             form.start_date.data, form.end_date.data))
     page_data = select.filter(BaseUser.name.like("%" + form.name.data + "%")).order_by(
         LoginLog.create_time.desc()). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
     loginlogs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.baseuser_id == i.admin_id).first()
@@ -200,7 +210,7 @@ def list_viewlog():
     form = PageForm().validate_for_api()
     page_data = ViewLog.query.join(User, User.user_id == ViewLog.user_id).order_by(
         ViewLog.update_time.desc()). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
     viewlogs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -243,7 +253,8 @@ def view_viewlog():
     select = select.join(BaseUser, BaseUser.id == ViewLog.user_id). \
         filter(BaseUser.name.like("%" + form.name.data + "%")).order_by(
         ViewLog.create_time.desc())
-    page_data = select.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
+    page_data = select.paginate(error_out=False, page=int(form.page.data),
+                                per_page=int(current_app.config["ADMIN_PER_LOG_PAGE"]))
     viewlogs = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()

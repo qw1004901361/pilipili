@@ -78,14 +78,16 @@ def add_bangumi():
 # @user_auth
 @swag_from("../../yml/admin/bangumi/list_bangumi.yml")
 def list_bangumi():
-    form = BangumiListForm().validate_for_api()
+    form = PageForm().validate_for_api()
+    page_data = Bangumi.query
     if form.tag_id.data == -1:
-        page_data = Bangumi.query.order_by(Bangumi.create_time.desc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        pass
     else:
-        page_data = Bangumi.query.filter(Bangumi.tag_id == form.tag_id.data). \
-            order_by(Bangumi.create_time.desc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        page_data = page_data.filter(Bangumi.tag_id == form.tag_id.data)
+    if form.q.data:
+        page_data = page_data.filter(or_(Bangumi.id == form.q.data, Bangumi.name.like("%" + form.q.data + "%")))
+    page_data = page_data.order_by(Bangumi.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     bangumis = []
     for i in page_data.items:
         tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
@@ -98,7 +100,6 @@ def list_bangumi():
             "danmunum": i.danmunum,
             "colnum": i.colnum,
             "fannum": i.fannum,
-            "release_time": i.release_time,
             "status": i.status,
             "tag": tag
         }
@@ -173,43 +174,43 @@ def del_bangumi():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
-@bangumi.route("/view")
-@login_required
-# @user_auth
-@swag_from("../../yml/admin/bangumi/view_bangumi.yml")
-def view_bangumi():
-    """通过番剧ID或者番剧名搜索"""
-    form = SearchForm().validate_for_api()
-    q = form.q.data
-    select = Bangumi.query.filter(or_(Bangumi.id == q, Bangumi.name.like("%" + q + "%")))
-    page_data = select.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
-    bangumis = []
-    for i in page_data.items:
-        tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
-        bangumi = {
-            "id": i.id,
-            "name": i.name,
-            "logo": i.logo,
-            "playnum": i.playnum,
-            "commentnum": i.commentnum,
-            "danmunum": i.danmunum,
-            "colnum": i.colnum,
-            "fannum": i.fannum,
-            "release_time": i.release_time,
-            "status": i.status,
-            "tag": tag
-        }
-        bangumis.append(bangumi)
-    r = {
-        "has_next": page_data.has_next,
-        "has_prev": page_data.has_prev,
-        "pages": page_data.pages,
-        "page": page_data.page,
-        "total": page_data.total,
-        "bangumis": bangumis
-    }
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
+# @bangumi.route("/view")
+# @login_required
+# # @user_auth
+# @swag_from("../../yml/admin/bangumi/view_bangumi.yml")
+# def view_bangumi():
+#     """通过番剧ID或者番剧名搜索"""
+#     form = SearchForm().validate_for_api()
+#     q = form.q.data
+#     select = Bangumi.query.filter(or_(Bangumi.id == q, Bangumi.name.like("%" + q + "%")))
+#     page_data = select.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+#     bangumis = []
+#     for i in page_data.items:
+#         tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
+#         bangumi = {
+#             "id": i.id,
+#             "name": i.name,
+#             "logo": i.logo,
+#             "playnum": i.playnum,
+#             "commentnum": i.commentnum,
+#             "danmunum": i.danmunum,
+#             "colnum": i.colnum,
+#             "fannum": i.fannum,
+#             "release_time": i.release_time,
+#             "status": i.status,
+#             "tag": tag
+#         }
+#         bangumis.append(bangumi)
+#     r = {
+#         "has_next": page_data.has_next,
+#         "has_prev": page_data.has_prev,
+#         "pages": page_data.pages,
+#         "page": page_data.page,
+#         "total": page_data.total,
+#         "bangumis": bangumis
+#     }
+#     write_oplog()
+#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
 
 
 @bangumi.route("/add_video")
