@@ -1,0 +1,39 @@
+  添加用户
+    ---
+  tags:
+    - user(user_admin, super_admin)
+  parameters:
+    - name: account
+      in: formData
+      description: 用户帐号，不能使用已经被注册过的
+      required: true
+      type: string
+    - name: pwd
+      in: formData
+      description: 用户密码（默认pilipili）
+      type: string
+    - name: name
+      in: formData
+      description: 名字
+      required: true
+      type: string
+  responses:
+    200:
+      description: register message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type

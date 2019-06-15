@@ -1,0 +1,46 @@
+  编辑管理员
+    ---
+  tags:
+    - admin(super_admin)
+  parameters:
+    - name: id
+      in: formData
+      description: 管理员ID
+      required: true
+      type: string
+    - name: pwd
+      in: formData
+      description: 管理员密码
+      type: string
+    - name: name
+      in: formData
+      description: 管理员名
+      type: string
+    - name: gender
+      in: formData
+      description: 管理员性别（0为未知，1为男性，2为女性）
+      type: integer
+    - name: role_id
+      in: formData
+      description: 管理员角色
+      type: integer
+  responses:
+    200:
+      description: register message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type

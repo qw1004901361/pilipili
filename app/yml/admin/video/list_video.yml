@@ -1,0 +1,31 @@
+  列出视频
+    ---
+  tags:
+    - video(video_admin, super_admin)
+  parameters:
+    - name: tag_id
+      in: query
+      description: 视频类型（默认为-1—全部）
+    - name: page
+      in: query
+      description: 页码（默认为1）
+  responses:
+    200:
+      description: login message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type

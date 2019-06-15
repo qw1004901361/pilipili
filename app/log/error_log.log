@@ -1,0 +1,125 @@
+2019-05-23 22:01:03,148 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-23 22:06:39,307 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 09:43:58,270 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:11:38,273 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:12:35,979 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:12:35] "POST /register HTTP/1.1" 400 -
+2019-05-25 10:14:29,190 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:14:29] "POST /register HTTP/1.1" 400 -
+2019-05-25 10:27:31,712 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:27:34,000 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:27:33] "POST /register HTTP/1.1" 400 -
+2019-05-25 10:29:16,529 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:29:27,900 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:29:27] "POST /register HTTP/1.1" 400 -
+2019-05-25 10:31:32,447 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:31:34,790 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:31:34] "POST /register HTTP/1.1" 400 -
+2019-05-25 10:32:33,783 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:32:33] "POST /register HTTP/1.1" 200 -
+2019-05-25 10:33:30,022 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:33:30] "GET /personal HTTP/1.1" 403 -
+2019-05-25 10:33:55,435 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:35:03,182 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:35:50,004 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:36:33,299 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:36:33] "POST /login HTTP/1.1" 200 -
+2019-05-25 10:38:01,151 - C:\Users\q5\PycharmProjects\video\app\__init__.py[line:98] - ERROR: ("'module' object is not callable",)
+2019-05-25 10:38:01,152 - D:\Program Files\Python37\lib\site-packages\flask\app.py[line:1761] - ERROR: Exception on /personal [GET]
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1719, in handle_user_exception
+    return handler(e)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Program Files\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\q5\PycharmProjects\video\app\api\home\base.py", line 121, in personal
+    logging()
+TypeError: 'module' object is not callable
+2019-05-25 10:38:01,158 - C:\Users\q5\PycharmProjects\video\app\__init__.py[line:98] - ERROR: ("'module' object is not callable",)
+2019-05-25 10:38:01,175 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:38:01] "GET /personal HTTP/1.1" 500 -
+2019-05-25 10:38:01,186 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - ERROR: Error on request:
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\werkzeug\serving.py", line 302, in run_wsgi
+    execute(self.server.app)
+  File "D:\Program Files\Python37\lib\site-packages\werkzeug\serving.py", line 290, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1719, in handle_user_exception
+    return handler(e)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Program Files\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\q5\PycharmProjects\video\app\api\home\base.py", line 121, in personal
+    logging()
+TypeError: 'module' object is not callable
+2019-05-25 10:38:32,562 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-05-25 10:39:44,489 - C:\Users\q5\PycharmProjects\video\app\__init__.py[line:98] - ERROR: ("'module' object is not callable",)
+2019-05-25 10:39:44,490 - D:\Program Files\Python37\lib\site-packages\flask\app.py[line:1761] - ERROR: Exception on /personal [GET]
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1719, in handle_user_exception
+    return handler(e)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Program Files\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\q5\PycharmProjects\video\app\api\home\base.py", line 121, in personal
+    logging()
+TypeError: 'module' object is not callable
+2019-05-25 10:39:44,493 - C:\Users\q5\PycharmProjects\video\app\__init__.py[line:98] - ERROR: ("'module' object is not callable",)
+2019-05-25 10:39:44,508 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - INFO: 127.0.0.1 - - [25/May/2019 10:39:44] "GET /personal HTTP/1.1" 500 -
+2019-05-25 10:39:44,517 - D:\Program Files\Python37\lib\site-packages\werkzeug\_internal.py[line:122] - ERROR: Error on request:
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\werkzeug\serving.py", line 302, in run_wsgi
+    execute(self.server.app)
+  File "D:\Program Files\Python37\lib\site-packages\werkzeug\serving.py", line 290, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1748, in handle_exception
+    return self.finalize_request(handler(e), from_error_handler=True)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1719, in handle_user_exception
+    return handler(e)
+  File "C:\Users\q5\PycharmProjects\video\app\__init__.py", line 99, in framework_error
+    raise e
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Program Files\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Program Files\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\q5\PycharmProjects\video\app\api\home\base.py", line 121, in personal
+    logging()
+TypeError: 'module' object is not callable

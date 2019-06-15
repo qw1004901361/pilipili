@@ -1,0 +1,41 @@
+# coding=UTF-8
+import os
+
+# 每页标签数
+PER_TAG_PAGE = 5
+# 每页视频数
+PER_PAGE = 10
+# 每页用户数
+PER_USER_PAGE = 10
+# 每页管理员数
+PER_ADMIN_PAGE = 10
+# 权限
+PER_BASE_PAGE = 10
+# 每页评论数
+PER_COM_PAGE = 20
+# 视频存放目录
+VIDEO_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../static/video/")
+# 视频封面存在目录
+LOGO_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../static/logo/")
+# 用户头像存放目录
+FACE_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../static/face/")
+# 临时目录
+TMP_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../static/tmp/")
+# 支持返回中文
+JSON_AS_ASCII = False
+# 允许图片扩展名
+IMAGE_ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
+# 允许视频扩展名
+VIDEO_ALLOWED_EXTENSIONS = ['mp4', 'avi', 'flv', 'wmv']
+# 管理员界面每页评论数
+ADMIN_PER_COM_PAGE = 15
+# 管理员界面每页轮播图数
+ADMIN_PER_ANI_PAGE = 15
+# 管理员界面每页日志数
+ADMIN_PER_LOG_PAGE = 15
+# 管理员界面每页角色数
+ADMIN_PER_ROLE_PAGE = 15
+# 管理员界面每页用户数
+ADMIN_PER_USER_PAGE = 15
+# 管理员界面每页视频数
+ADMIN_PER_VIDEO_PAGE = 15

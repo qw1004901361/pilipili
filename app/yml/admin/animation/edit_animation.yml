@@ -1,0 +1,49 @@
+  编辑轮播图
+    ---
+  tags:
+    - animation(video_admin, super_admin)
+  parameters:
+    - name: id
+      in: formData
+      description: 轮播图ID
+      type: integer
+      required: true
+    - name: tag_id
+      in: formData
+      description: 所属标签，默认为0（首页）
+      type: integer
+    - name: name
+      in: formData
+      description: 轮播图标题
+      required: true
+      type: string
+    - name: logo
+      in: formData
+      description: 轮播图封面
+      required: true
+      type: string
+    - name: url
+      in: formData
+      description: 轮播图跳转链接
+      type: string
+      required: true
+  responses:
+    200:
+      description: register message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type

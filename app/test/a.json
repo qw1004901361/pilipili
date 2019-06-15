@@ -1,0 +1,5748 @@
+{
+  "seoKeyword": "热门游戏直播,游戏直播,高清游戏直播,手机游戏直播,电子竞技直播",
+  "cate1Name": "全部分类",
+  "activeCate1Id": 0,
+  "seoDescription": "斗鱼-每个人的直播平台提供高清、快捷、流畅的视频直播和游戏赛事直播服务，包含英雄联盟直播、穿越火线cf直播、dota2直播、美女直播等各类热门游戏赛事直播和各种名家大神游戏直播，内容丰富，推送及时，带给你不一样的视听体验，一切尽在斗鱼-每个人的直播平台",
+  "isShowFirstCategory": 1,
+  "firstCategory": [
+    {
+      "cate1Name": "网游竞技",
+      "secondCategory": [
+        {
+          "cate2Name": "英雄联盟",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a42cd925b86d345e41f0ef9e3c817fc2.png",
+          "cate2Url": "/g_LOL",
+          "hot": 44826748,
+          "cate1Id": 1,
+          "cate2Id": 1,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "绝地求生",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/08dcd21b98a6b71bb1d37b0c30376734.png",
+          "cate2Url": "/g_jdqs",
+          "hot": 53037106,
+          "cate1Id": 1,
+          "cate2Id": 270,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "穿越火线",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3156f581df48b385f67fd1cc775f022.png",
+          "cate2Url": "/g_CF",
+          "hot": 8801727,
+          "cate1Id": 1,
+          "cate2Id": 33,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "DNF",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/83647da52bbb6f459706f99e0655764f.png",
+          "cate2Url": "/g_DNF",
+          "hot": 17079324,
+          "cate1Id": 1,
+          "cate2Id": 40,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "DOTA2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a274c2feced94f2e543ffdd7abc7718b.png",
+          "cate2Url": "/g_DOTA2",
+          "hot": 5575721,
+          "cate1Id": 1,
+          "cate2Id": 3,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "APEX英雄",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/94a11dcbc856f63006b8ed23e5216e9f.png",
+          "cate2Url": "/g_APEX",
+          "hot": 7259226,
+          "cate1Id": 1,
+          "cate2Id": 651,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "炉石传说",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/26dcbc48176c50af34948385545ae6da.png",
+          "cate2Url": "/g_How",
+          "hot": 5260643,
+          "cate1Id": 1,
+          "cate2Id": 2,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "CS:GO",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/998e401fc6fcb9f9b27f66e4a7600f86.png",
+          "cate2Url": "/g_CSGO",
+          "hot": 8388509,
+          "cate1Id": 1,
+          "cate2Id": 6,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "DOTA",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/833456ab222d1cdc2de8e40ffeca7a64.png",
+          "cate2Url": "/g_DOTA",
+          "hot": 2818513,
+          "cate1Id": 1,
+          "cate2Id": 217,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔兽争霸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/38de3e53bea36b535b85674ab90c1f9e.png",
+          "cate2Url": "/g_mszb",
+          "hot": 4607855,
+          "cate1Id": 1,
+          "cate2Id": 55,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔兽世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3de8cf9f376ef5ee1bbb930868f7f402.png",
+          "cate2Url": "/g_WOW",
+          "hot": 6898004,
+          "cate1Id": 1,
+          "cate2Id": 5,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "格斗游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/be6223542ee0120ce55583432784037b.png",
+          "cate2Url": "/g_FTG",
+          "hot": 1142404,
+          "cate1Id": 1,
+          "cate2Id": 29,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "刀塔自走棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0bf17ac009cccd010676f650eb36083b.png",
+          "cate2Url": "/g_dota2rpg",
+          "hot": 2871241,
+          "cate1Id": 1,
+          "cate2Id": 650,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "怀旧游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3bd1be0e2bedb007f73858fdb68ab11.png",
+          "cate2Url": "/g_classic",
+          "hot": 2010237,
+          "cate1Id": 1,
+          "cate2Id": 26,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "逆水寒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a6a703fe378c76ba566bf76c8fbd26c5.png",
+          "cate2Url": "/g_nsh",
+          "hot": 952203,
+          "cate1Id": 1,
+          "cate2Id": 434,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "QQ飞车端游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0818447c44cecd68190a4d4d8b888bb1.png",
+          "cate2Url": "/g_qqfcdy",
+          "hot": 1615290,
+          "cate1Id": 1,
+          "cate2Id": 375,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "跑跑卡丁车",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b51103bfc331a067ba56183e4d58aff2.png",
+          "cate2Url": "/g_Popkart",
+          "hot": 1050383,
+          "cate1Id": 1,
+          "cate2Id": 90,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "守望先锋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8def0af581d3f883e67e4a932c0207ce.png",
+          "cate2Url": "/g_Overwatch",
+          "hot": 3592518,
+          "cate1Id": 1,
+          "cate2Id": 148,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "星际争霸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/30a5b8f90e9beb8a63db0b25a3b8c8de.png",
+          "cate2Url": "/g_SC",
+          "hot": 1866830,
+          "cate1Id": 1,
+          "cate2Id": 4,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "三国杀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d2d3a2e75d3ab393947774522dc9fb78.png",
+          "cate2Url": "/g_sanguosha",
+          "hot": 2254292,
+          "cate1Id": 1,
+          "cate2Id": 14,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "剑网3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/afec180ae30827a5780d8935f19abcb2.png",
+          "cate2Url": "/g_JX3",
+          "hot": 2129969,
+          "cate1Id": 1,
+          "cate2Id": 65,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "逆战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/81e947b99fa69ead835fe19277c56007.png",
+          "cate2Url": "/g_NZ",
+          "hot": 3273099,
+          "cate1Id": 1,
+          "cate2Id": 46,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "传奇",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/167314690ab24464379fa2db1d45d646.png",
+          "cate2Url": "/g_cq",
+          "hot": 3659701,
+          "cate1Id": 1,
+          "cate2Id": 187,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "流放之路POE",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3e02ea75bacfef21d39fe0f99decad4.png",
+          "cate2Url": "/g_PathofExile",
+          "hot": 477276,
+          "cate1Id": 1,
+          "cate2Id": 79,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "我的世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dcb6c998e116ac99390eb3923e0aa5a5.png",
+          "cate2Url": "/g_MC",
+          "hot": 819362,
+          "cate1Id": 1,
+          "cate2Id": 44,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "NBA2KOL2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/05bb01714d3b13f07a9507883b93054e.png",
+          "cate2Url": "/g_NBA2KOL2",
+          "hot": 1003662,
+          "cate1Id": 1,
+          "cate2Id": 438,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天涯明月刀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/87e56f4cb4f6ce2e3e041deaaf146b05.png",
+          "cate2Url": "/g_tianya",
+          "hot": 1461271,
+          "cate1Id": 1,
+          "cate2Id": 59,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "风暴英雄",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b4031ee2a685671a0e715a19f9776cc0.png",
+          "cate2Url": "/g_HOTS",
+          "hot": 1044364,
+          "cate1Id": 1,
+          "cate2Id": 35,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦幻西游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0c133756c85484619e20e2817d951a9a.png",
+          "cate2Url": "/g_MHXYOL",
+          "hot": 1329941,
+          "cate1Id": 1,
+          "cate2Id": 69,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "棋牌娱乐",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/014eee3920eedbc362c49b1b19cc7ec9.png",
+          "cate2Url": "/g_qipai",
+          "hot": 7244724,
+          "cate1Id": 1,
+          "cate2Id": 113,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "堡垒之夜",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b54fef2fd17256a2a41bc93ceeffa205.png",
+          "cate2Url": "/g_blzy",
+          "hot": 1447296,
+          "cate1Id": 1,
+          "cate2Id": 347,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "热门网游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fc9d19abfda0964a02096a1930e1f897.png",
+          "cate2Url": "/g_rmwy",
+          "hot": 1257478,
+          "cate1Id": 1,
+          "cate2Id": 203,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "泰亚史诗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1013c10eaeeb825e3a13315c70dd5531.png",
+          "cate2Url": "/g_tyss",
+          "hot": 996241,
+          "cate1Id": 1,
+          "cate2Id": 523,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "FIFA ONLINE系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c59e0e836baab955359918ea124f0dad.png",
+          "cate2Url": "/g_FOXL",
+          "hot": 469820,
+          "cate1Id": 1,
+          "cate2Id": 766,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "军事游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4af118df3c3e8ab053b716afabb824b2.png",
+          "cate2Url": "/g_jsyx",
+          "hot": 2281434,
+          "cate1Id": 1,
+          "cate2Id": 255,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "铁甲雄兵",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5c7d3a040d8206b1261a46f053d1b134.png",
+          "cate2Url": "/g_tjxb",
+          "hot": 264198,
+          "cate1Id": 1,
+          "cate2Id": 669,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "最终幻想14",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b94f46fb938ed659ccd31743182bbe30.png",
+          "cate2Url": "/g_FF14",
+          "hot": 159333,
+          "cate1Id": 1,
+          "cate2Id": 41,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "街头篮球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f726307d0a20b0af1a87b338233c7641.png",
+          "cate2Url": "/g_jtlq",
+          "hot": 572955,
+          "cate1Id": 1,
+          "cate2Id": 155,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "迷你世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8a67a2e0acfbf7c5fc48e94b1b7e354d.png",
+          "cate2Url": "/g_MNSJ",
+          "hot": 443913,
+          "cate1Id": 1,
+          "cate2Id": 273,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "问道电脑版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a800d954dd3fe7014af5b76156a2e18d.png",
+          "cate2Url": "/g_wddnb",
+          "hot": 246108,
+          "cate1Id": 1,
+          "cate2Id": 413,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "剑灵",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7c1f3b408dc124081d0dccb6af5aba52.png",
+          "cate2Url": "/g_BladeSoul",
+          "hot": 505710,
+          "cate1Id": 1,
+          "cate2Id": 13,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "竞速游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/69ddf1883699fe7b2e71177837335aaa.png",
+          "cate2Url": "/g_jingsu",
+          "hot": 120262,
+          "cate1Id": 1,
+          "cate2Id": 47,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "无限法则",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/98dcaa6f42ddaa529b9a16d73b0c423b.png",
+          "cate2Url": "/g_roe",
+          "hot": 1052029,
+          "cate1Id": 1,
+          "cate2Id": 572,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "反恐精英",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e5fe60dfcad407f3361f06a610b47963.png",
+          "cate2Url": "/g_CS",
+          "hot": 268853,
+          "cate1Id": 1,
+          "cate2Id": 66,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "暗黑破坏神3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8630bb65479af9ac60394ce2234fde02.png",
+          "cate2Url": "/g_DIABLO3",
+          "hot": 609138,
+          "cate1Id": 1,
+          "cate2Id": 32,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦三国2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fb535c40c6d3761943e961198e0ad4c5.png",
+          "cate2Url": "/g_msg2",
+          "hot": 484636,
+          "cate1Id": 1,
+          "cate2Id": 83,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "使命召唤OL",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0f7b04c2b7a5d15a1f92cb022736b2c0.png",
+          "cate2Url": "/g_CODONLINE",
+          "hot": 343137,
+          "cate1Id": 1,
+          "cate2Id": 11,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "斗鱼游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8fd6456e42e286af5c795990148f3169.png",
+          "cate2Url": "/g_DYYX",
+          "hot": 118886,
+          "cate1Id": 1,
+          "cate2Id": 275,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "星际战甲",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b84b50bef7b1d6cbbfc6bd9400273fa2.png",
+          "cate2Url": "/g_Warframe",
+          "hot": 362284,
+          "cate1Id": 1,
+          "cate2Id": 126,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "群雄逐鹿",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2666b0075a4d7600c18d680d0a0e68cc.png",
+          "cate2Url": "/g_qxzl",
+          "hot": 197656,
+          "cate1Id": 1,
+          "cate2Id": 87,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "征途2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/430ac22428f2e8d1178afbf02ed9e8b7.png",
+          "cate2Url": "/g_zhengtu2",
+          "hot": 38747,
+          "cate1Id": 1,
+          "cate2Id": 656,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "神途",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4254bfd8310035c721f9ae367a060c34.png",
+          "cate2Url": "/g_shentu",
+          "hot": 248607,
+          "cate1Id": 1,
+          "cate2Id": 186,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "方舟：生存进化",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e8c5b07e037057dcd8ae0e95bbcc984b.png",
+          "cate2Url": "/g_fzscjh",
+          "hot": 318768,
+          "cate1Id": 1,
+          "cate2Id": 382,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "RPG网游专区",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e196839efc5585c00914ecdaf47c3180.png",
+          "cate2Url": "/g_rpgwyzq",
+          "hot": 741653,
+          "cate1Id": 1,
+          "cate2Id": 605,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "古剑奇谭网络版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c6cc8c7205b9dc4a290b75db907e20b1.png",
+          "cate2Url": "/g_gjqtwlb",
+          "hot": 272425,
+          "cate1Id": 1,
+          "cate2Id": 551,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "Artifact",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2f8d2dd6041498909a58e3f4ba7f72a6.png",
+          "cate2Url": "/g_Artifact",
+          "hot": 5881,
+          "cate1Id": 1,
+          "cate2Id": 544,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "300专区",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9db8c987537c90e0dc7732611d907970.png",
+          "cate2Url": "/g_300heroes",
+          "hot": 52953,
+          "cate1Id": 1,
+          "cate2Id": 48,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "龙之谷",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/47df3953fa74d0b1176148afc727a5b9.png",
+          "cate2Url": "/g_DragonNest",
+          "hot": 81143,
+          "cate1Id": 1,
+          "cate2Id": 106,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "武侠乂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7a1102f226cefdc0ec4870c367479b42.png",
+          "cate2Url": "/g_wxy",
+          "hot": 108230,
+          "cate1Id": 1,
+          "cate2Id": 506,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "诛仙3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bcd0ce04b8c0e350a73f20073fa9ac2a.png",
+          "cate2Url": "/g_zhuxian3",
+          "hot": 86548,
+          "cate1Id": 1,
+          "cate2Id": 157,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "怪物猎人ol",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f2afb9e6af3a24693040de30aae25405.png",
+          "cate2Url": "/g_MHol",
+          "hot": 18521,
+          "cate1Id": 1,
+          "cate2Id": 164,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "冒险岛2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0c507395bdf04e5494a6577bef217039.png",
+          "cate2Url": "/g_MXD2",
+          "hot": 54919,
+          "cate1Id": 1,
+          "cate2Id": 200,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "高达文化区",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ee3494f8b9d71fca8e0b57143e37d892.png",
+          "cate2Url": "/g_gdyxq",
+          "hot": 226078,
+          "cate1Id": 1,
+          "cate2Id": 590,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "激战2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fe22cf076b1dd71df05f2b341a5a2769.png",
+          "cate2Url": "/g_GuildWars2",
+          "hot": 130099,
+          "cate1Id": 1,
+          "cate2Id": 15,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "英魂之刃",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3ab48ad11620601b72b41229e54301f9.png",
+          "cate2Url": "/g_COS",
+          "hot": 103806,
+          "cate1Id": 1,
+          "cate2Id": 77,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "劲舞团",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/810ae8a9b79400628fd5fe219c09bef9.png",
+          "cate2Url": "/g_jwt",
+          "hot": 144202,
+          "cate1Id": 1,
+          "cate2Id": 412,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "忍者村大战2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/73ae253928eb77d96e9104f2372199f1.png",
+          "cate2Url": "/g_rzcdz2",
+          "hot": 139435,
+          "cate1Id": 1,
+          "cate2Id": 397,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天下3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fdd03084c52b859289d8bfe91c919c9e.png",
+          "cate2Url": "/g_TX3",
+          "hot": 42756,
+          "cate1Id": 1,
+          "cate2Id": 280,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "泡泡堂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6206740a322267d395d79dbada2a5734.png",
+          "cate2Url": "/g_ppt",
+          "hot": 11366,
+          "cate1Id": 1,
+          "cate2Id": 633,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "永恒之塔",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7a72ac37697e4eebdb99092ff7593c99.png",
+          "cate2Url": "/g_AION",
+          "hot": 69009,
+          "cate1Id": 1,
+          "cate2Id": 167,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "无尽战区",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b0e515c25fc094c9c96cf93bfb3141c6.png",
+          "cate2Url": "/g_WJZQ",
+          "hot": 89463,
+          "cate1Id": 1,
+          "cate2Id": 197,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "巫师之昆特牌",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a8cca86f57d832b31a75a1acdf1fac1f.png",
+          "cate2Url": "/g_wszktp",
+          "hot": 8529,
+          "cate1Id": 1,
+          "cate2Id": 111,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "九阴真经",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/40d3f4219aaa17b22dc534e642b1f1b4.png",
+          "cate2Url": "/g_JYZJ",
+          "hot": 23766,
+          "cate1Id": 1,
+          "cate2Id": 80,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "笑傲江湖OL",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/07ab34e8f6541f3f83068b0fd983b607.png",
+          "cate2Url": "/g_xajhol",
+          "hot": 57842,
+          "cate1Id": 1,
+          "cate2Id": 660,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "刀锋铁骑",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/05ce760f98b3419a1d41cfe68b09794a.png",
+          "cate2Url": "/g_dftq",
+          "hot": 25822,
+          "cate1Id": 1,
+          "cate2Id": 216,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "万智牌",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b6be26fc49971930225b0b19db7be1a9.png",
+          "cate2Url": "/g_MTGA",
+          "hot": 28501,
+          "cate1Id": 1,
+          "cate2Id": 615,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "神之浩劫",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3d6285fe8d151049893a04a4c08767f.png",
+          "cate2Url": "/g_SMITE",
+          "hot": 33621,
+          "cate1Id": 1,
+          "cate2Id": 24,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "新倩女幽魂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/edece307afd237720c643898f1256710.png",
+          "cate2Url": "/g_ONLINE",
+          "hot": 30203,
+          "cate1Id": 1,
+          "cate2Id": 277,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天谕",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/93084ac1da53640343328b484cd280e5.png",
+          "cate2Url": "/g_tianyu",
+          "hot": 56530,
+          "cate1Id": 1,
+          "cate2Id": 105,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "命运2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/55c9b3966795a214c2f8dabd63269105.png",
+          "cate2Url": "/g_MY2",
+          "hot": 29719,
+          "cate1Id": 1,
+          "cate2Id": 286,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "灵山奇缘",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d14f56d48527dd14f2b662b80bd3d966.png",
+          "cate2Url": "/g_lsqy",
+          "hot": 5128,
+          "cate1Id": 1,
+          "cate2Id": 442,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦想世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9fb12a8ebcaec546246f09d679853fe6.png",
+          "cate2Url": "/g_mxsj",
+          "hot": 32098,
+          "cate1Id": 1,
+          "cate2Id": 607,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "火箭联盟",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/adcae48b1a27637aa25ed7005ee38ad7.png",
+          "cate2Url": "/g_hjlm",
+          "hot": 19818,
+          "cate1Id": 1,
+          "cate2Id": 322,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "音乐游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/db0df8ee9670cb0d064ab245ffc1eafc.png",
+          "cate2Url": "/g_MG",
+          "hot": 13528,
+          "cate1Id": 1,
+          "cate2Id": 54,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "创世战车",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b3aacb58be4c4688794b48d4fbb64f89.png",
+          "cate2Url": "/g_cszc",
+          "hot": 16785,
+          "cate1Id": 1,
+          "cate2Id": 226,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "枪林弹雨",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6cecc18229ea230022ce4a43c817e9f3.png",
+          "cate2Url": "/g_qldy",
+          "hot": 22549,
+          "cate1Id": 1,
+          "cate2Id": 210,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天之禁2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c0853e71fd5271db5ea448fe4921ddef.png",
+          "cate2Url": "/g_TZJ",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 653,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "乐高无限",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bbf0a683f7fdd0d5a91bb5bc1661e519.png",
+          "cate2Url": "/g_lgwhq",
+          "hot": 5361,
+          "cate1Id": 1,
+          "cate2Id": 592,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "枪火游侠",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/51ec5a3a97ed079a32fb849a81664a04.png",
+          "cate2Url": "/g_qhyx",
+          "hot": 26887,
+          "cate1Id": 1,
+          "cate2Id": 258,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "火源",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/515cdba15d0febc7e89d247c54b8e2b0.png",
+          "cate2Url": "/g_hy",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 462,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "战意",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/487deea195a0dd3c7c5692914371968b.png",
+          "cate2Url": "/g_WYZY",
+          "hot": 13500,
+          "cate1Id": 1,
+          "cate2Id": 310,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "醉逍遥",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fd14944a83f18774f69d8d3f60c5bac8.png",
+          "cate2Url": "/g_zxy",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 346,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "橙光",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4c6571ae1ffdfecf20b3db9f6839cc6d.png",
+          "cate2Url": "/g_cg",
+          "hot": 232,
+          "cate1Id": 1,
+          "cate2Id": 427,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "武魂2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/af6f73ec0c7a791356970cfb296fa725.png",
+          "cate2Url": "/g_wh2",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 610,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "秘境对决",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ee547b1bdb9a1ece5b8619709f4785d7.png",
+          "cate2Url": "/g_mjdj",
+          "hot": 4736,
+          "cate1Id": 1,
+          "cate2Id": 330,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "虚幻争霸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3b645ee61cba4c0a2c5f211264432fe4.png",
+          "cate2Url": "/g_xhzb",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 189,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "心悦大咖秀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8437af57b28f99f8f6286d0aedb9f5a6.png",
+          "cate2Url": "/g_xydkx",
+          "hot": 14678523,
+          "cate1Id": 1,
+          "cate2Id": 432,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "罗博造造",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/369c8d7919dbead4556e531d70b758bd.png",
+          "cate2Url": "/g_lbzz",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 429,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "兽人必须死",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fcb80f8037a6e537c5b58bc7127c9523.png",
+          "cate2Url": "/g_srbxs",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 345,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "手工星球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/cf1a80e544c4919330e9f36549180def.png",
+          "cate2Url": "/g_sgxq",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 632,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "艾兰岛",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2c236dd90761bea54930ad7f92a550ef.png",
+          "cate2Url": "/g_ald",
+          "hot": 10900,
+          "cate1Id": 1,
+          "cate2Id": 439,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "百变球球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/293493914f3bd016d83a2d85a7eef984.png",
+          "cate2Url": "/g_BBQQ",
+          "hot": 29822,
+          "cate1Id": 1,
+          "cate2Id": 404,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "QQ炫舞",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/49b3d56e0572dc13f5b6ced4c49c13df.png",
+          "cate2Url": "/g_qqxw",
+          "hot": 54422,
+          "cate1Id": 1,
+          "cate2Id": 710,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "生死狙击",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b92c11252d1906df43972413575641d4.png",
+          "cate2Url": "/g_BattleTeams",
+          "hot": 26894,
+          "cate1Id": 1,
+          "cate2Id": 748,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "生存竞技",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/98925ce2fedcef3b905745e4d7f3cac0.png",
+          "cate2Url": "/g_scjj",
+          "hot": 91030,
+          "cate1Id": 1,
+          "cate2Id": 751,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "Hytale",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3d43f9de70ee04fe17ee8c190e28a97d.png",
+          "cate2Url": "/g_Hytale",
+          "hot": 0,
+          "cate1Id": 1,
+          "cate2Id": 771,
+          "isDisplay": 0
+        }
+      ],
+      "shortName": "PCgame",
+      "cate1Id": 1
+    },
+    {
+      "cate1Name": "单机热游",
+      "secondCategory": [
+        {
+          "cate2Name": "主机游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6b1ca7930ebf10c660f46dfda64a3f64.png",
+          "cate2Url": "/g_TVgame",
+          "hot": 18459299,
+          "cate1Id": 15,
+          "cate2Id": 19,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "全战三国",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3fece84c7ceef3bafbe90167cdc8ed47.png",
+          "cate2Url": "/g_qzsg",
+          "hot": 3043780,
+          "cate1Id": 15,
+          "cate2Id": 497,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "怪物猎人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c867f1c241bf0e4ba892174ee4ed4232.png",
+          "cate2Url": "/g_gwlrsj",
+          "hot": 773296,
+          "cate1Id": 15,
+          "cate2Id": 367,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战地风云",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e91779ba2084aa3462ab349aaa9d2554.png",
+          "cate2Url": "/g_BF",
+          "hot": 396164,
+          "cate1Id": 15,
+          "cate2Id": 466,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "全境封锁",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bc5c6fb2e6953906b1278b4d6ba83ccf.png",
+          "cate2Url": "/g_qjfs",
+          "hot": 379413,
+          "cate1Id": 15,
+          "cate2Id": 478,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "探灵笔记",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2d00311f230050dedb6a57e773a3c425.png",
+          "cate2Url": "/g_tlbj",
+          "hot": 1189742,
+          "cate1Id": 15,
+          "cate2Id": 644,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "灵魂筹码",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/af8e18da887d323ad256abfaafbef8b6.png",
+          "cate2Url": "/g_lhcm",
+          "hot": 286586,
+          "cate1Id": 15,
+          "cate2Id": 461,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "骑马与砍杀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/963002ea98f5e68c131ca656b7b78b73.png",
+          "cate2Url": "/g_qmyks",
+          "hot": 189868,
+          "cate1Id": 15,
+          "cate2Id": 491,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "饥荒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c10ec6d95732013b30a0b8dc6e9245c5.png",
+          "cate2Url": "/g_famine",
+          "hot": 333253,
+          "cate1Id": 15,
+          "cate2Id": 23,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "只狼",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/91fda718781a31ad9ab9e6fc8cf49baf.png",
+          "cate2Url": "/g_ZL",
+          "hot": 184944,
+          "cate1Id": 15,
+          "cate2Id": 658,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "隐形守护者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/deabf9603b9ac782ab002f357c7f909b.png",
+          "cate2Url": "/g_yxshz",
+          "hot": 30397,
+          "cate1Id": 15,
+          "cate2Id": 668,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "NBA2K",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dd9d4c5f3c8bc0829a43131def2b2516.png",
+          "cate2Url": "/g_NBA2K",
+          "hot": 266297,
+          "cate1Id": 15,
+          "cate2Id": 473,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "圣歌",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b640e170003a0e0e841d5853cdc2728b.png",
+          "cate2Url": "/g_sg",
+          "hot": 6814,
+          "cate1Id": 15,
+          "cate2Id": 640,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "ATLAS",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2c720dd366d7dc2976971f767bf87b4c.png",
+          "cate2Url": "/g_ATLAS",
+          "hot": 32228,
+          "cate1Id": 15,
+          "cate2Id": 626,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "足球游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/10a8ff98df660654f2df0903b7967f81.png",
+          "cate2Url": "/g_zq",
+          "hot": 191404,
+          "cate1Id": 15,
+          "cate2Id": 661,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "跳伞行动",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b01dd27a79b16d95b5b7d67df1af8a8d.png",
+          "cate2Url": "/g_tsxd",
+          "hot": 99094,
+          "cate1Id": 15,
+          "cate2Id": 595,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "角色扮演",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f43c92f0aeb660b6d5f681c408d08139.png",
+          "cate2Url": "/g_RPG",
+          "hot": 104448,
+          "cate1Id": 15,
+          "cate2Id": 758,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "动作冒险",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dccfee616adb03d72d326aa0b74390e0.png",
+          "cate2Url": "/g_ACT",
+          "hot": 34927,
+          "cate1Id": 15,
+          "cate2Id": 755,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "独立小众",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/65013edab78764b692f883de1537b85b.png",
+          "cate2Url": "/g_indie",
+          "hot": 51264,
+          "cate1Id": 15,
+          "cate2Id": 756,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "恐怖游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f30cff4e99e34e110fa41792f1ec6e36.png",
+          "cate2Url": "/g_Horror",
+          "hot": 167488,
+          "cate1Id": 15,
+          "cate2Id": 760,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "模拟经营",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/88edc1f2ed60f600ad246c585dcfb596.png",
+          "cate2Url": "/g_SIM",
+          "hot": 40540,
+          "cate1Id": 15,
+          "cate2Id": 761,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "即时战略",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2caac3eb966840c7d8ec1f91e6ba4151.png",
+          "cate2Url": "/g_RTS",
+          "hot": 41742,
+          "cate1Id": 15,
+          "cate2Id": 757,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "体育竞技",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/cb60d45441337d344a0642dbdfd476a4.png",
+          "cate2Url": "/g_SPT",
+          "hot": 8371,
+          "cate1Id": 15,
+          "cate2Id": 764,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "赛车竞速",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/299eeaa850f4f36fd3feb34478e4afae.png",
+          "cate2Url": "/g_RAC",
+          "hot": 25163,
+          "cate1Id": 15,
+          "cate2Id": 762,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "策略战棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fffdc4913f0ff276fda46bd34c9b665b.png",
+          "cate2Url": "/g_SRPG",
+          "hot": 27170,
+          "cate1Id": 15,
+          "cate2Id": 754,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "射击游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/85965d57f6a460922187f165ab956af3.png",
+          "cate2Url": "/g_FPS",
+          "hot": 37877,
+          "cate1Id": 15,
+          "cate2Id": 763,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "roguelike",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f5e412b7e082279815f86aa49fe2833c.png",
+          "cate2Url": "/g_Roguelike",
+          "hot": 22418,
+          "cate1Id": 15,
+          "cate2Id": 753,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "解谜冒险",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2197ba78cb2d183f43a2f34880dd6619.png",
+          "cate2Url": "/g_AVG",
+          "hot": 26380,
+          "cate1Id": 15,
+          "cate2Id": 759,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "休闲益智",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5a8f59622622d6d73aca3105581ac23b.png",
+          "cate2Url": "/g_EDU",
+          "hot": 4746,
+          "cate1Id": 15,
+          "cate2Id": 765,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "辐射",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ff7d004ef00793f0a8d8b40b1b86838c.png",
+          "cate2Url": "/g_fs",
+          "hot": 19169,
+          "cate1Id": 15,
+          "cate2Id": 480,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "太吾绘卷",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/144036a93fd09cf7012f787d21792d78.png",
+          "cate2Url": "/g_twhj",
+          "hot": 14014,
+          "cate1Id": 15,
+          "cate2Id": 587,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "SCUM",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a9021b4746763b1eaea398e1591b0080.png",
+          "cate2Url": "/g_Scum",
+          "hot": 71523,
+          "cate1Id": 15,
+          "cate2Id": 567,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "正当防卫",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9126363e790bf22a840bd9203a1e991f.png",
+          "cate2Url": "/g_zdfw",
+          "hot": 1104,
+          "cate1Id": 15,
+          "cate2Id": 481,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战神",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/05ebcdc7d5ca7a82a4dd70cd8c77127a.png",
+          "cate2Url": "/g_GoW",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 676,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "以撒的结合",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fbcb43a9b727254dbc640eff5a7e50b2.png",
+          "cate2Url": "/g_Isaac",
+          "hot": 8936,
+          "cate1Id": 15,
+          "cate2Id": 680,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "文明6",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/40f1ef9e7109eeea4bb618eb6ff73df2.png",
+          "cate2Url": "/g_CVI",
+          "hot": 32915,
+          "cate1Id": 15,
+          "cate2Id": 687,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "三国志系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f985c06df7c1d768f5f5cdf62f0118c9.png",
+          "cate2Url": "/g_Sangokushi",
+          "hot": 60336,
+          "cate1Id": 15,
+          "cate2Id": 698,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "仁王",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3fe59354ae749152e49814fa09b05590.png",
+          "cate2Url": "/g_NIOH",
+          "hot": 24859,
+          "cate1Id": 15,
+          "cate2Id": 701,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "缺氧",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/442870121a9d8db22b3ffe4f867b77f4.png",
+          "cate2Url": "/g_ONI",
+          "hot": 37675,
+          "cate1Id": 15,
+          "cate2Id": 702,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "全面吃鸡模拟器",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/51198481736a479d6c8c59c968a57757.png",
+          "cate2Url": "/g_TAB",
+          "hot": 4894,
+          "cate1Id": 15,
+          "cate2Id": 703,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "了不起的修仙模拟器",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/48cbf98cf191da40a4579e7e3dd11e8a.png",
+          "cate2Url": "/g_ACS",
+          "hot": 8132,
+          "cate1Id": 15,
+          "cate2Id": 713,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "环世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0792fe80b3ff050352d5f8bd42555850.png",
+          "cate2Url": "/g_RimWorld",
+          "hot": 44944,
+          "cate1Id": 15,
+          "cate2Id": 721,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "鬼泣5",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/cf0420c944b9687ecdb2a43655ace914.png",
+          "cate2Url": "/g_DMC5",
+          "hot": 37448,
+          "cate1Id": 15,
+          "cate2Id": 724,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "古墓丽影",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bcf20c12c9f6ae0e45dc7b30c5e1b36e.png",
+          "cate2Url": "/g_gmly",
+          "hot": 13270,
+          "cate1Id": 15,
+          "cate2Id": 470,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "古剑奇谭3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6c2c71117d491d0173838408cba919f2.png",
+          "cate2Url": "/g_GuJian3",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 728,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "刺客信条",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/71a63b845ca7057f2e0ba701826abf30.png",
+          "cate2Url": "/g_AC",
+          "hot": 55644,
+          "cate1Id": 15,
+          "cate2Id": 469,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "波西亚时光",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/90a93aa175f6ce08c0ad6b9eb4408958.png",
+          "cate2Url": "/g_bxysg",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 369,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "宝可梦：剑/盾",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1d230b73901a05be73d66b188f53ed14.png",
+          "cate2Url": "/g_PSS",
+          "hot": 700,
+          "cate1Id": 15,
+          "cate2Id": 739,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "鬼泣",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e5b789d30cb2143e64f94c38e882a56b.png",
+          "cate2Url": "/g_DMC",
+          "hot": 13357,
+          "cate1Id": 15,
+          "cate2Id": 725,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "往日不再",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/389702183a011c9731dc3fdbcd81bc0a.png",
+          "cate2Url": "/g_WRBZ",
+          "hot": 16127,
+          "cate1Id": 15,
+          "cate2Id": 690,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "JUMP大乱斗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/14ceb27a29e3c45d3ab43b6f05f86615.png",
+          "cate2Url": "/g_JUMPDLD",
+          "hot": 17634,
+          "cate1Id": 15,
+          "cate2Id": 642,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "皇牌空战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/734b7916126eebf8ee28c615a4e28109.png",
+          "cate2Url": "/g_hpkz",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 479,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "海岛大亨",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/278535c6abe50427025b71ab3e3e07fe.png",
+          "cate2Url": "/g_hddh",
+          "hot": 6253,
+          "cate1Id": 15,
+          "cate2Id": 482,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "NBA 2K 欢乐竞技场2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/32adc251ffb370cd0d3b5f3905865bc2.png",
+          "cate2Url": "/g_nba2khljjc2",
+          "hot": 500,
+          "cate1Id": 15,
+          "cate2Id": 598,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "碧海黑帆",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e1dc5e8770dc3b9b8f73e7c578fc0ca1.png",
+          "cate2Url": "/g_klhdt",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 477,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "灵魂之火",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/eefadd147350550e6f3900b885dbbc02.png",
+          "cate2Url": "/g_lhzh",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 504,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "最后生还者2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bf9aaf825889b1c7dc08242f2332259e.png",
+          "cate2Url": "/g_TLOU2",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 670,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "装机模拟器",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a5f176ab1185373eebd5a980473c8c71.png",
+          "cate2Url": "/g_PCBS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 671,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "侏罗纪世界：进化",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c51288b0df047abd4d0a6e1440a19646.png",
+          "cate2Url": "/g_JWE",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 672,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "植物大战僵尸:花园战争系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/553528bdd7b18525d2997c267056d9dc.png",
+          "cate2Url": "/g_PvsZ",
+          "hot": 5543,
+          "cate1Id": 15,
+          "cate2Id": 673,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "蜘蛛侠",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a1a10d48bc085ae5e2909eb6739d6f27.png",
+          "cate2Url": "/g_Spide",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 674,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "战争机器系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7996b0d93c95791c7e01dc569e3fce0f.png",
+          "cate2Url": "/g_Gears",
+          "hot": 1213,
+          "cate1Id": 15,
+          "cate2Id": 675,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战国无双",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b88ad547139b95775dfd746a5da84f86.png",
+          "cate2Url": "/g_ZGWS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 677,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "勇者斗恶龙：建造者2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4f6dccf3d2e5ab824b405b2e6ec3f897.png",
+          "cate2Url": "/g_DQB2",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 678,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "异度之刃",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c70c30f77cfd01d16df79dd212845961.png",
+          "cate2Url": "/g_YDZR",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 679,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "遗迹：灰烬重生",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/91c340692e584282d42bbfc27809b4f2.png",
+          "cate2Url": "/g_Rem",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 681,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "血源",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ef44c2188dcc35cbf853994a1f57f15c.png",
+          "cate2Url": "/g_BB",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 682,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "羞辱系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2379d7e883c0d83e4a44fe7f66fe6a77.png",
+          "cate2Url": "/g_Dish",
+          "hot": 7016,
+          "cate1Id": 15,
+          "cate2Id": 683,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "星之卡比",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/85b0cfee7b1770dffffc1514dba7ee3c.png",
+          "cate2Url": "/g_Kirby",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 684,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "仙剑奇侠传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/de9d0207a3db9f914b19f5cc3053fd48.png",
+          "cate2Url": "/g_PAL",
+          "hot": 18725,
+          "cate1Id": 15,
+          "cate2Id": 685,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "侠客风云传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/97cdc6ca5704a5e623630c87d96d6b87.png",
+          "cate2Url": "/g_ToW",
+          "hot": 9219,
+          "cate1Id": 15,
+          "cate2Id": 686,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "维京人：人中之狼",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8d42402010396d94cb22b878c578a730.png",
+          "cate2Url": "/g_VWoM",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 688,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "旺达与巨像",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/24d48ccbb619368fa522420dc98cdd81.png",
+          "cate2Url": "/g_SotC",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 689,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "吞食孔明传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c3c8c8d3fdf8e86430b3c156ae32fe9d.png",
+          "cate2Url": "/g_ETwK",
+          "hot": 11190,
+          "cate1Id": 15,
+          "cate2Id": 691,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "突变元年：伊甸园之路",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b1500d6ca87f19b58ac32329f8ed8b91.png",
+          "cate2Url": "/g_MYZ",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 692,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "死亡搁浅",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e8df9f9481622d4706c15537bbbf8466.png",
+          "cate2Url": "/g_DS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 693,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "双点医院",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/91822e7645f90e65e7472d55161bf97b.png",
+          "cate2Url": "/g_TPH",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 694,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "守墓人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c7c6cf0b5be3a1120ac9edb03bc7534c.png",
+          "cate2Url": "/g_GK",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 695,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "神秘海域",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7806dbc5f4a2f2a83afc7916acfc31fc.png",
+          "cate2Url": "/g_Uncharted",
+          "hot": 4347,
+          "cate1Id": 15,
+          "cate2Id": 696,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "莎木",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e139bbdc23c2e05a3da9b199166276de.png",
+          "cate2Url": "/g_Shenmue",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 697,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "塞尔达传说：梦见岛重制版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f3dc652bfe03693666df2181d70b9689.png",
+          "cate2Url": "/g_TLoZ",
+          "hot": 62310,
+          "cate1Id": 15,
+          "cate2Id": 699,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "忍者龙剑传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f0e602b8b6d03f508f8ba6c259a31064.png",
+          "cate2Url": "/g_NG",
+          "hot": 13500,
+          "cate1Id": 15,
+          "cate2Id": 700,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "喷射战士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fe9c70a372e2ec7954d4bae1df3f584b.png",
+          "cate2Url": "/g_Splatoon",
+          "hot": 14469,
+          "cate1Id": 15,
+          "cate2Id": 704,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "女神异闻录5",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8d236c26962e8c63df103a9121c60337.png",
+          "cate2Url": "/g_P5",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 705,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "模拟人生",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fefe940224b852859b6389915a461fa2.png",
+          "cate2Url": "/g_Sims",
+          "hot": 5196,
+          "cate1Id": 15,
+          "cate2Id": 706,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "迷雾侦探",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a6deb5ea0a09b174080bd62f3824d87e.png",
+          "cate2Url": "/g_TotNS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 707,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "毛线小精灵",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9ab9667f61d06651d6b5bd8242414e58.png",
+          "cate2Url": "/g_Unravel",
+          "hot": 1771,
+          "cate1Id": 15,
+          "cate2Id": 708,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "龙腾世纪",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/21b07ea8d18293517af24e53aef7bbc9.png",
+          "cate2Url": "/g_DA",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 711,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "猎天使魔女",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dd2bb5aaadcd62719bcd4689d1fb5cae.png",
+          "cate2Url": "/g_Bayonetta",
+          "hot": 4330,
+          "cate1Id": 15,
+          "cate2Id": 712,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "狂野星球之旅",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/162a916cb88c4ccd68acb99312ed67d0.png",
+          "cate2Url": "/g_JttSP",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 714,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "空洞骑士：丝绸之歌",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/848da337d9daa961581f319de1ed6479.png",
+          "cate2Url": "/g_HKS",
+          "hot": 6022,
+          "cate1Id": 15,
+          "cate2Id": 715,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "狙击精英",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2a847c6efdf8f8a0f04400bc6613089c.png",
+          "cate2Url": "/g_SE",
+          "hot": 6371,
+          "cate1Id": 15,
+          "cate2Id": 716,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "救赎之路",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b542e28f71eb41856c8f5ee4ed77f25d.png",
+          "cate2Url": "/g_SSfR",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 717,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "精灵宝可梦Let's Go!",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/548e46f2d3ae871d27d1b75dd332b2d2.png",
+          "cate2Url": "/g_PLsGo",
+          "hot": 44928,
+          "cate1Id": 15,
+          "cate2Id": 718,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "驾驶俱乐部",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/99322a51705d8558663a9e49a4b3875d.png",
+          "cate2Url": "/g_DriveClub",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 720,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "极限竞速",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3160473693f7afe93783993e234bb94.png",
+          "cate2Url": "/g_jxjs",
+          "hot": 220,
+          "cate1Id": 15,
+          "cate2Id": 468,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "极品飞车",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ff396af10a7e3829aca3b8a206e5bb3d.png",
+          "cate2Url": "/g_jpfc",
+          "hot": 5864,
+          "cate1Id": 15,
+          "cate2Id": 488,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "胡闹厨房",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c28a56a2873fdcf7add125ffb041eb4c.png",
+          "cate2Url": "/g_Overcooked",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 722,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "河洛群侠传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/46c3b5e858cdc6fd1db306fc95d03f62.png",
+          "cate2Url": "/g_TBoD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 723,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "归于沉寂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/00c64ae5f4f56abd6a02370d066d7d3c.png",
+          "cate2Url": "/g_FtS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 726,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "光之子",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/55a2da13cde50cf680d93b6500df831b.png",
+          "cate2Url": "/g_COL",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 727,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "古剑奇谭2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7ee41a5e3c603077ca52c996ca8be6bf.png",
+          "cate2Url": "/g_GuJian2",
+          "hot": 1957,
+          "cate1Id": 15,
+          "cate2Id": 729,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "古惑狼三部曲",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b20d1b001110e474e9f75f9819a82a1a.png",
+          "cate2Url": "/g_CBNST",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 730,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "疯狂的麦克斯",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0acb3df1e95cfdf43fa285e319401663.png",
+          "cate2Url": "/g_MadMax",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 731,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "地铁:离去",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/53b4b8162b78d84d13370fb0c2a41b1b.png",
+          "cate2Url": "/g_ME",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 732,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "沉没之城",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/053aa78c3acdfa117d07955af58c0f61.png",
+          "cate2Url": "/g_TSC",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 733,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "尘埃系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a20b01d6ea40aea47f9f60e768964247.png",
+          "cate2Url": "/g_DiRT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 734,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超级马里奥：奥德赛",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e0487010a7584e4ddf53a74e1f3775a5.png",
+          "cate2Url": "/g_SMO",
+          "hot": 5922,
+          "cate1Id": 15,
+          "cate2Id": 735,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "超凡双生",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/449ebb06c9ac854e861238b52b1295f2.png",
+          "cate2Url": "/g_BTS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 736,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "飙酷车神",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/47170e13e31159ea4db296e74a953406.png",
+          "cate2Url": "/g_Crew",
+          "hot": 7582,
+          "cate1Id": 15,
+          "cate2Id": 737,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "孢子",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/772ceaf8b62645d75ad908e31364e5cc.png",
+          "cate2Url": "/g_Spore",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 738,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "八方旅人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/35b6aff829de047d18f587bf48117e7d.png",
+          "cate2Url": "/g_OT",
+          "hot": 431033,
+          "cate1Id": 15,
+          "cate2Id": 740,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "暗夜长梦",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5c220977c2a003bd4a8ca73a8305b872.png",
+          "cate2Url": "/g_Int",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 741,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "暗黑地牢",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f08ff5555bb548564d61139177177ce3.png",
+          "cate2Url": "/g_DD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 742,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "Rime",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b6f2e6aa60163071917d9f04c40cc0aa.png",
+          "cate2Url": "/g_Rime",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 743,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "Inside",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/333a7aa136c2975bd94217df14ab42e6.png",
+          "cate2Url": "/g_Inside",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 744,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "文嘉",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a2e2a3ba0baa1acdaff3c379da936dd5.png",
+          "cate2Url": "/g_Wenjia",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 773,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "无双全明星",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4832c1cb159321c7ac0fdbbcd821d5da.png",
+          "cate2Url": "/g_wsqmx",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 774,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超越善恶",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6dfba125423b0c9f1f9034a919d3d254.png",
+          "cate2Url": "/g_BGE",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 775,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "讨鬼传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ec62b8ddd5c8e336f14fbaf7263eb21a.png",
+          "cate2Url": "/g_Toukiden",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 776,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "奇异小队",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0f99858d8090dc64e4424de140607a1b.png",
+          "cate2Url": "/g_StrangeBrigade",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 777,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "索尼克系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/66e294c9d24f6f25ddda62802b4b69ab.png",
+          "cate2Url": "/g_Sonic",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 778,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "暗黑血统",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/68029fee98b86c9dc97c0859010f66e9.png",
+          "cate2Url": "/g_Darksiders",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 779,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "进击的巨人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7b849b300e5f85da27058bb8a513ed3f.png",
+          "cate2Url": "/g_AoT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 780,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "合金装备",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c9fcf1fb0d58453daae3007715149571.png",
+          "cate2Url": "/g_MetalGear",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 781,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "星球大战系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/95935a68835d2737220cbc3577e369f1.png",
+          "cate2Url": "/g_StarWars",
+          "hot": 863,
+          "cate1Id": 15,
+          "cate2Id": 782,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "纪元：变异",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/61527a1adc3bc119f6dd13ce8d0ff368.png",
+          "cate2Url": "/g_ANNO",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 783,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "镜之边缘",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4d799e4ff187a7a82a990a93f8d7458f.png",
+          "cate2Url": "/g_MsE",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 784,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "无双大蛇",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bb8e5b83a20323625dd0494d5dc7c807.png",
+          "cate2Url": "/g_WO",
+          "hot": 5439,
+          "cate1Id": 15,
+          "cate2Id": 785,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "海贼王系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f479162836fe7bfff8a4b0b7b881d3af.png",
+          "cate2Url": "/g_OnePiece",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 786,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "人中北斗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b1cd70ffd8847548c79f433b228d087d.png",
+          "cate2Url": "/g_HGG",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 787,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "波斯王子",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/28ce1eb06c31c89910a70857c38f5b3d.png",
+          "cate2Url": "/g_PfP",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 788,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "Hob",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/948f003d0c3f658a23f54fa137f552b7.png",
+          "cate2Url": "/g_Hob",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 789,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "祖先：人类史诗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3e3ca5a73e3e5e141ab1bc4733bbf763.png",
+          "cate2Url": "/g_Ancestors",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 790,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "勿忘我",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/416c1e36c4e40883e59f9a673f4e4235.png",
+          "cate2Url": "/g_Remw",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 791,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "寂静之人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5bd9be3f7f8a98801795452912f97e06.png",
+          "cate2Url": "/g_QuietMan",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 792,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "海贼无双",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c728d333f36f6dd98294e68dd85dff8d.png",
+          "cate2Url": "/g_OPPW",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 793,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "黑道圣徒系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/cd27bb69a9bcd5e7a7f3533d8d58bc46.png",
+          "cate2Url": "/g_SR",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 794,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "鬼屋魔影：启蒙",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5f4c43c82cc8afc9943a16d8f431ba54.png",
+          "cate2Url": "/g_AitD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 795,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "我还活着",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3ea7d7dce6aaa53bd685b3f6f7c2f8ed.png",
+          "cate2Url": "/g_Alive",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 796,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "巨神狩猎",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/de5fead2bdfff60df3bb064ec19b14d0.png",
+          "cate2Url": "/g_PftG",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 797,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "三合会之战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7e6456192d5bdc7abc45b3e54df38f82.png",
+          "cate2Url": "/g_TW",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 798,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "女巫",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0787c97c19617e16ce97c5e5f508a593.png",
+          "cate2Url": "/g_Noita",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 799,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "恶灵附身",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/642f70184e8e94ef583276dee1fb1a81.png",
+          "cate2Url": "/g_Within",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 800,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "狼刃",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e0af9673488d91c3e168a6b3f25a13b7.png",
+          "cate2Url": "/g_Wulverblade",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 801,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "大将军：罗马",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1e1f1a13c1c94ef8aa8cd62d06c84a81.png",
+          "cate2Url": "/g_Rome",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 802,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "人类黎明",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/aea85614bbe268ce06e18519f3c0b75c.png",
+          "cate2Url": "/g_DawnMan",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 803,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "漫展模拟器",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4f69ec651d90c8d32fd8f14130dc334b.png",
+          "cate2Url": "/g_ConSim",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 804,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "星际公民",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/db0186ca5bba13a6e7c43550a071b4b8.png",
+          "cate2Url": "/g_StarCitizen",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 805,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "电竞传奇",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2debd333ea3d28f77cc1fcdc3013183c.png",
+          "cate2Url": "/g_ESL",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 806,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "爱丽丝：庇护",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6314656f966ae2e90a848d248fac27c7.png",
+          "cate2Url": "/g_Alice",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 807,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "深渊狂猎",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/536bf58361a12cddaeb989911133e862.png",
+          "cate2Url": "/g_LxL",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 808,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "掠食",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/164046994422ff6cfccb7f131e42874d.png",
+          "cate2Url": "/g_Prey",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 809,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "重装机兵XENO",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/14122ba36c22d72f971eb2c465eaf256.png",
+          "cate2Url": "/g_MMX",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 810,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "南方公园",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5133618174b9132917074bc5eb0cca93.png",
+          "cate2Url": "/g_SouthPark",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 811,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "火焰纹章：风花雪月",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/262f1f8d766b5d1b59d7049153f40a57.png",
+          "cate2Url": "/g_FireEmblem",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 812,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "总有一天你会回来",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f9183f128d82abf491602c4a684fcada.png",
+          "cate2Url": "/g_Return",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 813,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "神鬼寓言",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/058dbcc81fe3a9076d54377c2acc9ccc.png",
+          "cate2Url": "/g_Fable",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 814,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "物质世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/37b7868bd5e107becb0b88f7b8d5ab7c.png",
+          "cate2Url": "/g_Outward",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 815,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "星露谷物语",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/829f6aee65851d0cbf0e3d2e568568ce.png",
+          "cate2Url": "/g_Stardew",
+          "hot": 13550,
+          "cate1Id": 15,
+          "cate2Id": 816,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "永恒之柱",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3bfc86bd388a3cbe4594797ccfdbaf8a.png",
+          "cate2Url": "/g_Pillars",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 817,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "质量效应",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3d57f8f99d8cfc2fb5603b76dea2729d.png",
+          "cate2Url": "/g_Effect",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 818,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "英雄传说",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1f9cff1684b5483a6b49ffb95c94b8c8.png",
+          "cate2Url": "/g_Heroes",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 819,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "中土世界：战争之影",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b57a13413240deaff20e9b48b0161bbc.png",
+          "cate2Url": "/g_MiddleEarth",
+          "hot": 34592,
+          "cate1Id": 15,
+          "cate2Id": 820,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "刀剑神域",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8ba6eb47d50dbe97868ee1a9a2e97fd5.png",
+          "cate2Url": "/g_SAO",
+          "hot": 6657,
+          "cate1Id": 15,
+          "cate2Id": 821,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "博德之门",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/96f6848024e55e52f00e4ca5600ec0db.png",
+          "cate2Url": "/g_BG",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 822,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "光之骑士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/07b23d15629f53e9df57b56e375988e3.png",
+          "cate2Url": "/g_KL",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 823,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "通灵塔",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4f605162206a322b3f09bfa960130ed9.png",
+          "cate2Url": "/g_Ziggurat",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 824,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "火炬之光",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3b2e2b2c7531062fff3b70bc58614bd2.png",
+          "cate2Url": "/g_Torchlight",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 825,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "噬血代码",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e1a0886de922f44776a1f7962de15656.png",
+          "cate2Url": "/g_CodeVein",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 826,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "最终幻想",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/87164492a7a05ccdb377f23683fff8aa.png",
+          "cate2Url": "/g_FF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 827,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "上古卷轴",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/abb2756d7c83f34e4a6c7d783473f667.png",
+          "cate2Url": "/g_TES",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 828,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "战场女武神",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/918dcc46b9ee86c63e5cf0a672fe5c9b.png",
+          "cate2Url": "/g_VC",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 829,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超人：世界最佳拍档",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/160015040f6b4f3cf95315d2c299f1b1.png",
+          "cate2Url": "/g_Superman",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 830,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "无畏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/761ba2f930e51d9beb6adcaf77d79a85.png",
+          "cate2Url": "/g_Dauntless",
+          "hot": 27354,
+          "cate1Id": 15,
+          "cate2Id": 831,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "二之国2：亡灵之国",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5cb0fde1c45c041676370130ebee6d0a.png",
+          "cate2Url": "/g_NK2",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 832,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "命运之手",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8ac5d6ba9844502483695b9e38067874.png",
+          "cate2Url": "/g_HoF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 833,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "神舞幻想",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bf58c8e409ef51294bdec54ad4d435b7.png",
+          "cate2Url": "/g_FoD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 834,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "消失的星球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/abcd6a150d2a534d396a26a06fd1baf7.png",
+          "cate2Url": "/g_LostSphear",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 835,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "赛博朋克2077",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a2d2a4f26e92cf56b0a807179dacb0f8.png",
+          "cate2Url": "/g_Cyberpunk",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 836,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "碧蓝幻想",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1cf56dce65e4695a2fd612dd1da6ce19.png",
+          "cate2Url": "/g_GF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 837,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "中国式家长",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/08094abcf8efd40f4f0075fb6670fb3a.png",
+          "cate2Url": "/g_CP",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 838,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "勇者斗恶龙",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6d812f86694d5d4de58056eb96f6bcfd.png",
+          "cate2Url": "/g_DQ",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 839,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "幻想三国志",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e682b2a62d8fd30c38483d9d6a91e818.png",
+          "cate2Url": "/g_HXSGZ",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 840,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "堕落之王",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/51adf290426c1693f6cd3e884b4452c3.png",
+          "cate2Url": "/g_LotF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 841,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "生化变种",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/98bee1023a50732dec6af815da5b2da9.png",
+          "cate2Url": "/g_Biomutant",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 842,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "精灵宝可梦",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d30b581baf3f6bdcf9b7d649ebeb1c0f.png",
+          "cate2Url": "/g_Pokemon",
+          "hot": 1584,
+          "cate1Id": 15,
+          "cate2Id": 843,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔界战记",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4efe9fc9b725c7dbb4cb83271625bccd.png",
+          "cate2Url": "/g_Disgaea",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 844,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "最后的守护者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7805fd735629a99336732e18b4de3eb6.png",
+          "cate2Url": "/g_TLG",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 845,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "尼尔：机械纪元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b9b7f5af678082164d0d05a92a2ca831.png",
+          "cate2Url": "/g_NieR",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 846,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "流放者柯南",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f231bc1d6d612562847926b99e36e939.png",
+          "cate2Url": "/g_Conan",
+          "hot": 13176,
+          "cate1Id": 15,
+          "cate2Id": 847,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "伊苏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f9c28ea977d9b6982ecdd7548ce0d62a.png",
+          "cate2Url": "/g_Ys",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 848,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "迸发",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d3b3af1cb37932d0a082747d2b4f2e06.png",
+          "cate2Url": "/g_Surge",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 849,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "审判之眼：死神的遗言",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/636557684c0fad3fa1b2db540ccb6a50.png",
+          "cate2Url": "/g_JE",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 850,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "天国：拯救",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/931bb3ae263163488c997a46ef91ffa4.png",
+          "cate2Url": "/g_KingdomCome",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 851,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "地牢围攻3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6f7288875cea58f18406f7d0edbfcf5e.png",
+          "cate2Url": "/g_DS3",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 852,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "幻",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a7fa0870204a63bfe2515688ed884c7c.png",
+          "cate2Url": "/g_Phantom",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 853,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "克苏鲁的呼唤",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d4c07f1e2f996f0da3bca8785d1cfd79.png",
+          "cate2Url": "/g_CoC",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 854,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "奇异人生",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c68cd547a4fd6c24fe6b5c757e100629.png",
+          "cate2Url": "/g_LiS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 855,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "黑暗影集：棉兰幽灵",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9a6637e29838186266487f08b4f45538.png",
+          "cate2Url": "/g_TDP",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 856,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "行尸走肉",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a26943e7b6304d355db11be2aacd728f.png",
+          "cate2Url": "/g_TWD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 857,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "蔚蓝",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/44c3e4363616f2681b5ecf0fdf2f58e8.png",
+          "cate2Url": "/g_Celeste",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 858,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "对马之魂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/88b99bd6429d5505b740b8e6807956c2.png",
+          "cate2Url": "/g_GoT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 859,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "少数幸运儿",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/548be2a8c61fb6549d3be78a83c5ed86.png",
+          "cate2Url": "/g_WHF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 860,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "与狼同行",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9ff2600e07cc320865abfe7aa6eeaad8.png",
+          "cate2Url": "/g_TWAU",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 861,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "无人深空",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c501fa6f4fa288285836c6d3e154bef0.png",
+          "cate2Url": "/g_NMS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 532,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "乐高世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f5a8e612c2fb7e4467d3e93b5e59e8f6.png",
+          "cate2Url": "/g_LEGOW",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 862,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超能队长",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/94ec5f9045fe35a69b83ba664c3c9a81.png",
+          "cate2Url": "/g_CapSp",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 863,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "内心朋友",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/00b14a713f76cef8a5adcef2e0938058.png",
+          "cate2Url": "/g_TIF",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 864,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "深海迷航",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fa6c4990d1ef6081bdc4f588480f1055.png",
+          "cate2Url": "/g_Subnautica",
+          "hot": 1068,
+          "cate1Id": 15,
+          "cate2Id": 865,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "Deracine",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dd5f5980a5f168dd35473a4f3c08ed08.png",
+          "cate2Url": "/g_Deracine",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 866,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "风来之国",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6d1ff5b723c5bbf59076b7d04f35cdde.png",
+          "cate2Url": "/g_Eastward",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 867,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "EVOTINCTION",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9bcb797bae33de7d2cf6244764cfb366.png",
+          "cate2Url": "/g_EVOTINCTION",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 868,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "看火人",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8107b47b5600e9f0b09b80eb39fab542.png",
+          "cate2Url": "/g_Firewatch",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 869,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "F1系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7d987fe495710598e812935cddb98b83.png",
+          "cate2Url": "/g_F1",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 870,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "争分夺秒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4603d518a899ceab6dc1559e2619f460.png",
+          "cate2Url": "/g_Split",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 871,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超级房车赛系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2760d2d19583c277f6249e5a0d43557d.png",
+          "cate2Url": "/g_RD",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 872,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "GT赛车系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/23b77d3b24ffea81140d85b4bb8868d7.png",
+          "cate2Url": "/g_GT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 873,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "赛车计划 系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1462a74db95ba4c7873c8f8200c0b07a.png",
+          "cate2Url": "/g_PC",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 874,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超级街道赛",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/94015eb1cfbd8fde09037cc1a8f975ab.png",
+          "cate2Url": "/g_SSTG",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 875,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "极速骑行",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f485cb4c8bc3f14a570872a1363d5540.png",
+          "cate2Url": "/g_Ride",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 876,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "超级机器人大战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a21f587015ae5e400dfd136c82d882f1.png",
+          "cate2Url": "/g_SRW",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 877,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "幽浮2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0b6cca65d9067f55874a0d073d4bdd46.png",
+          "cate2Url": "/g_XCOM2",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 878,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "信长之野望",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f2c2cd2bcadf118753d96e164c911a61.png",
+          "cate2Url": "/g_KOEINOBU",
+          "hot": 904,
+          "cate1Id": 15,
+          "cate2Id": 879,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "这是我的战争",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5e3d23ff583da8c68ac775e645d7af89.png",
+          "cate2Url": "/g_TWoM",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 880,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "三国群英传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/da5e8b0d1147715f59b7e00c77bd0797.png",
+          "cate2Url": "/g_SANGO",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 881,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "太空战舰：战术行动",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/eaec5fdbfe6cde1f46a32d0dea8af8e8.png",
+          "cate2Url": "/g_SHT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 882,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "杀戮尖塔",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d9ea25a22bb8e9d45b1bf328900b4b91.png",
+          "cate2Url": "/g_sljt",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 390,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "冰汽时代",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d6007fcb6275c6b6b4c4f3634cdab43b.png",
+          "cate2Url": "/g_Frostpunk",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 883,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "帝国时代4",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f53e2442a522352ae1147a36698ab151.png",
+          "cate2Url": "/g_AoEIV",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 884,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "十字军之王2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/093eff16500df97d314e09d328678c6d.png",
+          "cate2Url": "/g_CKII",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 885,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "罗马2：全面战争",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ba232a63db78c0236e4a24ebeaa0829a.png",
+          "cate2Url": "/g_RomeII",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 886,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "文明：太空",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bb3f10aad0b2e1bb8efe4b895a8d8fbe.png",
+          "cate2Url": "/g_CBE",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 887,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "精英：危险",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2bf77f75f6508e5d3e76075ad81661b6.png",
+          "cate2Url": "/g_ED",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 888,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "战锤40K：星际战士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1e862df1ce1d3eaa4a3f7cc3726eb0fd.png",
+          "cate2Url": "/g_ZC40K",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 889,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "马克思佩恩",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e39a9a1e02c6a68e31e932a0b79607b6.png",
+          "cate2Url": "/g_MP",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 890,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "腐烂国度2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7357fd341c9d12369c808c10d22dff26.png",
+          "cate2Url": "/g_SoD2",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 891,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "量子破碎",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b45fab166b7f28dafec17032c58447ea.png",
+          "cate2Url": "/g_QB",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 892,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "死亡空间",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/84a099c6cef9ff10e00be487adc9f3b9.png",
+          "cate2Url": "/g_swkj",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 893,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "恶魔三人组",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bca13ab24eefa5ff8d661751e4788ef4.png",
+          "cate2Url": "/g_DT",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 894,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "光明记忆",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3ee7a76b52f55516deec46d3b4fdd78f.png",
+          "cate2Url": "/g_Bright",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 895,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "海贼王：寻秘世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d062b7072950efc12e82a79a7d7d985e.png",
+          "cate2Url": "/g_OPWS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 896,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "暗黑血统3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/00513c49df16053b5bda647943f7f9a4.png",
+          "cate2Url": "/g_Darksider3",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 897,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "非常英雄",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bc40566cc34e47f5b63dfc5fd84b58bc.png",
+          "cate2Url": "/g_UH",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 898,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "旁观者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/155424aa293fc4dae28eb6be9aad39b9.png",
+          "cate2Url": "/g_Beholder",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 899,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "凯瑟琳Full Body",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f268ef99833000bfb78ceabaf766c7a5.png",
+          "cate2Url": "/g_CFB",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 900,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "噬神者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5f1b8dd7fa1f2235d42a3a559bc790ee.png",
+          "cate2Url": "/g_GE3",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 901,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "鬼武者重制版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bc7439c274b3c922f9b37ae1a79209ea.png",
+          "cate2Url": "/g_Onimusha",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 902,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "叛乱：沙漠风暴",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7e6daaf3cfab4cb8798b30f4d790c135.png",
+          "cate2Url": "/g_Insurgency",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 903,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "王国之心",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4b1534463513c5cdf456e2d992848e86.png",
+          "cate2Url": "/g_KH",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 904,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "除暴战警3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5f7ff35d7d5332ae050c84bb284038e4.png",
+          "cate2Url": "/g_Crackdown3",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 905,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "幽林怪谈",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4a68e1ffae235bfa7d3bd1c136d86921.png",
+          "cate2Url": "/g_BladedFury",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 906,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "任天堂明星大乱斗特别版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2c23387f533b5fe6ec5bc59bf8352d2c.png",
+          "cate2Url": "/g_SSBS",
+          "hot": 0,
+          "cate1Id": 15,
+          "cate2Id": 907,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "杀手",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2b4e21aeccfbd9b62375e9dc877e893f.png",
+          "cate2Url": "/g_Hitman",
+          "hot": 52,
+          "cate1Id": 15,
+          "cate2Id": 908,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "djry",
+      "cate1Id": 15
+    },
+    {
+      "cate1Name": "手游休闲",
+      "secondCategory": [
+        {
+          "cate2Name": "王者荣耀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/df342455752c64f99dd7bd9518968f46.png",
+          "cate2Url": "/g_wzry",
+          "hot": 55981926,
+          "cate1Id": 9,
+          "cate2Id": 181,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "和平精英",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/58234eb001b58e4b0b71d6aa4a818ebe.png",
+          "cate2Url": "/g_hpjy",
+          "hot": 25478873,
+          "cate1Id": 9,
+          "cate2Id": 350,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "欢乐麻将",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a354e942f29499bb477817455169fc75.png",
+          "cate2Url": "/g_HLMJ",
+          "hot": 2124931,
+          "cate1Id": 9,
+          "cate2Id": 451,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "多多自走棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bc41aac58ccab4688a808643351bacfb.png",
+          "cate2Url": "/g_zzq",
+          "hot": 1964084,
+          "cate1Id": 9,
+          "cate2Id": 663,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "赤潮自走棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9036abaa61ecf07ee9f3bca71af08dbd.png",
+          "cate2Url": "/g_chichao",
+          "hot": 840544,
+          "cate1Id": 9,
+          "cate2Id": 709,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "CF手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fc50a59e39e636da0ec87816f2565107.png",
+          "cate2Url": "/g_CFSY",
+          "hot": 1961054,
+          "cate1Id": 9,
+          "cate2Id": 178,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "猫和老鼠",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/be6611dcbed358cf6973da54d355dace.png",
+          "cate2Url": "/g_mhls",
+          "hot": 912691,
+          "cate1Id": 9,
+          "cate2Id": 524,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "火影忍者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d0f19a2b25683d30ab598f5628e0b70b.png",
+          "cate2Url": "/g_hyrz",
+          "hot": 1794894,
+          "cate1Id": 9,
+          "cate2Id": 196,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "QQ飞车",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/923e3513c4e565de5428ca2cedcda731.png",
+          "cate2Url": "/g_qqfcsy",
+          "hot": 3028700,
+          "cate1Id": 9,
+          "cate2Id": 331,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "欢乐斗地主",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d85503102c6379f372a41278dfaa494f.png",
+          "cate2Url": "/g_hlddz",
+          "hot": 814711,
+          "cate1Id": 9,
+          "cate2Id": 416,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "中国象棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/07c27aba5ee95e32e6f201076b9a8a8e.png",
+          "cate2Url": "/g_ZGXQ",
+          "hot": 1019883,
+          "cate1Id": 9,
+          "cate2Id": 543,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "跑跑卡丁车手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e4f87a1a2690f126e7c811e45d153b32.png",
+          "cate2Url": "/g_PPKDCSY",
+          "hot": 537121,
+          "cate1Id": 9,
+          "cate2Id": 654,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "决战平安京",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7a263bb12c01084cdab694b0ef9195ab.png",
+          "cate2Url": "/g_jzpaj",
+          "hot": 556489,
+          "cate1Id": 9,
+          "cate2Id": 344,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "狼人杀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b23f7b7c4cb68ce40751946c185ba9c5.png",
+          "cate2Url": "/g_LRS",
+          "hot": 1249492,
+          "cate1Id": 9,
+          "cate2Id": 260,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "皇室战争",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1e6f05d006ea0db92c1e7fa5a708b2d4.png",
+          "cate2Url": "/g_hszz",
+          "hot": 333496,
+          "cate1Id": 9,
+          "cate2Id": 190,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "阴阳师",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a4743a18294ca02dc5fc978f79e580fe.png",
+          "cate2Url": "/g_yys",
+          "hot": 683611,
+          "cate1Id": 9,
+          "cate2Id": 240,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "新游中心",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a88abfb492ee75b3ae6e3ae87657775f.png",
+          "cate2Url": "/g_xyzx",
+          "hot": 1963801,
+          "cate1Id": 9,
+          "cate2Id": 229,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "王牌战士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/cb230efff8438e3b251141d11687d676.png",
+          "cate2Url": "/g_wpzs",
+          "hot": 1260139,
+          "cate1Id": 9,
+          "cate2Id": 634,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "镇魔曲手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f01090b1b9c41c9d446bc95209710334.png",
+          "cate2Url": "/g_zmq",
+          "hot": 33894,
+          "cate1Id": 9,
+          "cate2Id": 307,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦塔防手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5eceee9e086a2ae07b93e4303d17fcd2.png",
+          "cate2Url": "/g_mtfsy",
+          "hot": 61192,
+          "cate1Id": 9,
+          "cate2Id": 664,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "明日之后",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/149bcef61a39c82b8b25dec8b2166478.png",
+          "cate2Url": "/g_mrzh",
+          "hot": 395615,
+          "cate1Id": 9,
+          "cate2Id": 430,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "龙族幻想",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7c46d7734a52781c94a71ce65f04a382.png",
+          "cate2Url": "/g_lzhx",
+          "hot": 48505,
+          "cate1Id": 9,
+          "cate2Id": 630,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "热门手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1a6e59d34af8686f0f6565c67f71c530.png",
+          "cate2Url": "/g_rmsy",
+          "hot": 650894,
+          "cate1Id": 9,
+          "cate2Id": 418,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "火影忍者OL",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bad1d3739ebb26d0dfcd0a4e1973ea92.png",
+          "cate2Url": "/g_huoyingrenzheOL",
+          "hot": 280607,
+          "cate1Id": 9,
+          "cate2Id": 563,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦幻西游手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/245aca53b13d3321bdc81ac7549e64b5.png",
+          "cate2Url": "/g_mhxy",
+          "hot": 594279,
+          "cate1Id": 9,
+          "cate2Id": 179,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "航海王：燃烧意志",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/89d9da9b9db23a409cdedf8c291467d8.png",
+          "cate2Url": "/g_hhwrsyz",
+          "hot": 227174,
+          "cate1Id": 9,
+          "cate2Id": 581,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "率土之滨",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ce52dab66567d712c3d6f0b62ccc4c86.png",
+          "cate2Url": "/g_stzb",
+          "hot": 348019,
+          "cate1Id": 9,
+          "cate2Id": 376,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦幻模拟战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/63a56ac73e0907096bbc38017fe662fe.png",
+          "cate2Url": "/g_mhmnz",
+          "hot": 402861,
+          "cate1Id": 9,
+          "cate2Id": 500,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "决斗之城",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1acfe60436f24fddf4b2b43434b989e1.png",
+          "cate2Url": "/g_JDZC",
+          "hot": 82630,
+          "cate1Id": 9,
+          "cate2Id": 285,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "影之诗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0c053bd71274c346eacdaf5611f4456f.png",
+          "cate2Url": "/g_yzs",
+          "hot": 232899,
+          "cate1Id": 9,
+          "cate2Id": 408,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "神武系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2125a337e29c55b0154f788b8ed0d9b0.png",
+          "cate2Url": "/g_WS2",
+          "hot": 298124,
+          "cate1Id": 9,
+          "cate2Id": 295,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "部落冲突",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a3057a958ccba83b4e40e1f48e8300b0.png",
+          "cate2Url": "/g_blct",
+          "hot": 321645,
+          "cate1Id": 9,
+          "cate2Id": 177,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "忍者必须死3",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4df3585ad58783769b393230a959337d.png",
+          "cate2Url": "/g_rzbxs3",
+          "hot": 230573,
+          "cate1Id": 9,
+          "cate2Id": 566,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "球球大作战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/10fcc3f53bc910a57f6318042e80b06a.png",
+          "cate2Url": "/g_qqdzz",
+          "hot": 282012,
+          "cate1Id": 9,
+          "cate2Id": 192,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "钓鱼冒险岛",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/21770c6dd77d5a271a14f40b25458d3d.png",
+          "cate2Url": "/g_DYMXD",
+          "hot": 10350,
+          "cate1Id": 9,
+          "cate2Id": 667,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "侍魂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a7db3519b9a08701b7f6c28e629ced8a.png",
+          "cate2Url": "/g_shnycs",
+          "hot": 44048,
+          "cate1Id": 9,
+          "cate2Id": 476,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魂斗罗归来",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b0fd2a70a9609f877f4f83c299f59e4d.png",
+          "cate2Url": "/g_DLHGL",
+          "hot": 192835,
+          "cate1Id": 9,
+          "cate2Id": 288,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "二次元手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9368974c8ee85893396b5db092b73269.png",
+          "cate2Url": "/g_ecysy",
+          "hot": 394192,
+          "cate1Id": 9,
+          "cate2Id": 254,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "大话西游2口袋版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c5988752161e264682a9352f3ef1de16.png",
+          "cate2Url": "/g_dhxy2kdb",
+          "hot": 205371,
+          "cate1Id": 9,
+          "cate2Id": 326,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "问道",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c620104cc34230d7ee4fe2c15d71d6f3.png",
+          "cate2Url": "/g_wd",
+          "hot": 259248,
+          "cate1Id": 9,
+          "cate2Id": 198,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "口袋妖怪复刻",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b0cc9c2d37817a840575da523773e81b.png",
+          "cate2Url": "/g_KDYGFZ",
+          "hot": 101292,
+          "cate1Id": 9,
+          "cate2Id": 291,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "RPG手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a211feb9339406c4c490ee4b15c72068.png",
+          "cate2Url": "/g_rpgsy",
+          "hot": 78436,
+          "cate1Id": 9,
+          "cate2Id": 407,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "圣斗士星矢",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8d025f063b91d393adf4c7ab914e23cf.png",
+          "cate2Url": "/g_sdsxs",
+          "hot": 246154,
+          "cate1Id": 9,
+          "cate2Id": 508,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "英雄杀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/999eec349745386111697b7c82b36be1.png",
+          "cate2Url": "/g_yxs",
+          "hot": 169500,
+          "cate1Id": 9,
+          "cate2Id": 448,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "贪婪洞窟2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/04865e2b68c09c1d4c6e083f4cdcb2e6.png",
+          "cate2Url": "/g_tldk2",
+          "hot": 13515,
+          "cate1Id": 9,
+          "cate2Id": 616,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "实况足球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/900f058317cf91595faac269908dc6fc.png",
+          "cate2Url": "/g_skzq",
+          "hot": 72920,
+          "cate1Id": 9,
+          "cate2Id": 474,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "口袋对决",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f590310b6288bbd7ce2d3554be271807.png",
+          "cate2Url": "/g_kddj",
+          "hot": 5912,
+          "cate1Id": 9,
+          "cate2Id": 624,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "楚留香",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/29afb0632fdc282c23f424650896d38e.png",
+          "cate2Url": "/g_clx",
+          "hot": 200500,
+          "cate1Id": 9,
+          "cate2Id": 366,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "最强NBA",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0e8d6b2266b9cc3922eebd6b1be19cb7.png",
+          "cate2Url": "/g_zqnba",
+          "hot": 142000,
+          "cate1Id": 9,
+          "cate2Id": 318,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔域口袋版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b2a178fc06af3fdf3ccedf97449d99c1.png",
+          "cate2Url": "/g_mykdb",
+          "hot": 66226,
+          "cate1Id": 9,
+          "cate2Id": 555,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔力宝贝",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3434ad544b957a9d9c58dbb213f83ad.png",
+          "cate2Url": "/g_mlbb",
+          "hot": 39191,
+          "cate1Id": 9,
+          "cate2Id": 398,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "我叫MT4",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/93cf24cf34b522a7a2929664a295cd9a.png",
+          "cate2Url": "/g_MT4",
+          "hot": 39115,
+          "cate1Id": 9,
+          "cate2Id": 501,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "流星蝴蝶剑",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e720fcdf710910b9ae00667834c5a31e.png",
+          "cate2Url": "/g_liuxinghudiejian",
+          "hot": 86837,
+          "cate1Id": 9,
+          "cate2Id": 528,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "香肠派对",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/92a2d549e03db169bfb83b93596da403.png",
+          "cate2Url": "/g_xcpd",
+          "hot": 126776,
+          "cate1Id": 9,
+          "cate2Id": 507,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "街篮",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/32e518375eb7531800619525a2f66bec.png",
+          "cate2Url": "/g_jl",
+          "hot": 92036,
+          "cate1Id": 9,
+          "cate2Id": 244,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "综合手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a7dcfbfb3ce9a54d894a01c06771f59a.png",
+          "cate2Url": "/g_phone",
+          "hot": 10743119,
+          "cate1Id": 9,
+          "cate2Id": 30,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "特色手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1506ecfde34a3b591ec64e9b1914a484.png",
+          "cate2Url": "/g_tssy",
+          "hot": 264790,
+          "cate1Id": 9,
+          "cate2Id": 609,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "潮人篮球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1806b22b4918926b2682e108a9679a24.png",
+          "cate2Url": "/g_crlq",
+          "hot": 33546,
+          "cate1Id": 9,
+          "cate2Id": 520,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "传奇手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ff5a31cd924008fc9745e95c9ce11cd0.png",
+          "cate2Url": "/g_cqsy",
+          "hot": 154704,
+          "cate1Id": 9,
+          "cate2Id": 637,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "精灵宝可梦手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dc1d4a0fe0cb683505464fb193dd378b.png",
+          "cate2Url": "/g_Pokemongo",
+          "hot": 22534,
+          "cate1Id": 9,
+          "cate2Id": 213,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "龙之谷手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4d94978b3af7e8259bca45f8408fa30f.png",
+          "cate2Url": "/g_lzgsy",
+          "hot": 39293,
+          "cate1Id": 9,
+          "cate2Id": 264,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "闹闹天宫",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/12dc62fd7adbd1c4bc1d62181f10ea2a.png",
+          "cate2Url": "/g_nntg",
+          "hot": 7868,
+          "cate1Id": 9,
+          "cate2Id": 569,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "赛尔号",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8117db9302da2383bc525bfb6203da03.png",
+          "cate2Url": "/g_srh",
+          "hot": 65003,
+          "cate1Id": 9,
+          "cate2Id": 339,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "猎魂觉醒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6340a5547ddde78581c176dc63910436.png",
+          "cate2Url": "/g_lhjx",
+          "hot": 69201,
+          "cate1Id": 9,
+          "cate2Id": 362,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "魔灵召唤",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3decd04ccc0868e2c420f9668679902f.png",
+          "cate2Url": "/g_mlzh",
+          "hot": 33847,
+          "cate1Id": 9,
+          "cate2Id": 374,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "万王之王3D",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ada1a09a99155e085daaf8949cc5fbed.png",
+          "cate2Url": "/g_wwzw3D",
+          "hot": 29147,
+          "cate1Id": 9,
+          "cate2Id": 559,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "剑网3：指尖江湖",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/52ef79af1ae00c9ff7736e59725c138c.png",
+          "cate2Url": "/g_jw3zjjh",
+          "hot": 126703,
+          "cate1Id": 9,
+          "cate2Id": 631,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "仙境传说",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d212413ee29689db0af7b8c714c92c0f.png",
+          "cate2Url": "/g_ro",
+          "hot": 54711,
+          "cate1Id": 9,
+          "cate2Id": 259,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "自由幻想",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f20cf85bfd348fb4a6f183088d1e256b.png",
+          "cate2Url": "/g_zyhx",
+          "hot": 34229,
+          "cate1Id": 9,
+          "cate2Id": 465,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "一人之下",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4155fe9ace0ea6ddcb9c71b9777861b3.png",
+          "cate2Url": "/g_yrzx",
+          "hot": 3948,
+          "cate1Id": 9,
+          "cate2Id": 505,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "斗破苍穹：斗帝之路",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/16dbb43dd90e46da941bb98e9d567754.png",
+          "cate2Url": "/g_dpcq",
+          "hot": 25481,
+          "cate1Id": 9,
+          "cate2Id": 583,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "雀魂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/316ba6536f17c398fd44bd264312751d.png",
+          "cate2Url": "/g_Majsoul",
+          "hot": 44001,
+          "cate1Id": 9,
+          "cate2Id": 648,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "非人学园",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f38fa1c7303fe9590345f532c78c5629.png",
+          "cate2Url": "/g_frxy",
+          "hot": 3392,
+          "cate1Id": 9,
+          "cate2Id": 458,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "神都夜行录",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3211a65975195b00301a73b45810f8f7.png",
+          "cate2Url": "/g_sdyxl",
+          "hot": 13372,
+          "cate1Id": 9,
+          "cate2Id": 464,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "复古传奇",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/be13a18abc93a207db2038ec5443222a.png",
+          "cate2Url": "/g_fgcq",
+          "hot": 59629,
+          "cate1Id": 9,
+          "cate2Id": 586,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天天酷跑",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/304aba7eca9169e5cc54c44f40447ba0.png",
+          "cate2Url": "/g_ttkp",
+          "hot": 20343,
+          "cate1Id": 9,
+          "cate2Id": 456,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "FIFA足球世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1468ac430ef87c268319a4538370741e.png",
+          "cate2Url": "/g_fifazqsj",
+          "hot": 8895,
+          "cate1Id": 9,
+          "cate2Id": 421,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "奇迹觉醒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1fa37e218e6c3465c948ebd7fe92d336.png",
+          "cate2Url": "/g_qjjx",
+          "hot": 37996,
+          "cate1Id": 9,
+          "cate2Id": 359,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "植物大战僵尸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3833c4abeb1e74b4b3ba6c4650c419d7.png",
+          "cate2Url": "/g_ZWDZJS",
+          "hot": 21333,
+          "cate1Id": 9,
+          "cate2Id": 298,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "决斗之城2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a995457cfeb72c26925a3012e90a98a8.png",
+          "cate2Url": "/g_jdzc2",
+          "hot": 22990,
+          "cate1Id": 9,
+          "cate2Id": 553,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "街头篮球手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/881c35d2996ab87c1831e3b9f7e9a5ea.png",
+          "cate2Url": "/g_jtlqsy",
+          "hot": 81034,
+          "cate1Id": 9,
+          "cate2Id": 256,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "风之大陆",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5e2d14f9b89b4479195e56cd5eb9ee10.png",
+          "cate2Url": "/g_fzdl",
+          "hot": 7689,
+          "cate1Id": 9,
+          "cate2Id": 512,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "武林外传",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e4fccf5b9bf2507bf9170daf311c92c5.png",
+          "cate2Url": "/g_wlwz",
+          "hot": 14033,
+          "cate1Id": 9,
+          "cate2Id": 444,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "弹弹堂",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/82905e0d2d00ea54692f529027dbad9a.png",
+          "cate2Url": "/g_TTT",
+          "hot": 33755,
+          "cate1Id": 9,
+          "cate2Id": 278,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "元气骑士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1a3d0cc19b8b77bfcd32784e0c975e0a.png",
+          "cate2Url": "/g_yuanqiqishi",
+          "hot": 12108,
+          "cate1Id": 9,
+          "cate2Id": 536,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "时空召唤",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3919d013b58cdd3ca9779d0b164573d9.png",
+          "cate2Url": "/g_skzh",
+          "hot": 22627,
+          "cate1Id": 9,
+          "cate2Id": 535,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "逃跑吧少年",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/97c9701797d96dac8b9de4b130429c9f.png",
+          "cate2Url": "/g_tpbsn",
+          "hot": 16688,
+          "cate1Id": 9,
+          "cate2Id": 556,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "方舟手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ade580207e898f6b8403672cdb1a4019.png",
+          "cate2Url": "/g_FZ",
+          "hot": 4272,
+          "cate1Id": 9,
+          "cate2Id": 450,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "拳皇98OL",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/216b6f67d5bb6fa5ea23d111865829fc.png",
+          "cate2Url": "/g_kof98",
+          "hot": 21426,
+          "cate1Id": 9,
+          "cate2Id": 214,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "fatego系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5bc31432c21515d3eb0bfaa94078a63a.png",
+          "cate2Url": "/g_fatego",
+          "hot": 45437,
+          "cate1Id": 9,
+          "cate2Id": 379,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "坦克大决战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7460c6615173bfb1ce860aa8d56b0a97.png",
+          "cate2Url": "/g_tkdjz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 622,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "拉结尔",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b99ee29fa5575f3e1d7689211afea78b.png",
+          "cate2Url": "/g_lje",
+          "hot": 39258,
+          "cate1Id": 9,
+          "cate2Id": 641,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "荒野乱斗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/45def5e34e6e3f468596bac48bd804f3.png",
+          "cate2Url": "/g_hyld",
+          "hot": 6292,
+          "cate1Id": 9,
+          "cate2Id": 625,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "虚荣",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ce252000aae3a72f6c67f00aef237bc2.png",
+          "cate2Url": "/g_xurong",
+          "hot": 50965,
+          "cate1Id": 9,
+          "cate2Id": 161,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "JJ斗地主",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/32818f64f9ba0d1037fa8ac5d47dcb7a.png",
+          "cate2Url": "/g_jj",
+          "hot": 7014,
+          "cate1Id": 9,
+          "cate2Id": 454,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "寻仙",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3c7d7e0547ce61c6c174908aecb5c846.png",
+          "cate2Url": "/g_xunxian",
+          "hot": 26947,
+          "cate1Id": 9,
+          "cate2Id": 315,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "石器时代",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/615bc3b998d12ad5169277f95c8d95ba.png",
+          "cate2Url": "/g_sqsd",
+          "hot": 51998,
+          "cate1Id": 9,
+          "cate2Id": 639,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "敢达争锋对决",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4e1f23bb0c5362c70f1ae0c1925b1505.png",
+          "cate2Url": "/g_gdzfdj",
+          "hot": 3448,
+          "cate1Id": 9,
+          "cate2Id": 522,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "中国式家长手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d0acc18a163b2156a205bdff15d9f3cb.png",
+          "cate2Url": "/g_zgsjz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 601,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "蜀门",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3c221a3703e40d279db53d7f0b9475b9.png",
+          "cate2Url": "/g_sm",
+          "hot": 4671,
+          "cate1Id": 9,
+          "cate2Id": 428,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战就战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c62e9e6f7d3e0bc4dec561c59e153b2f.png",
+          "cate2Url": "/g_zjz",
+          "hot": 18224,
+          "cate1Id": 9,
+          "cate2Id": 319,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天天象棋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9ae78d6ce5c1724925b3adfa14437b15.png",
+          "cate2Url": "/g_ttxq",
+          "hot": 2732,
+          "cate1Id": 9,
+          "cate2Id": 433,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "红警OL手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c3f400871c10a5457a578e2f70894154.png",
+          "cate2Url": "/g_hjolsy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 596,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "明日方舟",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1a3414f7887125d293fe7e004323ac58.png",
+          "cate2Url": "/g_mrfz",
+          "hot": 164970,
+          "cate1Id": 9,
+          "cate2Id": 531,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "拳皇命运",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/0be413f045ec10b5cfa02acee84ab08f.png",
+          "cate2Url": "/g_qhmy",
+          "hot": 24724,
+          "cate1Id": 9,
+          "cate2Id": 425,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "QQ炫舞手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ec8de488ee96de7ee1f96f59c45ced53.png",
+          "cate2Url": "/g_QQxwSY",
+          "hot": 12257,
+          "cate1Id": 9,
+          "cate2Id": 394,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "数码宝贝：相遇",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d649118c608d2e7ce477f2a3a5e9e231.png",
+          "cate2Url": "/g_smbbxy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 636,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "魂武者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2836f0df3462693b4e03f19a53bc928f.png",
+          "cate2Url": "/g_hwz",
+          "hot": 6968,
+          "cate1Id": 9,
+          "cate2Id": 585,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "梦幻诛仙",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3cf48417ed811e687e3fea9ae235de0f.png",
+          "cate2Url": "/g_mhzx",
+          "hot": 9998,
+          "cate1Id": 9,
+          "cate2Id": 245,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "英魂口袋版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/04252e0426c1b6ca75dff0bee4f4b8be.png",
+          "cate2Url": "/g_yh",
+          "hot": 6960,
+          "cate1Id": 9,
+          "cate2Id": 289,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "手游酒馆",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2660228ba2d0544bf290dfca9dbd2794.png",
+          "cate2Url": "/g_syjg",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 613,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "创造与魔法",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/28ad92b02b07a612017de574b6720ff8.png",
+          "cate2Url": "/g_ccymf",
+          "hot": 284,
+          "cate1Id": 9,
+          "cate2Id": 371,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "剑侠情缘2：剑歌行",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d80dc974c6a29c76f8d8b80598b98b1f.png",
+          "cate2Url": "/g_jianxiaqingyuan",
+          "hot": 12378,
+          "cate1Id": 9,
+          "cate2Id": 560,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "热血足球",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9117d3f1790cefd1eee4cd5a8f205aa3.png",
+          "cate2Url": "/g_rxzq",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 452,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "征途2手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f98cda483ab316b4172664f013167bd0.png",
+          "cate2Url": "/g_zt2sy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 411,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "崩坏系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a27f445807162c6b8c7168a6398e871c.png",
+          "cate2Url": "/g_bhxl",
+          "hot": 96521,
+          "cate1Id": 9,
+          "cate2Id": 380,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "光明大陆",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a7a1b8dd6089a2e5e3faba89bc228557.png",
+          "cate2Url": "/g_gmdl",
+          "hot": 8486,
+          "cate1Id": 9,
+          "cate2Id": 266,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "不思议迷宫",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/95334ff85b1cd6655f19bfb98c42129f.png",
+          "cate2Url": "/g_bsymg",
+          "hot": 7840,
+          "cate1Id": 9,
+          "cate2Id": 294,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "原始守卫战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/566eea846e03b15723df81fdf8fdc9a7.png",
+          "cate2Url": "/g_ysswz",
+          "hot": 12853,
+          "cate1Id": 9,
+          "cate2Id": 647,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "废土行动",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3c9f5efe51f6bb64711c7c2ab9d5dfd5.png",
+          "cate2Url": "/g_ftxd",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 460,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "云梦四时歌",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dc6fdb4f4c80ff402a6d0a266ff30bc0.png",
+          "cate2Url": "/g_ymssg",
+          "hot": 338031,
+          "cate1Id": 9,
+          "cate2Id": 620,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "欢乐升级",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/88e1d1793e9046364e3af0fb5b9c3c09.png",
+          "cate2Url": "/g_hlsj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 530,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "一起来捉妖",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ae623fef677327baa608bb120625cc35.png",
+          "cate2Url": "/g_yiqilaizhuoyao",
+          "hot": 548137,
+          "cate1Id": 9,
+          "cate2Id": 545,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "野蛮人大作战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/246633f4302d7ed2d6321e3decd3cf7d.png",
+          "cate2Url": "/g_ymrdzz",
+          "hot": 5374,
+          "cate1Id": 9,
+          "cate2Id": 325,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "三国杀移动版",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/92ee1bfc8b7806bfdce2172f924a256e.png",
+          "cate2Url": "/g_SGSSY",
+          "hot": 1047751,
+          "cate1Id": 9,
+          "cate2Id": 657,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "4399游戏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/48543b7257763709a652dd5402c71312.png",
+          "cate2Url": "/g_4399yx",
+          "hot": 6535,
+          "cate1Id": 9,
+          "cate2Id": 577,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "月圆之夜",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/773e2095f1d836efa3e35d1f201571d5.png",
+          "cate2Url": "/g_yyzy",
+          "hot": 692,
+          "cate1Id": 9,
+          "cate2Id": 588,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "超次元战姬",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/dfff5c68fc99a37bf67316e616cf33a5.png",
+          "cate2Url": "/g_ccyzj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 611,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "仙剑4",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/03f49e6573016912b1c9a1514f27032d.png",
+          "cate2Url": "/g_xjqxz4",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 570,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "境界-死神激斗",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c72bf4a6583dce323f95ed5696b3f0b5.png",
+          "cate2Url": "/g_jjssjd",
+          "hot": 3849,
+          "cate1Id": 9,
+          "cate2Id": 564,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "赛尔号星球大战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a42e06015c594585bf46ecb555c4ce96.png",
+          "cate2Url": "/g_srhxqdz",
+          "hot": 1382,
+          "cate1Id": 9,
+          "cate2Id": 576,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "永恒纪元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/81908e4774199434713d6e126d4774b9.png",
+          "cate2Url": "/g_yhjy",
+          "hot": 2006,
+          "cate1Id": 9,
+          "cate2Id": 292,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "麻将来了",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2901f2eab42a7403e425e406a06d9ae2.png",
+          "cate2Url": "/g_mjll",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 370,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "地球末日生存",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/614a02b5ab2e63e4aa74b99053ac727a.png",
+          "cate2Url": "/g_diqiumorishengcun",
+          "hot": 5018,
+          "cate1Id": 9,
+          "cate2Id": 558,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "王国纪元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8409f8ebd3701491595c8bdc7ee61b8a.png",
+          "cate2Url": "/g_wgjy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 526,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "舰娘系列",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/80c8620ca2eb8c060dca92014121c588.png",
+          "cate2Url": "/g_jnxl",
+          "hot": 4498,
+          "cate1Id": 9,
+          "cate2Id": 381,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "蛇蛇争霸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/775ad75a945a3ea7275f5d0bc8ab5479.png",
+          "cate2Url": "/g_sszb",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 243,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "乱世王者",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1a72a83fc14fafe99fcfde8782655dab.png",
+          "cate2Url": "/g_lswz",
+          "hot": 48,
+          "cate1Id": 9,
+          "cate2Id": 348,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "二战风云2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/37801d83bfe2dbf109d5ffe6e0841c10.png",
+          "cate2Url": "/g_ezfy2",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 568,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "妖神记",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/762b904ea755d25bc5fd3671c173c356.png",
+          "cate2Url": "/g_ysj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 525,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "轮回诀",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/40c95f8200396c9977c0c869587bef9d.png",
+          "cate2Url": "/g_lhj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 417,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "电击文库：零境交错",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/3b4bed48beaf6f848ea8c0e7627413d6.png",
+          "cate2Url": "/g_djwk",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 519,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "风暴魔域",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4f45942d118890a1a204b567fdcaa1fa.png",
+          "cate2Url": "/g_fbmy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 638,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "权力与纷争",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/96f3cd3c2aec7dcd45b3bf5de078af93.png",
+          "cate2Url": "/g_qlyfz",
+          "hot": 12544,
+          "cate1Id": 9,
+          "cate2Id": 628,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "命运歌姬",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/d1ee2912b1d3e849e853b38c75bfb878.png",
+          "cate2Url": "/g_mygj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 652,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "隆中对",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4e2534b42835de71d771e628737da6d3.png",
+          "cate2Url": "/g_lzd",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 578,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "剑侠世界2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e0c07f0a20c5543235fc4f66ac2a0b20.png",
+          "cate2Url": "/g_jxsj2",
+          "hot": 1005,
+          "cate1Id": 9,
+          "cate2Id": 515,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战塔英雄",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a9d262093b492edce6266639e1a5feb4.png",
+          "cate2Url": "/g_ztyx",
+          "hot": 678,
+          "cate1Id": 9,
+          "cate2Id": 463,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "趣推理",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/68fc37c2192e5f2d3975abf31f8577d7.png",
+          "cate2Url": "/g_qtl",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 608,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "风暴对决",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/87418a48e3de891d2fcb499e5c16a2d8.png",
+          "cate2Url": "/g_fbdj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 627,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "魂武-边缘迷阵",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f156577075f86dfc375851f3c6c556f8.png",
+          "cate2Url": "/g_hwbymz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 591,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "全民枪战2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/768fe97d258ba870d88b6acc63bbc7aa.png",
+          "cate2Url": "/g_qmqz2",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 358,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "我是谜",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/4f490f1f829895a771d07c831fbdf5f4.png",
+          "cate2Url": "/g_wsm",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 539,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "足球手游",
+          "cate2Icon": "https://cs-op.douyucdn.cn/dycatr/b773f1d3094ebf13788b8ccb02b90216.png",
+          "cate2Url": "/g_zqsy",
+          "hot": 82015,
+          "cate1Id": 9,
+          "cate2Id": 513,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "独立手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/82badd773d4925abff97c62d3522322e.png",
+          "cate2Url": "/g_dlsy",
+          "hot": 12827,
+          "cate1Id": 9,
+          "cate2Id": 409,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "求仙",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/94ad79bc456d8ca92d0af5d15d6df076.png",
+          "cate2Url": "/g_qx",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 584,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "小米枪战",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/667e7ef0d3490329559cd1b993b51790.png",
+          "cate2Url": "/g_xmqz",
+          "hot": 2017,
+          "cate1Id": 9,
+          "cate2Id": 338,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "王牌御史",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/69b4c2024adfffba94ce5f233f6ebd81.png",
+          "cate2Url": "/g_wpys",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 643,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "光荣使命",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9e843c9e9edc7c662537f92a05d4d9b2.png",
+          "cate2Url": "/g_grsm",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 340,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "光明勇士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2f5905280027f0366f2c03c8b8565935.png",
+          "cate2Url": "/g_gmys",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 619,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "孤岛先锋",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/93171b574a0404484c173c2e2633c1ef.png",
+          "cate2Url": "/g_gdxf",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 385,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "末日方舟",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9e72ef244c628c1f9fcb14942ba3d6dd.png",
+          "cate2Url": "/g_morfz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 629,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "戏精大侦探",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/406673f07454b34ff5f6ba2bf005c351.png",
+          "cate2Url": "/g_xjdzt",
+          "hot": 1878,
+          "cate1Id": 9,
+          "cate2Id": 537,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "篮球手游",
+          "cate2Icon": "https://cs-op.douyucdn.cn/dycatr/355cd4db1685fa682fe6e5a3ad0087c4.png",
+          "cate2Url": "/g_lqsy",
+          "hot": 359173,
+          "cate1Id": 9,
+          "cate2Id": 511,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "阿瑞斯病毒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c0661f0f2b48c6f55fb321106be294b1.png",
+          "cate2Url": "/g_arlsbd",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 549,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "暗影之怒：种族争霸",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/bbaec2e2202114f0b68cf916ca2005d4.png",
+          "cate2Url": "/g_ayznzzzb",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 579,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "传送门骑士",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8d9a9e2978da023fdab40c69f7733fd1.png",
+          "cate2Url": "/g_csmqs",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 521,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "疯狂动物城：赛车嘉年华",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8ec068c27d61b34436e86bfcbdd9d0fd.png",
+          "cate2Url": "/g_fkdwcscjnh",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 617,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "猎手之王",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/740e1d1ba704de8f3436b54116471048.png",
+          "cate2Url": "/g_lszw",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 618,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "王牌战争",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fae7f62f86658cf9662b1a11a559f6d5.png",
+          "cate2Url": "/g_wpzz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 483,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "全军出击",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/b9c1287d5d932e2baa49dc230183f789.png",
+          "cate2Url": "/g_jdqsqjcj",
+          "hot": 63663,
+          "cate1Id": 9,
+          "cate2Id": 349,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "猛犸崛起",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/54eee676a001befb90998fb897133f18.png",
+          "cate2Url": "/g_mmjq",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 424,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "波姆波姆团",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a880c55b130e78ed15071f729aec726c.png",
+          "cate2Url": "/g_bmbmt",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 649,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "海岛纪元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/ef8566f142d95cbc48edc46fc1e9030e.png",
+          "cate2Url": "/g_HAIDAOJIYUAN",
+          "hot": 1848,
+          "cate1Id": 9,
+          "cate2Id": 655,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "轩辕剑龙舞云山",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e47c48e34d9940c49bb8db68ff3a2659.png",
+          "cate2Url": "/g_xyjlwys",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 546,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "风色世界",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/622d77a23c873a02780fdce8d91e9ede.png",
+          "cate2Url": "/g_fssj",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 589,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "易次元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1bc3be70f725ad606a54d5785855e483.png",
+          "cate2Url": "/g_ycy",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 614,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "音舞手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/7a4625720b326cf8f554f02a3e8fdf43.png",
+          "cate2Url": "/g_ywsy",
+          "hot": 12409,
+          "cate1Id": 9,
+          "cate2Id": 420,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "票房大卖王",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/1ec16f8af246f587b7b3d0f0e3b21015.png",
+          "cate2Url": "/g_pfdmw",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 426,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "全民主公2",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5b236757a8b9c286a741484f42681e0e.png",
+          "cate2Url": "/g_qmzg2",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 593,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "吾爱斗地主",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/022db3f7f1776824f70c08e0a2a07f08.png",
+          "cate2Url": "/g_waddz",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 597,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "救赎之地",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fe2dcb95bc77df574bf4d304a21b0b46.png",
+          "cate2Url": "/g_jszd",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 603,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "射击类手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/beb4f9b9b468a87143e855c7bd7b44ca.png",
+          "cate2Url": "/g_qtsy",
+          "hot": 524945,
+          "cate1Id": 9,
+          "cate2Id": 341,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "狐妖小红娘",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/328b7dfc32e83f99e42e7f1506223f8b.png",
+          "cate2Url": "/g_hyxhn",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 552,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "迷雾侦探社",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/f7973d223ae5e2521a14c25d20ff054a.png",
+          "cate2Url": "/g_MWZTS",
+          "hot": 0,
+          "cate1Id": 9,
+          "cate2Id": 602,
+          "isDisplay": 0
+        },
+        {
+          "cate2Name": "妖精的尾巴：魔导少年",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/acf73665c09a9aad74536cc229d2a621.png",
+          "cate2Url": "/g_YJDWB",
+          "hot": 259678,
+          "cate1Id": 9,
+          "cate2Id": 747,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "武侠乂手游",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/eda161bdff7717f97c606281d46465d8.png",
+          "cate2Url": "/g_wxysy",
+          "hot": 8978,
+          "cate1Id": 9,
+          "cate2Id": 749,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "遇见逆水寒",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/8072fbcdba7437feaaddaf53436109f0.png",
+          "cate2Url": "/g_yjnsh",
+          "hot": 26725,
+          "cate1Id": 9,
+          "cate2Id": 768,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "战争与文明",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/28e1e3903afe717b51b04750bf88fdae.png",
+          "cate2Url": "/g_zzywm",
+          "hot": 30606,
+          "cate1Id": 9,
+          "cate2Id": 769,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "天龙八部online",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9ce7546ef5b6a7b3af1b1ce4b28df527.png",
+          "cate2Url": "/g_tianlongbabuonline",
+          "hot": 7765,
+          "cate1Id": 9,
+          "cate2Id": 772,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "syxx",
+      "cate1Id": 9
+    },
+    {
+      "cate1Name": "娱乐天地",
+      "secondCategory": [
+        {
+          "cate2Name": "二次元",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/2ac33e6745b82a1412fda74353362e65.png",
+          "cate2Url": "/g_ecy",
+          "hot": 8085466,
+          "cate1Id": 2,
+          "cate2Id": 174,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "一起看",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/aa520b17087274a93c6148c6bc396428.png",
+          "cate2Url": "/g_yqk",
+          "hot": 8382212,
+          "cate1Id": 2,
+          "cate2Id": 208,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "颜值横屏",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/46c425e12ad9d9cc81413261fd7afb12.png",
+          "cate2Url": "/g_XX",
+          "hot": 7696694,
+          "cate1Id": 2,
+          "cate2Id": 311,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "星娱",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a70be7a5579f4c760d59852e9a095b48.png",
+          "cate2Url": "/g_xingyu",
+          "hot": 7824548,
+          "cate1Id": 2,
+          "cate2Id": 287,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "户外",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/de310e347614d059d796a26e7d5a6eab.png",
+          "cate2Url": "/g_HW",
+          "hot": 17250242,
+          "cate1Id": 2,
+          "cate2Id": 124,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "乡野",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/31bb70a2039d2d88d8902edfdad16503.png",
+          "cate2Url": "/g_xiangye",
+          "hot": 6691069,
+          "cate1Id": 2,
+          "cate2Id": 662,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "美食",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/031869a3daddfd90310ffd98e5e7f7e6.png",
+          "cate2Url": "/g_ms",
+          "hot": 6108432,
+          "cate1Id": 2,
+          "cate2Id": 194,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "音乐",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/51c7818a6e64a846af9acd4559cd7e24.png",
+          "cate2Url": "/g_music",
+          "hot": 7354607,
+          "cate1Id": 2,
+          "cate2Id": 175,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "原创IP",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/311d9c887a83a98b119561856b4f49eb.png",
+          "cate2Url": "/g_ip",
+          "hot": 194691,
+          "cate1Id": 2,
+          "cate2Id": 183,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "互动交友",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e4ff82e9575ed61138073e72637be5de.png",
+          "cate2Url": "/g_HDJY",
+          "hot": 2359945,
+          "cate1Id": 2,
+          "cate2Id": 646,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "yl",
+      "cate1Id": 2
+    },
+    {
+      "cate1Name": "颜值",
+      "secondCategory": [
+        {
+          "cate2Name": "颜值",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/fb29868cad445d2254dd955f47d97718.png",
+          "cate2Url": "/g_yz",
+          "hot": 24566826,
+          "cate1Id": 8,
+          "cate2Id": 201,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "yz",
+      "cate1Id": 8
+    },
+    {
+      "cate1Name": "科技教育",
+      "secondCategory": [
+        {
+          "cate2Name": "鱼教",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/514757c34be7ec7c60004a5cceb8cf59.png",
+          "cate2Url": "/g_yj",
+          "hot": 1816219,
+          "cate1Id": 11,
+          "cate2Id": 195,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "企鹅直播",
+          "cate2Icon": "https://cs-op.douyucdn.cn/dycatr/e8ec5fc31974532f46f09c34a069b673.png",
+          "cate2Url": "/g_qezb",
+          "hot": 23446,
+          "cate1Id": 11,
+          "cate2Id": 207,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "设计师",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e02b5a141bad3732c634dfd84e0d6c9a.png",
+          "cate2Url": "/g_BLOVES",
+          "hot": 104887,
+          "cate1Id": 11,
+          "cate2Id": 283,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "数码科技",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/91ef5e820cb86006aa6770c85af387ea.png",
+          "cate2Url": "/g_smkj",
+          "hot": 891215,
+          "cate1Id": 11,
+          "cate2Id": 134,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "汽车",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/432b84ba2c9515457c567a7366551aa7.png",
+          "cate2Url": "/g_car",
+          "hot": 701056,
+          "cate1Id": 11,
+          "cate2Id": 136,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "科普",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/9712fde55988597e130f1eb61b777931.png",
+          "cate2Url": "/g_kepu",
+          "hot": 529464,
+          "cate1Id": 11,
+          "cate2Id": 204,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "人文军事",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c07728a8da281f5e8ee8ff69c8277a04.png",
+          "cate2Url": "/g_rwjs",
+          "hot": 124973,
+          "cate1Id": 11,
+          "cate2Id": 212,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "IMC",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/5c030a7245b7f47f2e63e7fa08c714db.png",
+          "cate2Url": "/g_IMC",
+          "hot": 249127,
+          "cate1Id": 11,
+          "cate2Id": 750,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "纪录片",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/86fa83284c67ee090d0e983203ba15c8.png",
+          "cate2Url": "/g_jlp",
+          "hot": 260229,
+          "cate1Id": 11,
+          "cate2Id": 514,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "kjjy",
+      "cate1Id": 11
+    },
+    {
+      "cate1Name": "语音直播",
+      "secondCategory": [
+        {
+          "cate2Name": "音乐电台",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/62235b54ca838d80264b6b78a502e7d5.png",
+          "cate2Url": "/g_yydt",
+          "hot": 1554722,
+          "cate1Id": 18,
+          "cate2Id": 422,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "FM233",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/772e181be29a7beb3f27024218364c11.png",
+          "cate2Url": "/g_FM233",
+          "hot": 1021134,
+          "cate1Id": 18,
+          "cate2Id": 405,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "连麦互动",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c335a2baa70fc7fc3eabe948c2a58b37.png",
+          "cate2Url": "/g_lianmaihudong",
+          "hot": 541319,
+          "cate1Id": 18,
+          "cate2Id": 441,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "游戏陪玩",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/c79bf35741857b33c6dd5951ffb1b7d0.png",
+          "cate2Url": "/g_PlayGame",
+          "hot": 19481,
+          "cate1Id": 18,
+          "cate2Id": 435,
+          "isDisplay": 1
+        },
+        {
+          "cate2Name": "情感电台",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/74c51b50cec832a2560500a507a64b14.png",
+          "cate2Url": "/g_qinggan",
+          "hot": 434623,
+          "cate1Id": 18,
+          "cate2Id": 447,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "voice",
+      "cate1Id": 18
+    },
+    {
+      "cate1Name": "正能量",
+      "secondCategory": [
+        {
+          "cate2Name": "正能量",
+          "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/95187b80aced3acb136bedeca33bcc0c.png",
+          "cate2Url": "/g_znl",
+          "hot": 8574342,
+          "cate1Id": 13,
+          "cate2Id": 250,
+          "isDisplay": 1
+        }
+      ],
+      "shortName": "znl",
+      "cate1Id": 13
+    }
+  ],
+  "baseRecommendCategory": [
+    {
+      "cate2Name": "英雄联盟",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a42cd925b86d345e41f0ef9e3c817fc2.png",
+      "cate2Url": "/g_LOL",
+      "hot": 44826748,
+      "cate1Id": 1,
+      "cate2Id": 1,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "绝地求生",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/08dcd21b98a6b71bb1d37b0c30376734.png",
+      "cate2Url": "/g_jdqs",
+      "hot": 53037106,
+      "cate1Id": 1,
+      "cate2Id": 270,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "王者荣耀",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/df342455752c64f99dd7bd9518968f46.png",
+      "cate2Url": "/g_wzry",
+      "hot": 55981926,
+      "cate1Id": 9,
+      "cate2Id": 181,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "DNF",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/83647da52bbb6f459706f99e0655764f.png",
+      "cate2Url": "/g_DNF",
+      "hot": 17079324,
+      "cate1Id": 1,
+      "cate2Id": 40,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "主机游戏",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/6b1ca7930ebf10c660f46dfda64a3f64.png",
+      "cate2Url": "/g_TVgame",
+      "hot": 18459299,
+      "cate1Id": 15,
+      "cate2Id": 19,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "和平精英",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/58234eb001b58e4b0b71d6aa4a818ebe.png",
+      "cate2Url": "/g_hpjy",
+      "hot": 25478873,
+      "cate1Id": 9,
+      "cate2Id": 350,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "DOTA2",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/a274c2feced94f2e543ffdd7abc7718b.png",
+      "cate2Url": "/g_DOTA2",
+      "hot": 5575721,
+      "cate1Id": 1,
+      "cate2Id": 3,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "穿越火线",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/e3156f581df48b385f67fd1cc775f022.png",
+      "cate2Url": "/g_CF",
+      "hot": 8801727,
+      "cate1Id": 1,
+      "cate2Id": 33,
+      "isDisplay": 1
+    },
+    {
+      "cate2Name": "音乐电台",
+      "cate2Icon": "https://sta-op.douyucdn.cn/dycatr/62235b54ca838d80264b6b78a502e7d5.png",
+      "cate2Url": "/g_yydt",
+      "hot": 1554722,
+      "cate1Id": 18,
+      "cate2Id": 422,
+      "isDisplay": 1
+    }
+  ],
+  "seoTitle": "游戏直播_全部游戏直播_斗鱼直播",
+  "listType": "cate",
+  "leftNav": {
+    "link": {
+      "followUrl": "/directory/myFollow",
+      "matchUrl": "/d_match",
+      "rankUrl": "/directory/rank_list/PCgame",
+      "webGameUrl": "https://wan.douyu.com"
+    },
+    "cateList": [
+      {
+        "recu": "",
+        "stn1": "PCgame",
+        "cn1": "网游竞技",
+        "id": 2,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "LOL",
+            "cn2": "英雄联盟",
+            "cid2": 1
+          },
+          {
+            "stn2": "jdqs",
+            "cn2": "绝地求生",
+            "cid2": 270
+          },
+          {
+            "stn2": "DOTA2",
+            "cn2": "DOTA2",
+            "cid2": 3
+          },
+          {
+            "stn2": "CF",
+            "cn2": "穿越火线",
+            "cid2": 33
+          },
+          {
+            "stn2": "DNF",
+            "cn2": "DNF",
+            "cid2": 40
+          },
+          {
+            "stn2": "APEX",
+            "cn2": "APEX英雄",
+            "cid2": 651
+          },
+          {
+            "stn2": "How",
+            "cn2": "炉石传说",
+            "cid2": 2
+          },
+          {
+            "stn2": "CSGO",
+            "cn2": "CS:GO",
+            "cid2": 6
+          },
+          {
+            "stn2": "dota2rpg",
+            "cn2": "刀塔自走棋",
+            "cid2": 650
+          },
+          {
+            "stn2": "WOW",
+            "cn2": "魔兽世界",
+            "cid2": 5
+          },
+          {
+            "stn2": "DOTA",
+            "cn2": "DOTA",
+            "cid2": 217
+          },
+          {
+            "stn2": "FTG",
+            "cn2": "格斗游戏",
+            "cid2": 29
+          },
+          {
+            "stn2": "mszb",
+            "cn2": "魔兽争霸",
+            "cid2": 55
+          },
+          {
+            "stn2": "classic",
+            "cn2": "怀旧游戏",
+            "cid2": 26
+          },
+          {
+            "stn2": "qqfcdy",
+            "cn2": "QQ飞车端游",
+            "cid2": 375
+          },
+          {
+            "stn2": "Overwatch",
+            "cn2": "守望先锋",
+            "cid2": 148
+          },
+          {
+            "stn2": "JX3",
+            "cn2": "剑网3",
+            "cid2": 65
+          },
+          {
+            "stn2": "blzy",
+            "cn2": "堡垒之夜",
+            "cid2": 347
+          }
+        ],
+        "cid1": 1,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "djry",
+        "cn1": "单机热游",
+        "id": 19,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "TVgame",
+            "cn2": "主机游戏",
+            "cid2": 19
+          },
+          {
+            "stn2": "qzsg",
+            "cn2": "全战三国",
+            "cid2": 497
+          },
+          {
+            "stn2": "BF",
+            "cn2": "战地风云",
+            "cid2": 466
+          },
+          {
+            "stn2": "qjfs",
+            "cn2": "全境封锁",
+            "cid2": 478
+          },
+          {
+            "stn2": "gwlrsj",
+            "cn2": "怪物猎人",
+            "cid2": 367
+          },
+          {
+            "stn2": "famine",
+            "cn2": "饥荒",
+            "cid2": 23
+          }
+        ],
+        "cid1": 15,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "syxx",
+        "cn1": "手游休闲",
+        "id": 10,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "wzry",
+            "cn2": "王者荣耀",
+            "cid2": 181
+          },
+          {
+            "stn2": "hpjy",
+            "cn2": "和平精英",
+            "cid2": 350
+          },
+          {
+            "stn2": "mhls",
+            "cn2": "猫和老鼠",
+            "cid2": 524
+          },
+          {
+            "stn2": "zzq",
+            "cn2": "多多自走棋",
+            "cid2": 663
+          },
+          {
+            "stn2": "chichao",
+            "cn2": "赤潮自走棋",
+            "cid2": 709
+          },
+          {
+            "stn2": "phone",
+            "cn2": "综合手游",
+            "cid2": 30
+          },
+          {
+            "stn2": "qipai",
+            "cn2": "棋牌娱乐",
+            "cid2": 113
+          },
+          {
+            "stn2": "hyrz",
+            "cn2": "火影忍者",
+            "cid2": 196
+          },
+          {
+            "stn2": "qqfcsy",
+            "cn2": "QQ飞车",
+            "cid2": 331
+          },
+          {
+            "stn2": "CFSY",
+            "cn2": "CF手游",
+            "cid2": 178
+          },
+          {
+            "stn2": "wpzs",
+            "cn2": "王牌战士",
+            "cid2": 634
+          },
+          {
+            "stn2": "xyzx",
+            "cn2": "新游中心",
+            "cid2": 229
+          },
+          {
+            "stn2": "yiqilaizhuoyao",
+            "cn2": "一起来捉妖",
+            "cid2": 545
+          },
+          {
+            "stn2": "yys",
+            "cn2": "阴阳师",
+            "cid2": 240
+          },
+          {
+            "stn2": "LRS",
+            "cn2": "狼人杀",
+            "cid2": 260
+          }
+        ],
+        "cid1": 9,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "yl",
+        "cn1": "娱乐天地",
+        "id": 3,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "yz",
+            "cn2": "颜值",
+            "cid2": 201
+          },
+          {
+            "stn2": "xingyu",
+            "cn2": "星娱",
+            "cid2": 287
+          },
+          {
+            "stn2": "ecy",
+            "cn2": "二次元",
+            "cid2": 174
+          },
+          {
+            "stn2": "HW",
+            "cn2": "户外",
+            "cid2": 124
+          },
+          {
+            "stn2": "ms",
+            "cn2": "美食",
+            "cid2": 194
+          },
+          {
+            "stn2": "music",
+            "cn2": "音乐",
+            "cid2": 175
+          },
+          {
+            "stn2": "xiangye",
+            "cn2": "乡野",
+            "cid2": 662
+          },
+          {
+            "stn2": "yqk",
+            "cn2": "一起看",
+            "cid2": 208
+          },
+          {
+            "stn2": "HDJY",
+            "cn2": "互动交友",
+            "cid2": 646
+          }
+        ],
+        "cid1": 2,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "kjjy",
+        "cn1": "科技教育",
+        "id": 14,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 1,
+        "list": [
+          {
+            "stn2": "smkj",
+            "cn2": "数码科技",
+            "cid2": 134
+          },
+          {
+            "stn2": "yj",
+            "cn2": "鱼教",
+            "cid2": 195
+          },
+          {
+            "stn2": "kepu",
+            "cn2": "科普",
+            "cid2": 204
+          },
+          {
+            "stn2": "rwjs",
+            "cn2": "人文军事",
+            "cid2": 212
+          },
+          {
+            "stn2": "car",
+            "cn2": "汽车",
+            "cid2": 136
+          },
+          {
+            "stn2": "jlp",
+            "cn2": "纪录片",
+            "cid2": 514
+          },
+          {
+            "stn2": "BLOVES",
+            "cn2": "设计师",
+            "cid2": 283
+          },
+          {
+            "stn2": "IMC",
+            "cn2": "IMC",
+            "cid2": 750
+          }
+        ],
+        "cid1": 11,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "voice",
+        "cn1": "语音直播",
+        "id": 22,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "FM233",
+            "cn2": "FM233",
+            "cid2": 405
+          },
+          {
+            "stn2": "yydt",
+            "cn2": "音乐电台",
+            "cid2": 422
+          },
+          {
+            "stn2": "lianmaihudong",
+            "cn2": "连麦互动",
+            "cid2": 441
+          },
+          {
+            "stn2": "qinggan",
+            "cn2": "情感电台",
+            "cid2": 447
+          },
+          {
+            "stn2": "PlayGame",
+            "cn2": "游戏陪玩",
+            "cid2": 435
+          }
+        ],
+        "cid1": 18,
+        "lsc": 1
+      },
+      {
+        "recu": "",
+        "stn1": "znl",
+        "cn1": "正能量",
+        "id": 21,
+        "isrec": 0,
+        "recn": "",
+        "isSport": 0,
+        "list": [
+          {
+            "stn2": "znl",
+            "cn2": "正能量",
+            "cid2": 250
+          }
+        ],
+        "cid1": 13,
+        "lsc": 0
+      }
+    ]
+  },
+  "currentCate1Name": "全部分类",
+  "shortName": "",
+  "shortCategory": []
+}

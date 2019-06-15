@@ -1,0 +1,49 @@
+  添加番剧视频
+    ---
+  tags:
+    - bangumi(video_admin, super_admin)
+  parameters:
+    - name: id
+      in: formData
+      description: 番剧ID
+      required: true
+      type: string
+    - name: name
+      in: formData
+      description: 视频标题
+      required: true
+      type: file
+    - name: url
+      in: formData
+      description: 视频
+      required: true
+      type: file
+    - name: logo
+      in: formData
+      description: 视频封面
+      required: true
+      type: file
+    - name: is_finish
+      in: formData
+      description: 是否完结（0为未完结，1为完结，默认为0）
+      type: integer
+  responses:
+    200:
+      description: register message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type
