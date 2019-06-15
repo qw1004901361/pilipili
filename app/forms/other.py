@@ -17,6 +17,9 @@ class IdForm(BaseForm):
 class PageForm(BaseForm):
     """所有使用分页的查询"""
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
+    q = StringField("搜索关键字")
+    tag_id = IntegerField("标签或者分类或者分区")
 
 
 class LoadComForm(BaseForm):
@@ -204,8 +207,10 @@ class SearchViewLogForm(BaseForm):
 
 
 class ListVideoForm(BaseForm):
+    q = StringField("搜索关键字")
     tag_id = IntegerField("tag_id", default=-1)
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
 
 
 class ListUploadVideoForm(BaseForm):

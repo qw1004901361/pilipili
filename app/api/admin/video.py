@@ -94,14 +94,16 @@ def add_video():
 @swag_from("../../yml/admin/video/list_video.yml")
 def list_video():
     form = ListVideoForm().validate_for_api()
+    page_data = Video.query
     if form.tag_id.data == -1:
-        page_data = Video.query.order_by(Video.create_time.desc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        pass
     else:
         sub_tags = [i.id for i in Tag.query.filter(Tag.parent_id == form.tag_id.data).all()]
-        page_data = Video.query.filter(or_(Video.tag_id == form.tag_id.data, Video.tag_id.in_(sub_tags))). \
-            order_by(Video.create_time.desc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        page_data = page_data.filter(or_(Video.tag_id == form.tag_id.data, Video.tag_id.in_(sub_tags)))
+    if form.q.data:
+        page_data = page_data.filter(or_(Video.id == form.q.data, Video.name.like("%" + form.q.data + "%")))
+    page_data = page_data.order_by(Video.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     videos = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()
@@ -118,7 +120,7 @@ def list_video():
                 "id": tag.id if tag else "未知",
                 "name": tag.name if tag else "未知",
             },
-            "release_time": i.release_time.release_time.strftime("%Y-%m-%d %H:%M:%S"),
+            "release_time": i.release_time.strftime("%Y-%m-%d %H:%M:%S"),
         }
         videos.append(video)
     r = {
@@ -208,7 +210,8 @@ def view_video():
     # if form.tag_id.data:
     #     page_data = page_data.join(Tag, Video.tag_id == Tag.id).filter(Video.tag_id == form.tag_id.data)
     # 分页查询
-    page_data = select.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+    page_data = select.paginate(error_out=False, page=int(form.page.data),
+                                per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     videos = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()
@@ -248,11 +251,13 @@ def list_uploadvideo():
     form = ListUploadVideoForm().validate_for_api()
     if form.status.data == -1:
         page_data = UploadVideo.query.order_by(UploadVideo.create_time.asc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+            paginate(error_out=False, page=int(form.page.data),
+                     per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     else:
         page_data = UploadVideo.query.join(Verification, UploadVideo.id == Verification.video_id).filter(
             Verification.status == form.status.data).order_by(UploadVideo.create_time.asc()). \
-            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+            paginate(error_out=False, page=int(form.page.data),
+                     per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     uploadvideos = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()

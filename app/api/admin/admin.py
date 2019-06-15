@@ -19,7 +19,6 @@ from app.view_models.return_obj import ReturnObj
 添加管理员
 列出管理员
 删除管理员
-查询管理员
 编辑管理员
 """
 
@@ -33,8 +32,11 @@ admin = Redprint("admin")
 def list_admin():
     """分页列出管理员的信息"""
     form = PageForm().validate_for_api()
-    page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+    page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id)
+    # 判断是否搜索
+    if form.q.data:
+        page_data = page_data.filter(or_(BaseUser.id == form.q.data, BaseUser.name == "%" + form.q.data + "%"))
+    page_data = page_data.paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     admins = []
     for i in page_data.items:
         roles = []
@@ -74,7 +76,7 @@ def view_admin():
     q = form.q.data
     page_data = BaseUser.query.join(Admin, BaseUser.id == Admin.id). \
         filter(or_(BaseUser.name.like("%" + q + "%"), BaseUser.id == q.lower().replace("uid", ""))). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
     admins = []
     for i in page_data.items:
         roles = []
