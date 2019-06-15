@@ -9,7 +9,7 @@
     - name: q
       in: query
       required: true
-      description: 搜索关键字
+      description: 搜索关键字（轮播图ID或者轮播图名字）
   responses:
     200:
       description: login message, include data, request, msg and error_code

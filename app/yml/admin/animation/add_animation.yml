@@ -16,7 +16,7 @@
       in: formData
       description: 轮播图封面
       required: true
-      type: string
+      type: file
     - name: url
       in: formData
       description: 轮播图跳转链接

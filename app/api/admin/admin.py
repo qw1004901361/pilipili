@@ -93,12 +93,12 @@ def view_admin():
         }
         admins.append(admin)
     r = {
-        "has_next": page_data.has_next,
-        "has_prev": page_data.has_prev,
-        "pages": page_data.pages,
-        "page": page_data.page,
-        "total": page_data.total,
-        "admins": admins
+        "has_next": page_data.has_next,  # 是否有下一页 bool
+        "has_prev": page_data.has_prev,  # 是否有上一页 bool
+        "pages": page_data.pages,  # 总共的页数
+        "page": page_data.page,  # 当前页数
+        "total": page_data.total,  # 总共的数据
+        "admins": admins  # 数据
     }
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)

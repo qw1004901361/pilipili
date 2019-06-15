@@ -15,18 +15,15 @@
     - name: name
       in: formData
       description: 轮播图标题
-      required: true
       type: string
     - name: logo
       in: formData
       description: 轮播图封面
-      required: true
-      type: string
+      type: file
     - name: url
       in: formData
       description: 轮播图跳转链接
       type: string
-      required: true
   responses:
     200:
       description: register message, include data, request, msg and error_code
