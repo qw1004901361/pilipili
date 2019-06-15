@@ -32,7 +32,8 @@ comment = Redprint("comment")
 def list_comment():
     """列出评论"""
     form = PageForm().validate_for_api()
-    page_data = Comment.query.paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_COM_PAGE"]))
+    page_data = Comment.query.paginate(error_out=False, page=int(form.page.data),
+                                       per_page=int(current_app.config["ADMIN_PER_COM_PAGE"]))
     comments = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -87,7 +88,8 @@ def view_comment():
     q = form.q.data
     page_data = Comment.query.join(Video, Comment.video_id == Video.id). \
         filter(or_(Comment.id == q, Video.name.like("%" + q + "%"))). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_COM_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data),
+                 per_page=int(current_app.config["ADMIN_PER_COM_PAGE"]))
     comments = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()

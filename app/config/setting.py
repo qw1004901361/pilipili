@@ -5,12 +5,6 @@ import os
 PER_TAG_PAGE = 5
 # 每页视频数
 PER_PAGE = 10
-# 每页用户数
-PER_USER_PAGE = 10
-# 每页管理员数
-PER_ADMIN_PAGE = 10
-# 权限
-PER_BASE_PAGE = 10
 # 每页评论数
 PER_COM_PAGE = 20
 # 视频存放目录
@@ -29,18 +23,18 @@ IMAGE_ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'gif']
 VIDEO_ALLOWED_EXTENSIONS = ['mp4', 'avi', 'flv', 'wmv']
 
 # 管理员界面每页评论数
-ADMIN_PER_COM_PAGE = 15
+ADMIN_PER_COM_PAGE = 10
 # 管理员界面每页轮播图数
-ADMIN_PER_ANI_PAGE = 15
+ADMIN_PER_ANI_PAGE = 10
 # 管理员界面每页日志数
-ADMIN_PER_LOG_PAGE = 15
+ADMIN_PER_LOG_PAGE = 10
 # 管理员界面每页角色数
-ADMIN_PER_ROLE_PAGE = 15
+ADMIN_PER_ROLE_PAGE = 10
 # 管理员界面每页用户数
-ADMIN_PER_USER_PAGE = 15
+ADMIN_PER_USER_PAGE = 10
 # 管理员界面每页视频数
-ADMIN_PER_VIDEO_PAGE = 15
+ADMIN_PER_VIDEO_PAGE = 10
 # 管理员界面每页模块数
-ADMIN_PER_MODULE_PAGE = 15
-# 管理严界面每页标签数 = 15
-ADMIN_PER_TAG_PAGE = 15
+ADMIN_PER_MODULE_PAGE = 10
+# 管理严界面每页标签数
+ADMIN_PER_TAG_PAGE = 10

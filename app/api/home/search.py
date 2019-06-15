@@ -54,7 +54,7 @@ def search_video():
         select = select.filter(Video.tag_id == form.tag_id.data)
     page_data = select.filter(
         or_(Video.name.like("%" + form.q.data + "%"), Video.id == form.q.data.lower().replace("av", ""))).order_by(
-        order).paginate(page=int(form.page.data), per_page=20)
+        order).paginate(error_out=False,page=int(form.page.data), per_page=20)
     videos = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -87,7 +87,7 @@ def search_bangumi():
     """根据名字搜索番剧"""
     form = SearchForm().validate_for_api()
     page_data = Bangumi.query.filter(Bangumi.name.like("%" + form.q.data + "%")). \
-        paginate(page=int(form.page.data), per_page=20)
+        paginate(error_out=False,page=int(form.page.data), per_page=20)
     bangumis = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()
@@ -124,7 +124,7 @@ def search_user():
     """搜索用户"""
     form = SearchForm().validate_for_api()
     page_data = BaseUser.query.filter(BaseUser.name.like("%" + form.q.data + "%")). \
-        paginate(page=int(form.page.data), per_page=20)
+        paginate(error_out=False,page=int(form.page.data), per_page=20)
     baseusers = []
     for i in page_data.items:
         user = User.query.filter(User.id == i.id).first()

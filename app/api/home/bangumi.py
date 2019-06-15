@@ -173,7 +173,7 @@ def get_index():
     if form.sort.data == 0:
         order = order.desc()
 
-    page_data = select.order_by(order).paginate(page=int(form.page.data), per_page=20)
+    page_data = select.order_by(order).paginate(error_out=False,page=int(form.page.data), per_page=20)
 
     r = {
         "has_next": page_data.has_next,

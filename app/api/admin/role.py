@@ -54,7 +54,7 @@ def add_role():
 def list_role():
     """列出角色列表，并找出哪些用户拥有该角色"""
     form = PageForm().validate_for_api()
-    page_data = Role.query.paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ROLE_PAGE"]))
+    page_data = Role.query.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ROLE_PAGE"]))
     roles = []
     for i in page_data.items:
         users = []
@@ -136,7 +136,7 @@ def view_role():
     form = SearchForm().validate_for_api()
     q = form.q.data
     page_data = Role.query.filter(or_(Role.name.like("%" + q + "%"), Role.id == q)). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ROLE_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ROLE_PAGE"]))
     roles = []
     for i in page_data.items:
         users = []

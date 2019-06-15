@@ -4,7 +4,7 @@ from werkzeug.exceptions import HTTPException
 
 
 class APIException(HTTPException):
-    code = 500
+    code = 200
     msg = "sorry, we make a mistake"
     data = None
     error_code = 999

@@ -55,7 +55,7 @@ def add_module():
 def list_module():
     """列出权限模块"""
     form = PageForm().validate_for_api()
-    page_data = AuthModule.query.paginate(page=int(form.page.data),
+    page_data = AuthModule.query.paginate(error_out=False,page=int(form.page.data),
                                           per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
     modules = []
     for i in page_data.items:
@@ -141,7 +141,7 @@ def view_module():
     except ValueError:
         pass
     page_data = AuthModule.query.filter(AuthModule.module_name.like("%" + q + "%")). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
     r = {
         "next_num": page_data.next_num,
         "has_next": page_data.has_next,
@@ -181,7 +181,7 @@ def add_auth_api():
 def list_auth_api():
     """列出权限接口"""
     form = PageForm().validate_for_api()
-    page_data = AuthApi.query.paginate(page=int(form.page.data),
+    page_data = AuthApi.query.paginate(error_out=False,page=int(form.page.data),
                                        per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
     r = {
         "next_num": page_data.next_num,
@@ -265,7 +265,7 @@ def view_auth_api():
     # 尝试模糊查询模块权限
     page_data = AuthApi.query.join(AuthModule, AuthApi.auth_module_id == AuthModule.auth_module_id). \
         filter(AuthModule.module_name.like("%" + q + "%")). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
     if page_data.total != 0:
         r = {
             "next_num": page_data.next_num,
@@ -285,7 +285,7 @@ def view_auth_api():
         return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "查询权限接口成功", data=r)
     # 尝试模糊查询模块接口
     page_data = AuthApi.query.filter(AuthApi.api_name.like("%" + q + "%")). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
     r = {
         "next_num": page_data.next_num,
         "has_next": page_data.has_next,

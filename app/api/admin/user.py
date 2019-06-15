@@ -40,8 +40,9 @@ def list_user():
     """列出用户"""
     form = PageForm().validate_for_api()
     page_data = BaseUser.query.join(User, BaseUser.id == User.id). \
-        order_by(BaseUser.create_time.desc()).paginate(
-        page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+        order_by(BaseUser.create_time.desc()).paginate(error_out=False,
+                                                       page=int(form.page.data),
+                                                       per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
     users = []
     for i in page_data.items:
         user = User.query.filter(User.id == i.id).first()
@@ -80,7 +81,7 @@ def view_user():
     # 根据用户名字搜索
     page_data = BaseUser.query.join(User, User.id == BaseUser.id). \
         filter(or_(BaseUser.id == q, BaseUser.name.like("%" + q + "%"))). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
     users = []
     for i in page_data.items:
         user = User.query.filter(User.id == i.id).first()

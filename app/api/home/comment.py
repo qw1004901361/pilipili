@@ -30,7 +30,7 @@ def list_comment():
         page_data = page_data.order_by(Comment.create_time.desc())
     else:
         page_data = page_data.order_by(form.order_by.data)
-    page_data = page_data.paginate(page=int(form.page.data), per_page=10)
+    page_data = page_data.paginate(error_out=False,page=int(form.page.data), per_page=10)
     r = {
         "has_next": page_data.has_next,
         "has_prev": page_data.has_prev,
@@ -54,7 +54,7 @@ def load_comment():
     """加载评论，用于观看视频时加载"""
     form = LoadComForm().validate_for_api()
     page_data = Comment.query.filter(Comment.video_id == form.video_id.data, Comment.root_id == None). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["PER_COM_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["PER_COM_PAGE"]))
     comments = []
     for i in page_data.items:
         # 查找根节点评论下的评论

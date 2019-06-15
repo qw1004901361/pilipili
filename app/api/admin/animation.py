@@ -60,10 +60,10 @@ def list_animation():
     form = AnimationListForm().validate_for_api()
     if form.tag_id.data == -1:
         page_data = Animation.query.order_by(Animation.create_time.desc()). \
-            paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
+            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
     else:
         page_data = Animation.query.filter(Animation.tag_id == form.tag_id.data).order_by(Animation.create_time.desc()). \
-            paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
+            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
     animations = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()
@@ -133,7 +133,7 @@ def view_animation():
     form = SearchForm().validate_for_api()
     q = form.q.data
     page_data = Animation.query.filter(or_(Animation.name.like("%" + q + "%"), Animation.id == q)). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ANI_PAGE"]))
     animations = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()

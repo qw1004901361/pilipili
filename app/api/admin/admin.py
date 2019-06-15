@@ -34,7 +34,7 @@ def list_admin():
     """分页列出管理员的信息"""
     form = PageForm().validate_for_api()
     page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
     admins = []
     for i in page_data.items:
         roles = []
@@ -74,7 +74,7 @@ def view_admin():
     q = form.q.data
     page_data = BaseUser.query.join(Admin, BaseUser.id == Admin.id). \
         filter(or_(BaseUser.name.like("%" + q + "%"), BaseUser.id == q.lower().replace("uid", ""))). \
-        paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
     admins = []
     for i in page_data.items:
         roles = []

@@ -81,11 +81,11 @@ def list_bangumi():
     form = BangumiListForm().validate_for_api()
     if form.tag_id.data == -1:
         page_data = Bangumi.query.order_by(Bangumi.create_time.desc()). \
-            paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     else:
         page_data = Bangumi.query.filter(Bangumi.tag_id == form.tag_id.data). \
             order_by(Bangumi.create_time.desc()). \
-            paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+            paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     bangumis = []
     for i in page_data.items:
         tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
@@ -182,7 +182,7 @@ def view_bangumi():
     form = SearchForm().validate_for_api()
     q = form.q.data
     select = Bangumi.query.filter(or_(Bangumi.id == q, Bangumi.name.like("%" + q + "%")))
-    page_data = select.paginate(page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+    page_data = select.paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
     bangumis = []
     for i in page_data.items:
         tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
