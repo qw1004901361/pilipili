@@ -12,7 +12,6 @@
       in: formData
       description: 视频标题
       required: true
-      type: file
     - name: url
       in: formData
       description: 视频

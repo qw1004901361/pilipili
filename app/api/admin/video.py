@@ -65,7 +65,7 @@ def add_video():
             except Exception as e:
                 print(e)
                 video.length = None
-            video.url = urljoin("http://localhost:5000/static/video/", url)
+            video.url = urljoin(current_app.config["VIDEO_PATH"], url)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO.value, "请上传视频")
         try:
@@ -75,7 +75,7 @@ def add_video():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            video.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            video.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO_LOGO.value, "请上传视频封面")
         # 默认所属用户为pilipili番剧
@@ -165,7 +165,7 @@ def edit_video():
             except Exception as e:
                 print(e)
                 video.length = None
-            video.url = urljoin("http://localhost:5000/static/video/", url)
+            video.url = urljoin(current_app.config["VIDEO_PATH"], url)
         except Exception as e:
             pass
         try:
@@ -175,7 +175,7 @@ def edit_video():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            video.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            video.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             pass
         # if form.tag_id.data:

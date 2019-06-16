@@ -248,7 +248,7 @@ def edit_user():
             file_face = secure_filename(file.filename)
             face = change_filename(file_face)
             file.save(os.path.join(current_app.config["FACE_DIR"], face))
-            user.face = urljoin("http://localhost:5000/static/face/", face)
+            user.face = urljoin(current_app.config["FACE_PATH"], face)
         except:
             pass
         db.session.add(baseuser)
@@ -400,7 +400,7 @@ def upload_video():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["TMP_DIR"], logo))
-            uploadvideo.logo = urljoin("http://localhost:5000/static/tmp/", logo)
+            uploadvideo.logo = urljoin(current_app.config["TMP_PATH"], logo)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO_LOGO.value, "请上传视频封面")
         # 保存视频
@@ -411,7 +411,7 @@ def upload_video():
             file_url = secure_filename(file.filename)
             url = change_filename(file_url)
             file.save(os.path.join(current_app.config["TMP_DIR"], url))
-            uploadvideo.url = urljoin("http://localhost:5000/static/tmp/", url)
+            uploadvideo.url = urljoin(current_app.config["TMP_PATH"], url)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO.value, "请上传视频")
         db.session.add(uploadvideo)

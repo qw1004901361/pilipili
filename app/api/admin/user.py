@@ -143,7 +143,7 @@ def edit_user():
             file_face = secure_filename(file.filename)
             face = change_filename(file_face)
             file.save(os.path.join(current_app.config["FACE_DIR"], face))
-            user.face = urljoin("http://localhost:5000/static/face/", face)
+            user.face = urljoin(current_app.config["FACE_PATH"], face)
         except BadRequestKeyError as e:
             pass
         db.session.add(user)

@@ -44,7 +44,7 @@ def add_animation():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            animation.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            animation.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_ANIMATION_LOGO.value, "请上传轮播图封面")
         animation.url = form.url.data
@@ -122,7 +122,7 @@ def edit_animation():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            animation.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            animation.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             pass
         if form.url.data:

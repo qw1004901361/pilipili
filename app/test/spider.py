@@ -1,12 +1,14 @@
 # coding=UTF-8
 import json
 import os
+import random
 import re
 
 import requests
 from lxml import etree
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from werkzeug.utils import secure_filename
 
 from app.models.video import Animation
 
@@ -32,8 +34,8 @@ def get_recommend():
     for i, j, k in zip(href_content, img_content, name_content):
         animation = Animation()
         animation.name = k.replace("\n", "").replace(" ", "")
-        animation.logo = j.replace("https://", "").replace("//", "")
-        animation.url = i.replace("https://", "")
+        animation.logo = "https://" + j.replace("https://", "").replace("//", "")
+        animation.url = "https://" + i.replace("https://", "")
         recommend_list.append(animation)
 
     for i in recommend_list:
@@ -195,8 +197,112 @@ def get_chin_ban():
     return md_list
 
 
+def get_animation():
+    # 连接数据库
+    engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    urls_1 = [  # {"url": "https://www.bilibili.com", "tag_id": 0},
+        {"url": "https://www.bilibili.com/v/douga", "tag_id": 1},
+        {"url": "https://www.bilibili.com/v/music", "tag_id": 4},
+        {"url": "https://www.bilibili.com/v/dance", "tag_id": 5},
+        {"url": "https://www.bilibili.com/v/game", "tag_id": 6},
+        {"url": "https://www.bilibili.com/v/technology", "tag_id": 7},
+        {"url": "https://www.bilibili.com/v/digital", "tag_id": 8},
+        {"url": "https://www.bilibili.com/v/life", "tag_id": 9},
+        {"url": "https://www.bilibili.com/v/kichiku", "tag_id": 10},
+        {"url": "https://www.bilibili.com/v/fashion", "tag_id": 11},
+        {"url": "https://www.bilibili.com/v/ent", "tag_id": 12},
+        {"url": "https://www.bilibili.com/v/cinephile", "tag_id": 13}]
+    recommend_list = []
+    url = "https://api.bilibili.com/x/web-show/res/locs?jsonp=jsonp&ids={}"
+    url_list = [
+        {"ids": 70, "name": "游戏", "tag_id": 6}
+    ]
+    for i in url_list:
+        url = url.format(i["ids"])
+        headers = {
+            "Referer": "https://www.bilibili.com/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36"
+        }
+        result = requests.get(url=url, headers=headers)
+        result = json.loads(result.text)
+        data = result["data"][str(i["ids"])]
+        for j in data:
+            animation = Animation()
+            animation.tag_id = i["tag_id"]
+            animation.name = j["name"]
+            animation.logo = j["pic"]
+            animation.url = j["url"]
+            recommend_list.append(animation)
+
+    for i in recommend_list:
+        try:
+            session.add(i)
+            session.commit()
+        except Exception as e:
+            print(e)
+            session.rollback()
+
+
+def LoadUserAgents(uafile):
+    uas = []
+    with open(uafile, 'rb') as uaf:
+        for ua in uaf.readlines():
+            if ua:
+                uas.append(ua.strip()[:-1])
+    random.shuffle(uas)
+    return uas
+
+
+def get_every_top_video():
+    """获取每个分类排行版的数据"""
+    url_list = ['https://www.bilibili.com/ranking/all/1/0/3', 'https://www.bilibili.com/ranking/all/168/0/3',
+                'https://www.bilibili.com/ranking/all/3/0/3', 'https://www.bilibili.com/ranking/all/129/0/3',
+                'https://www.bilibili.com/ranking/all/4/0/3', 'https://www.bilibili.com/ranking/all/36/0/3',
+                'https://www.bilibili.com/ranking/all/188/0/3', 'https://www.bilibili.com/ranking/all/160/0/3',
+                'https://www.bilibili.com/ranking/all/119/0/3', 'https://www.bilibili.com/ranking/all/155/0/3',
+                'https://www.bilibili.com/ranking/all/5/0/3', 'https://www.bilibili.com/ranking/all/181/0/3']
+    # url_list = ['https://www.bilibili.com/ranking/all/1/0/3']
+    av_list = []
+    for i in url_list:
+        html = requests.get(url=i)
+        selector = etree.HTML(html.text)
+        content = selector.xpath(
+            "//div[@class='rank-body']/div[@class='rank-list-wrap']/ul[@class='rank-list']/li[@class='rank-item']/div[@class='content']/div[@class='info']/a/@href")
+        for i in content:
+            av_list.append(i.replace("//www.bilibili.com/video/av", "").replace("/", ""))
+    uas = LoadUserAgents("user_agents.txt")
+    for i in av_list:
+        ua = random.choice(uas)
+        headers = {
+            'User-Agent': ua
+        }
+        start_url = 'https://api.bilibili.com/x/web-interface/view?aid=' + i
+        html = requests.get(start_url, headers=headers).json()
+        data = html['data']
+        root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_video")
+        file_name = secure_filename(data["title"])
+        with open(os.path.join(root_dir, file_name + ".json"), 'w+', encoding='utf-8')as f:
+            r = {
+                "name": data["title"],
+                "info": data["desc"],
+                "logo": data["pic"],
+                "user": data["owner"]["name"],
+                "user_face": data["owner"]["face"],
+                "tag": data["tname"],
+                "playnum": data["stat"]["view"],
+                "commentnum": data["stat"]["reply"],
+                "colnum": data["stat"]["favorite"],
+                "release_time": data["pubdate"],
+            }
+            f.write(json.dumps(r))
+        # currentVideoPath = os.path.join(c, 'static', 'bilibili_video', title)  # 下载目录
+
+
 if __name__ == "__main__":
     # get_recommend()
     # md_list = get_top_bangumi()
-    md_list = get_chin_ban()
-    get_bangumi(md_list)
+    # md_list = get_chin_ban()
+    # get_bangumi(md_list)
+    get_every_top_video()

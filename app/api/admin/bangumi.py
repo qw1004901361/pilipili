@@ -53,7 +53,7 @@ def add_bangumi():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            bangumi.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            bangumi.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             pass
         if form.start_date.data:
@@ -114,8 +114,20 @@ def list_bangumi():
             "colnum": i.colnum,
             "fannum": i.fannum,
             "status": i.status,
+            "voice_actors": i.voice_actors,
+            "staff": i.staff,
+            "score": i.score,
+            "info": i.info,
+            "start_date": i.start_date,
+            "update_time": i.update_time,
+            "update_weekday": i.update_weekday,
+            "is_finish": i.is_finish,
+            "season": i.season,
+            "area": i.area,
+            "new_piece": i.new_piece,
             "tag": tag,
             "episodes": episodes,
+            "grade": i.grade,
         }
         bangumis.append(bangumi)
     r = {
@@ -153,7 +165,7 @@ def edit_bangumi():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            bangumi.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            bangumi.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             pass
         if form.start_date.data:
@@ -188,7 +200,7 @@ def del_bangumi():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
-@bangumi.route("/add_video")
+@bangumi.route("/add_video", methods=["POST"])
 @login_required
 # @user_auth
 @swag_from("../../yml/admin/bangumi/add_video.yml")
@@ -214,7 +226,7 @@ def add_video():
             except Exception as e:
                 print(e)
                 video.length = None
-            video.url = urljoin("http://localhost:5000/static/video/", url)
+            video.url = urljoin(current_app.config["VIDEO_PATH"], url)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO.value, "请上传视频")
         try:
@@ -224,7 +236,7 @@ def add_video():
             file_logo = secure_filename(file.filename)
             logo = change_filename(file_logo)
             file.save(os.path.join(current_app.config["LOGO_DIR"], logo))
-            video.logo = urljoin("http://localhost:5000/static/logo/", logo)
+            video.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO_LOGO.value, "请上传视频封面")
     video = Video.query.filter(Video.name == form.name.data).order_by(Video.create_time.desc()).first()

@@ -154,7 +154,7 @@ class Bangumi(Base):
     commentnum = Column(Integer, default=0)
     # 弹幕总数
     danmunum = Column(Integer, default=0)
-    # 评论总数
+    # 收藏总数
     colnum = Column(Integer, default=0)
     # 综合评分
     score = Column(Integer)
@@ -179,7 +179,7 @@ class Bangumi(Base):
     # 最新话
     new_piece = Column(SmallInteger, default=1)
     # 标签（日漫还是国产）
-    tag_id = Column(Integer, ForeignKey("tag.id"))
+    tag_id = Column(Integer)
     # 用户点评分数
     grade = Column(Float)
 

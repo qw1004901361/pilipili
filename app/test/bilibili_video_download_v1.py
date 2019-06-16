@@ -304,14 +304,14 @@ def start_download(av_list):
 
 
 def get_every_top():
-    # url_list = ['https://www.bilibili.com/ranking/all/1/0/3', 'https://www.bilibili.com/ranking/all/168/0/3',
-    #             'https://www.bilibili.com/ranking/all/3/0/3', 'https://www.bilibili.com/ranking/all/129/0/3',
-    #             'https://www.bilibili.com/ranking/all/4/0/3', 'https://www.bilibili.com/ranking/all/36/0/3',
-    #             'https://www.bilibili.com/ranking/all/188/0/3', 'https://www.bilibili.com/ranking/all/160/0/3',
-    #             'https://www.bilibili.com/ranking/all/119/0/3', 'https://www.bilibili.com/ranking/all/155/0/3',
-    #             'https://www.bilibili.com/ranking/all/5/0/3', 'https://www.bilibili.com/ranking/all/181/0/3']
+    url_list = ['https://www.bilibili.com/ranking/all/1/0/3', 'https://www.bilibili.com/ranking/all/168/0/3',
+                'https://www.bilibili.com/ranking/all/3/0/3', 'https://www.bilibili.com/ranking/all/129/0/3',
+                'https://www.bilibili.com/ranking/all/4/0/3', 'https://www.bilibili.com/ranking/all/36/0/3',
+                'https://www.bilibili.com/ranking/all/188/0/3', 'https://www.bilibili.com/ranking/all/160/0/3',
+                'https://www.bilibili.com/ranking/all/119/0/3', 'https://www.bilibili.com/ranking/all/155/0/3',
+                'https://www.bilibili.com/ranking/all/5/0/3', 'https://www.bilibili.com/ranking/all/181/0/3']
 
-    url_list = ['https://www.bilibili.com/ranking/all/1/0/3']
+    # url_list = ['https://www.bilibili.com/ranking/all/1/0/3']
     av_list = []
     for i in url_list:
         html = requests.get(url=i)
@@ -342,9 +342,10 @@ def write_av_list(path, data):
 
 
 if __name__ == '__main__':
-    av_list = ["54119083"]
+    # av_list = ["54119083"]
     # write_av_list("av_list.txt", av_list)
     # print(av_list)
     # av_list = load_av_list("av_list.txt")
     # print(av_list)
+    av_list = get_every_top()
     start_download(av_list)
