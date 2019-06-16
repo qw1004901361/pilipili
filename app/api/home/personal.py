@@ -392,6 +392,7 @@ def upload_video():
         uploadvideo.name = form.name.data
         uploadvideo.info = form.info.data
         uploadvideo.user_id = current_user.id
+        uploadvideo.tag_id = form.tag_id.data
         # 保存视频封面
         try:
             file = request.files[form.logo.name]

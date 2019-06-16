@@ -265,7 +265,17 @@ def edit_uploadvideo():
             video.tag_id = uploadvideo.tag_id
             video.name = uploadvideo.name
             video.info = uploadvideo.info
-            video.logo = uploadvideo.logo
+
+            # 更换视频封面文件位置
+            file_name = uploadvideo.logo.rsplit("/", 1)[1]
+            src = os.path.join(current_app.config["TMP_DIR"], file_name)
+            if os.path.isfile(src):
+                des = os.path.join(current_app.config["LOGO_DIR"], file_name)
+                shutil.move(src, des)
+            else:
+                return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO_LOGO.value, "上传视频封面不存在")
+            video.logo = uploadvideo.logo.replace("tmp", "logo")
+
             # 更换视频文件位置
             file_name = uploadvideo.url.rsplit("/", 1)[1]
             src = os.path.join(current_app.config["TMP_DIR"], file_name)
@@ -275,6 +285,7 @@ def edit_uploadvideo():
             else:
                 return ReturnObj.get_response(ReturnEnum.UPLOADVIDE0_NOT_EXIST.value, "上传视频不存在")
             video.url = uploadvideo.url.replace("tmp", "video")
+
             video.release_time = datetime.now()
             db.session.add(video)
     write_oplog()
