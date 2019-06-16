@@ -425,7 +425,7 @@ def upload_video():
         uploadvideo = UploadVideo.query.filter(UploadVideo.name == uploadvideo.name).first()
         verification = Verification()
         verification.video_id = uploadvideo.id
-        db.session.add(uploadvideo)
+        db.session.add(verification)
         db.session.commit()
     except Exception as e:
         db.session.rollback()
