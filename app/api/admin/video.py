@@ -197,67 +197,20 @@ def del_video():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
 
 
-# @video.route("/view")
-# @login_required
-# # @user_auth
-# @swag_from("../../yml/admin/video/view_video.yml")
-# def view_video():
-#     """通过视频ID或者视频名搜索"""
-#     form = SearchForm().validate_for_api()
-#     q = form.q.data
-#     select = Video.query.filter(or_(Video.id == q, Video.name.like("%" + q + "%")))
-#     # # 如果有标签，则加上标签查询
-#     # if form.tag_id.data:
-#     #     page_data = page_data.join(Tag, Video.tag_id == Tag.id).filter(Video.tag_id == form.tag_id.data)
-#     # 分页查询
-#     page_data = select.paginate(error_out=False, page=int(form.page.data),
-#                                 per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
-#     videos = []
-#     for i in page_data.items:
-#         tag = Tag.query.filter(Tag.id == i.tag_id).first()
-#         video = {
-#             "id": i.id,
-#             "name": i.name,
-#             "logo": i.logo,
-#             "playnum": i.playnum,
-#             "commentnum": i.commentnum,
-#             "danmunum": i.danmunum,
-#             "colnum": i.colnum,
-#             "url": i.url,
-#             "tag": {
-#                 "id": tag.id if tag else "未知",
-#                 "name": tag.name if tag else "未知",
-#             },
-#             "release_time": i.release_time.strftime("%Y-%m-%d %H:%M:%S"),
-#         }
-#         videos.append(video)
-#     r = {
-#         "has_next": page_data.has_next,
-#         "has_prev": page_data.has_prev,
-#         "pages": page_data.pages,
-#         "page": page_data.page,
-#         "total": page_data.total,
-#         "videos": videos
-#     }
-#     write_oplog()
-#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
-
-
 @video.route("/list_uploadvideo")
 @login_required
 @swag_from("../../yml/admin/video/list_uploadvideo.yml")
 def list_uploadvideo():
     """查看审核视频"""
     form = ListUploadVideoForm().validate_for_api()
+    page_data = UploadVideo.query
     if form.status.data == -1:
-        page_data = UploadVideo.query.order_by(UploadVideo.create_time.asc()). \
-            paginate(error_out=False, page=int(form.page.data),
-                     per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        pass
     else:
-        page_data = UploadVideo.query.join(Verification, UploadVideo.id == Verification.video_id).filter(
-            Verification.status == form.status.data).order_by(UploadVideo.create_time.asc()). \
-            paginate(error_out=False, page=int(form.page.data),
-                     per_page=int(current_app.config["ADMIN_PER_VIDEO_PAGE"]))
+        page_data = page_data.join(Verification, UploadVideo.id == Verification.video_id). \
+            filter(Verification.status == form.status.data)
+    page_data = page_data.order_by(UploadVideo.create_time.asc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     uploadvideos = []
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()

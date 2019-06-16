@@ -29,12 +29,14 @@ class ListComForm(BaseForm):
     video_id = IntegerField("视频ID")
 
 
-class ListOpLogForm(BaseForm):
+class ListLogForm(BaseForm):
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
     pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
     q = StringField("搜索关键字")
     start_date = DateField("查询开始日期")
     end_date = DateField("查询结束日期", default=datetime.datetime.now)
+    tag_id = IntegerField("标签或者分类或者分区", default=-1)
+    video_id = IntegerField("视频ID")
 
 
 class LoadComForm(BaseForm):
@@ -172,7 +174,7 @@ class AnimationEditForm(BaseForm):
     name = StringField("轮播图标题")
     logo = FileField("轮播图封面")
     url = StringField("轮播图指向的URL")
-    tag_id = IntegerField("所属类别")  # 默认首页
+    tag_id = IntegerField("所属类别")
 
     obj = None
 
@@ -234,6 +236,7 @@ class ListUploadVideoForm(BaseForm):
     # 查看上传视频表，-1为全部，0为未审核，1为审核通过，2为审核不通过
     status = IntegerField("status", default=-1)
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
+    pagesize = IntegerField("数量", default=10, validators=[NumberRange(min=1, message="数量不能小于一")])
 
 
 class BangumiAddForm(BaseForm):

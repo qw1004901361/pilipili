@@ -9,6 +9,9 @@
     - name: page
       in: query
       description: 页码（默认为1）
+    - name: pagesize
+      in: query
+      description: 页数（默认为10）
   responses:
     200:
       description: login message, include data, request, msg and error_code

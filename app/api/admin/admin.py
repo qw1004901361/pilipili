@@ -32,11 +32,12 @@ admin = Redprint("admin")
 def list_admin():
     """分页列出管理员的信息"""
     form = PageForm().validate_for_api()
-    page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id)
-    # 判断是否搜索
+    page_data = BaseUser.query
     if form.q.data:
-        page_data = page_data.filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
-    page_data = page_data.paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
+        page_data = page_data.join(Admin, Admin.id == BaseUser.id). \
+            filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
+    page_data = page_data.order_by(BaseUser.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     admins = []
     for i in page_data.items:
         roles = []
@@ -61,46 +62,6 @@ def list_admin():
         "page": page_data.page,
         "total": page_data.total,
         "admins": admins
-    }
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
-
-
-@admin.route("/view")
-@login_required
-# @user_auth
-@swag_from("../../yml/admin/admin/view_admin.yml")
-def view_admin():
-    """查找管理员，根据id或者名字查找"""
-    form = SearchForm().validate_for_api()
-    q = form.q.data
-    page_data = BaseUser.query.join(Admin, BaseUser.id == Admin.id). \
-        filter(or_(BaseUser.name.like("%" + q + "%"), BaseUser.id == q.lower().replace("uid", ""))). \
-        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
-    admins = []
-    for i in page_data.items:
-        roles = []
-        for j in Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == i.id).all():
-            role = {
-                "id": j.id,
-                "name": j.name
-            }
-            roles.append(role)
-        admin = {
-            "id": i.id,
-            "account": i.account,
-            "name": i.name,
-            "gender": i.gender,
-            "roles": roles
-        }
-        admins.append(admin)
-    r = {
-        "has_next": page_data.has_next,  # 是否有下一页 bool
-        "has_prev": page_data.has_prev,  # 是否有上一页 bool
-        "pages": page_data.pages,  # 总共的页数
-        "page": page_data.page,  # 当前页数
-        "total": page_data.total,  # 总共的数据
-        "admins": admins  # 数据
     }
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)

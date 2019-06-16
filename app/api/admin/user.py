@@ -23,7 +23,6 @@ from app.view_models.return_obj import ReturnObj
 """
 管理用户模块（用户管理员，超级管理员）
 列出用户
-查找用户
 删除用户
 添加用户
 编辑用户
@@ -39,49 +38,12 @@ user = Redprint("user")
 def list_user():
     """列出用户"""
     form = PageForm().validate_for_api()
-    page_data = BaseUser.query.join(User, BaseUser.id == User.id). \
-        order_by(BaseUser.create_time.desc()).paginate(error_out=False,
-                                                       page=int(form.page.data),
-                                                       per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
-    users = []
-    for i in page_data.items:
-        user = User.query.filter(User.id == i.id).first()
-        one = {
-            "id": i.id,
-            "name": i.name,
-            "account": i.account,
-            "gender": i.gender,
-            "email": user.email,
-            "phone": user.phone,
-            "info": user.info,
-            "face": user.face,
-            "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S"),
-        }
-        users.append(one)
-    r = {
-        "has_next": page_data.has_next,
-        "has_prev": page_data.has_prev,
-        "pages": page_data.pages,
-        "page": page_data.page,
-        "total": page_data.total,
-        "users": users
-    }
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
-
-
-@user.route("/view")
-@login_required
-# @user_auth
-@swag_from("../../yml/admin/user/view_user.yml")
-def view_user():
-    """通过用户ID或者名字搜索"""
-    form = SearchForm().validate_for_api()
-    q = form.q.data
-    # 根据用户名字搜索
-    page_data = BaseUser.query.join(User, User.id == BaseUser.id). \
-        filter(or_(BaseUser.id == q, BaseUser.name.like("%" + q + "%"))). \
-        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_USER_PAGE"]))
+    page_data = BaseUser.query
+    if form.q.data:
+        page_data = page_data.join(User, BaseUser.id == User.id). \
+            filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
+    page_data = page_data.order_by(BaseUser.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     users = []
     for i in page_data.items:
         user = User.query.filter(User.id == i.id).first()

@@ -6,6 +6,15 @@
     - name: page
       in: query
       description: 页码（默认为1）
+    - name: pagesize
+      in: query
+      description: 数量（默认为10）
+    - name: q
+      in: query
+      description: 搜索关键字（轮播图ID或者轮播图名字）
+    - name: tag_id
+      in: query
+      description: 标签（默认为-1 — 全部）
   responses:
     200:
       description: login message, include data, request, msg and error_code

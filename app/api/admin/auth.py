@@ -59,8 +59,8 @@ def list_module():
     page_data = AuthModule.query
     if form.q.data:
         page_data = page_data.filter(or_(AuthModule.id == form.q.data, AuthModule.name.like("%" + form.q.data + "%")))
-    page_data = page_data.paginate(error_out=False, page=int(form.page.data),
-                                   per_page=int(form.pagesize.data))
+    page_data = page_data.order_by(AuthModule.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     modules = []
     for i in page_data.items:
         module = {
@@ -117,50 +117,6 @@ def edit_module():
         db.session.add(authmodule)
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
-
-
-# @auth.route("/view_module", methods=["GET", "POST"])
-# @login_required
-# @user_auth
-# def view_module():
-#     """查找（名字或ID）权限模块"""
-#     form = SearchForm().validate_for_api()
-#     q = form.q.data
-#     try:
-#         uuid.UUID(form.q.data)
-#         authmodule = AuthModule.query.filter(AuthModule.auth_module_id == q).first()
-#         r = {
-#             "next_num": None,
-#             "has_next": False,
-#             "has_prev": False,
-#             "modules": [{
-#                 "auth_module_id": authmodule.auth_module_id,
-#                 "name": authmodule.module_name,
-#                 "module": authmodule.auth_module,
-#                 "create_time": authmodule.create_time}],
-#             "total": 1 if authmodule else 0
-#         }
-#         logging()
-#         return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "查询权限模块成功", data=r)
-#     except ValueError:
-#         pass
-#     page_data = AuthModule.query.filter(AuthModule.module_name.like("%" + q + "%")). \
-#         paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_MODULE_PAGE"]))
-#     r = {
-#         "next_num": page_data.next_num,
-#         "has_next": page_data.has_next,
-#         "has_prev": page_data.has_prev,
-#         "modules": [{
-#             "auth_module_id": i.auth_module_id,
-#             "name": i.module_name,
-#             "module": i.auth_module,
-#             "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S")
-#         } for i in page_data.items],
-#         "total": page_data.total
-#     }
-#     logging()
-#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "查询权限模块成功", data=r)
-
 
 # @auth.route("/add_api", methods=["GET"])
 # @login_required

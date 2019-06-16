@@ -3,12 +3,24 @@
   tags:
     - log(log_admin, super_admin)
   parameters:
-    - name: tag_id
-      in: query
-      description: 查询类型（-1为全部，0为普通用户，1为管理员，默认为-1）
     - name: page
       in: query
       description: 页码（默认为1）
+    - name: pagesize
+      in: query
+      description: 数量（默认为10）
+    - name: q
+      in: query
+      description: 搜索关键字（用户ID或名字）
+    - name: start_date
+      in: query
+      description: 查询开始日期(例：2019-06-16 08:29:22)
+    - name: end_date
+      in: query
+      description: 查询结束日期（默认到现在）
+    - name: tag_id
+      in: query
+      description: 类别（默认为-1—全部，0为普通用户，1为管理员）
   responses:
     200:
       description: login message, include data, request, msg and error_code

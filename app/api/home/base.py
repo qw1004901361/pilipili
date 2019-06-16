@@ -19,7 +19,7 @@ base = Redprint("base")
 
 
 @base.route("/login", methods=["POST"])
-@swag_from("../../yml/admin/base/user_login.yml")
+# @swag_from("../../yml/admin/base/user_login.yml")
 def login():
     """登录"""
     form = LoginForm().validate_for_api()

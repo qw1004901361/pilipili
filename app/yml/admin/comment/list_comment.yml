@@ -6,6 +6,15 @@
     - name: page
       in: query
       description: 页码（默认为1）
+    - name: pagesize
+      in: query
+      description: 数量（默认为10）
+    - name: q
+      in: query
+      description: 搜索关键字（权限模块ID或者名字）
+    - name: video_id
+      in: query
+      description: 视频ID（查询该视频的评论）
   responses:
     200:
       description: login message, include data, request, msg and error_code

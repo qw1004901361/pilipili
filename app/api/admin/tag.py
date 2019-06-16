@@ -4,7 +4,7 @@ from flask import current_app
 from flask_login import login_required
 from sqlalchemy import or_
 
-from app.forms.other import TagAddForm, TagEditForm, TagListForm, IdForm, SearchForm
+from app.forms.other import TagAddForm, TagEditForm, TagListForm, IdForm, SearchForm, PageForm
 from app.libs.auth import user_auth
 from app.libs.enums import ReturnEnum
 from app.libs.redprint import Redprint
@@ -66,9 +66,12 @@ def edit_tag():
 # @user_auth
 @swag_from("../../yml/admin/tag/list_tag.yml")
 def list_tag():
-    form = TagListForm().validate_for_api()
-    page_data = Tag.query.filter(Tag.parent_id == 0). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_TAG_PAGE"]))
+    form = PageForm().validate_for_api()
+    page_data = Tag.query
+    if form.q.data:
+        page_data = page_data.filter(or_(Tag.id == form.q.data, Tag.name.like("%" + form.q.data + "%")))
+    page_data = page_data.filter(Tag.parent_id != None).order_by(Tag.create_time.desc()). \
+        paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     tags = []
     for i in page_data.items:
         sub_tags = Tag.query.filter(Tag.parent_id == i.id).all()
@@ -91,11 +94,12 @@ def list_tag():
         }
         tags.append(tag)
     r = {
-        "next_num": page_data.next_num,
         "has_next": page_data.has_next,
         "has_prev": page_data.has_prev,
+        "pages": page_data.pages,
+        "page": page_data.page,
+        "total": page_data.total,
         "tags": tags,
-        "total": page_data.total
     }
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
@@ -111,74 +115,3 @@ def del_tag():
         db.session.delete(tag)
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
-
-
-@tag.route("/view")
-@login_required
-@swag_from("../../yml/admin/tag/view_tag.yml")
-def view_tag():
-    """通过标签ID或名字查找"""
-    form = SearchForm().validate_for_api()
-    q = form.q.data
-    page_data = Tag.query.filter(Tag.parent_id != None, or_(Tag.name.like("%" + q + "%"), Tag.id == q)). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_TAG_PAGE"]))
-    tags = []
-    for i in page_data.items:
-        sub_tags = Tag.query.filter(Tag.parent_id == i.id).all()
-        subs = []
-        for j in sub_tags:
-            sub = {
-                "id": j.id,
-                "name": j.name,
-                "info": j.info,
-                "create_time": j.create_time.strftime("%Y-%m-%d %H:%M:%S"),
-            }
-            subs.append(sub)
-        tag = {
-            "id": i.id,
-            "name": i.name,
-            "info": i.info,
-            "sub_tags": subs,
-            "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S"),
-            "total": len(sub_tags)
-        }
-        tags.append(tag)
-    r = {
-        "next_num": page_data.next_num,
-        "has_next": page_data.has_next,
-        "has_prev": page_data.has_prev,
-        "tags": tags,
-        "total": page_data.total
-    }
-    write_oplog()
-    return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
-
-# @tag.route("/get_all")
-# @login_required
-# # @swag_from("../../yml/admin/tag/tag_add.yml")
-# def get_all():
-#     """获取所有标签"""
-#     tags = Tag.query.filter(Tag.parent_id == 0).all()
-#     main = []
-#     for i in tags:
-#         sub_tags = Tag.query.filter(Tag.parent_id == i.id).all()
-#         sub = []
-#         for j in sub_tags:
-#             sub_tag = {
-#                 "id": j.id,
-#                 "name": j.name,
-#                 "info": j.info
-#             }
-#             sub.append(sub_tag)
-#         main_tag = {
-#             "id": i.id,
-#             "name": i.name,
-#             "sub_tags": sub,
-#             "total": len(sub_tags)
-#         }
-#         main.append(main_tag)
-#     r = {
-#         "total": len(tags),
-#         "tags": main
-#     }
-#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
