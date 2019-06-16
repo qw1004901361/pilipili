@@ -54,11 +54,14 @@ def login():
             # 记录用户登录记录
             loginlog = LoginLog(user_id=current_user.id, ip=request.remote_addr)
             db.session.add(loginlog)
-        roles = [i.name for i in
-                 Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == admin.id).all()]
+        roles_id = [i.id for i in
+                    Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == admin.id).all()]
+        auths = AuthModule.query.join(RoleAuth, RoleAuth.auth_id == AuthModule.id). \
+            filter(RoleAuth.role_id.in_(roles_id)).all()
+        auths = [i.module for i in auths]
         r = {
-            "total": len(roles),
-            "roles": roles
+            "total": len(auths),
+            "auths": auths
         }
         return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
     return ReturnObj.get_response(ReturnEnum.LOGIN_ERROR.value, "帐号不存在或密码错误")
