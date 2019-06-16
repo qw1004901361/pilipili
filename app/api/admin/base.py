@@ -114,7 +114,7 @@ def edit():
 def info():
     """获取当前登录管理员信息"""
     roles_id = [i.id for i in
-                Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == admin.id).all()]
+                Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == current_user.id).all()]
     auths = AuthModule.query.join(RoleAuth, RoleAuth.auth_id == AuthModule.id). \
         filter(RoleAuth.role_id.in_(roles_id)).all()
     auths = [i.module for i in auths]
