@@ -242,16 +242,19 @@ def add_video():
             video.logo = urljoin(current_app.config["LOGO_PATH"], logo)
         except Exception as e:
             return ReturnObj.get_response(ReturnEnum.UPLOAD_VIDEO_LOGO.value, "请上传视频封面")
-    video = Video.query.filter(Video.name == form.name.data).order_by(Video.create_time.desc()).first()
+        db.session.add(video)
     with db.auto_commit():
+        video = Video.query.filter(Video.name == form.name.data).order_by(Video.create_time.desc()).first()
         bangumi.episodes += 1
         bangumi.new_piece += 1
         if form.is_finish.data == 1:
             bangumi.is_finish = 1
+        db.session.add(bangumi)
     with db.auto_commit():
         episode = Episode()
         episode.video_id = video.id
         episode.bangumi_id = bangumi.id
         episode.piece = bangumi.new_piece
+        db.session.add(episode)
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")

@@ -34,13 +34,15 @@ role = Redprint("role")
 @swag_from("../../yml/admin/role/add_role.yml")
 def add_role():
     form = RoleAddForm()
-    form.auths.choices = [(v.id, v.name) for v in AuthModule.query.all()]
+    form.auths.choices = [(v.id, v.id) for v in AuthModule.query.all()]
     form.validate_for_api()
     with db.auto_commit():
         # 添加角色
         role = Role(name=form.name.data)
         db.session.add(role)
         # 关联权限
+    with db.auto_commit():
+        role = Role.query.filter(Role.name == form.name.data).first()
         for i in form.auths.data:
             db.session.add(RoleAuth(role_id=role.id, auth_id=i))
     write_oplog()
@@ -131,40 +133,3 @@ def edit_role():
                 db.session.add(RoleAuth(role_id=role.role_id, auth_id=i))
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
-
-# @role.route("/view")
-# @login_required
-# # @user_auth
-# # @swag_from("../../yml/admin/role/view_role.yml")
-# def view_role():
-#     """根据角色ID或者角色名字搜索"""
-#     form = SearchForm().validate_for_api()
-#     q = form.q.data
-#     page_data = Role.query.filter(or_(Role.name.like("%" + q + "%"), Role.id == q)). \
-#         paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["ADMIN_PER_ROLE_PAGE"]))
-#     roles = []
-#     for i in page_data.items:
-#         users = []
-#         for j in BaseUser.query.join(UserRole, UserRole.user_id == BaseUser.id).filter(UserRole.role_id == i.id).all():
-#             user = {
-#                 "id": j.id,
-#                 "name": j.name
-#             }
-#             users.append(user)
-#         role = {
-#             "id": i.id,
-#             "name": i.name,
-#             "users": users,
-#             "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S")
-#         }
-#         roles.append(role)
-#     r = {
-#         "has_next": page_data.has_next,
-#         "has_prev": page_data.has_prev,
-#         "pages": page_data.pages,
-#         "page": page_data.page,
-#         "total": page_data.total,
-#         "roles": roles
-#     }
-#     write_oplog()
-#     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)

@@ -115,6 +115,7 @@ def list_video():
             "danmunum": i.danmunum,
             "colnum": i.colnum,
             "url": i.url,
+            "info": i.info,
             "tag": {
                 "id": tag.id if tag else "未知",
                 "name": tag.name if tag else "未知",

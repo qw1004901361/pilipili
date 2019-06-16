@@ -200,9 +200,9 @@ class AdminEditUserForm(BaseForm):
         self.user = User.query.filter(User.id == self.baseuser.id).first()
 
     def validate_name(self, field):
-        user = BaseUser.query.filter(BaseUser.name == field.data).first()
-        if user:
-            if self.user == user:
+        baseuser = BaseUser.query.filter(BaseUser.name == field.data).first()
+        if baseuser:
+            if self.baseuser == baseuser:
                 pass
             else:
                 raise ValidationError("该名称已被使用")

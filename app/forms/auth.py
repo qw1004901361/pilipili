@@ -127,5 +127,9 @@ class RoleEditForm(BaseForm):
             self.obj = role
 
     def validate_name(self, field):
-        if Role.query.filter(Role.name == field.data).first():
-            raise ValidationError("角色名称已存在")
+        role = Role.query.filter(Role.name == field.data).first()
+        if role:
+            if self.obj == role:
+                pass
+            else:
+                raise ValidationError("角色名称已存在")
