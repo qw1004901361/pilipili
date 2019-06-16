@@ -90,6 +90,19 @@ def list_bangumi():
         paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     bangumis = []
     for i in page_data.items:
+        videos = [{"video_id": i.video_id, "piece": i.piece} for i in
+                  Episode.query.filter(Episode.bangumi_id == i.id).all()]
+        episodes = []
+        for j in videos:
+            video = Video.query.filter(Video.id == j["video_id"]).first()
+            episode = {
+                "id": video.id,
+                "piece": j["piece"],
+                "name": video.name,
+                "logo": video.logo,
+                "url": video.url,
+            } if video else None
+            episodes.append(episode)
         tag = "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
         bangumi = {
             "id": i.id,
@@ -101,7 +114,8 @@ def list_bangumi():
             "colnum": i.colnum,
             "fannum": i.fannum,
             "status": i.status,
-            "tag": tag
+            "tag": tag,
+            "episodes": episodes,
         }
         bangumis.append(bangumi)
     r = {
