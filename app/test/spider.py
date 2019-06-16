@@ -1,4 +1,5 @@
 # coding=UTF-8
+import datetime
 import json
 import os
 import random
@@ -10,7 +11,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from werkzeug.utils import secure_filename
 
-from app.models.video import Animation
+from app.libs.enums import GenderEnum
+from app.models.user import BaseUser, User, UserRole
+from app.models.video import Animation, Video, Tag
 
 
 def get_recommend():
@@ -301,8 +304,70 @@ def get_every_top_video():
         num += 1
 
 
-def write2db():
-    pass
+def writevideo_2db():
+    # 连接数据库
+    engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_video")
+    dir_list = os.listdir(root_dir)
+    start = 7000
+    for i in range(len(dir_list)):
+        with open(os.path.join(root_dir, dir_list[i]), encoding="utf-8") as f:
+            data = json.load(f)
+            try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
+                if not baseuser:
+                    baseuser = BaseUser()
+                    baseuser.id = start
+                    baseuser.name = data["user"]
+                    baseuser.gender = GenderEnum.UNKNOWN.value,
+                    baseuser.account = start
+                    baseuser.pwd = start
+                session.add(baseuser)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            # 用户额外信息
+            try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
+                user = User()
+                user.id = baseuser.id
+                user.face = data["user_face"]
+                session.add(user)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            # 用户角色赋予
+            try:
+                userrole = UserRole(user_id=baseuser.id, role_id=1)
+                session.add(userrole)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            start += 1
+            try:
+                video = Video()
+                video.name = data["name"]
+                video.info = data["info"]
+                video.logo = data["logo"]
+                video.playnum = data["playnum"]
+                video.danmunum = data["danmunum"]
+                tag = session.query(Tag).filter(Tag.name == data["tag"]).first()
+                if tag:
+                    video.tag_id = tag.id
+                video.commentnum = data["commentnum"]
+                video.colnum = data["colnum"]
+                video.release_time = datetime.datetime.fromtimestamp(data["release_time"])
+                video.user_id = baseuser.id
+                session.add(video)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
 
 
 if __name__ == "__main__":
@@ -310,5 +375,6 @@ if __name__ == "__main__":
     # md_list = get_top_bangumi()
     # md_list = get_chin_ban()
     # get_bangumi(md_list)
-    get_every_top_video()
+    # get_every_top_video()
     # get_animation()
+    writevideo_2db()

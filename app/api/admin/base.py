@@ -133,7 +133,7 @@ def get_all_tag():
         tag = {
             "id": i.id,
             "name": i.name,
-            "sub_tags": sub_tags,
+            "children": sub_tags,
             "total": len(sub_page_data)
         }
         tags.append(tag)

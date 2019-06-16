@@ -19,7 +19,6 @@ from app.view_models.return_obj import ReturnObj
 编辑标签
 列出标签
 删除标签
-查找标签
 """
 
 tag = Redprint("tag")
@@ -88,7 +87,7 @@ def list_tag():
             "id": i.id,
             "name": i.name,
             "info": i.info,
-            "sub_tags": subs,
+            "children": subs,
             "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S"),
             "total": len(sub_tags)
         }
