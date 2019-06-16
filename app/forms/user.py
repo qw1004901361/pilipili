@@ -181,12 +181,13 @@ class AdminEditUserForm(BaseForm):
     # 帐号只含有英文和数字
     gender = StringField("性别")
     pwd = StringField("密码")
-    email = StringField("邮箱", validators=[Optional(), Email("非法的电子邮箱")])
-    phone = StringField("电话号码", validators=[Optional(), Regexp(r"0?(13|14|15|18|17)[0-9]{9}", message="非法的手机号码")])
+    email = StringField("邮箱", validators=[Email("非法的电子邮箱")])
+    phone = StringField("电话号码", validators=[Regexp(r"0?(13|14|15|18|17)[0-9]{9}", message="非法的手机号码")])
     info = StringField("用户简介")
     face = FileField("用户头像")
 
-    obj = None
+    baseuser = None
+    user = None
 
     def validate_id(self, field):
         baseuser = BaseUser.query.filter(BaseUser.id == field.data).first()
@@ -195,12 +196,13 @@ class AdminEditUserForm(BaseForm):
         admin = Admin.query.filter(Admin.id == baseuser.id).first()
         if admin:
             raise ValidationError("没有权限修改管理员信息")
-        self.obj = baseuser
+        self.baseuser = baseuser
+        self.user = User.query.filter(User.id == self.baseuser.id).first()
 
     def validate_name(self, field):
         user = BaseUser.query.filter(BaseUser.name == field.data).first()
         if user:
-            if self.obj == user:
+            if self.user == user:
                 pass
             else:
                 raise ValidationError("该名称已被使用")
@@ -208,7 +210,7 @@ class AdminEditUserForm(BaseForm):
     def validate_email(self, field):
         user = User.query.filter(User.email == field.data).first()
         if user:
-            if self.obj == user:
+            if self.user == user:
                 pass
             else:
                 raise ValidationError("该邮箱已被使用")
@@ -216,7 +218,7 @@ class AdminEditUserForm(BaseForm):
     def validate_phone(self, field):
         user = User.query.filter(User.phone == field.data).first()
         if user:
-            if self.obj == user:
+            if self.user == user:
                 pass
             else:
                 raise ValidationError("该电话号码已被使用")

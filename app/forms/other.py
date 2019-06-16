@@ -52,20 +52,6 @@ class CommentAddForm(BaseForm):
     content = StringField("内容", validators=[DataRequired("评论内容不能为空")])
 
 
-# class ListComForm(BaseForm):
-#     start_time = DateField("搜索开始时间")
-#     end_time = DateField("搜索结束时间")
-#     order_by = StringField("排序方式", default=Comment.create_time.asc())
-#     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
-
-
-# class ListLogForm(BaseForm):
-#     start_time = DateField("搜索开始时间")
-#     end_time = DateField("搜索结束时间")
-#     order_by = StringField("排序方式", default=UserLoginLog.create_time.asc())
-#     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
-
-
 class SearchForm(BaseForm):
     q = StringField("搜索关键词", validators=[DataRequired("搜索关键词不能为空")])
     page = IntegerField("页码", default=1, validators=[NumberRange(min=1, message="页码不能小于一")])
@@ -106,16 +92,20 @@ class TagEditForm(BaseForm):
 
     obj = None
 
-    def validate_name(self, field):
-        if Tag.query.filter(Tag.name == field.data).first():
-            raise ValidationError("该标签名已存在! ")
-
     def validate_id(self, field):
         tag = Tag.query.filter(Tag.id == field.data).first()
         if not tag:
             raise ValidationError("找不到该标签! ")
         else:
             self.obj = tag
+
+    def validate_name(self, field):
+        tag = Tag.query.filter(Tag.name == field.data).first()
+        if tag:
+            if self.obj == tag:
+                pass
+            else:
+                raise ValidationError("该标签名已存在! ")
 
     def validate_parent_id(self, field):
         if not Tag.query.filter(Tag.id == field.data).first():

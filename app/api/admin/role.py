@@ -52,7 +52,7 @@ def add_role():
 # @user_auth
 @swag_from("../../yml/admin/role/list_role.yml")
 def list_role():
-    """列出角色列表，并找出哪些用户拥有该角色"""
+    """列出角色列表"""
     form = PageForm().validate_for_api()
     page_data = Role.query
     if form.q.data:
@@ -61,18 +61,19 @@ def list_role():
         paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     roles = []
     for i in page_data.items:
-        users = []
-        for j in BaseUser.query.join(UserRole, UserRole.user_id == BaseUser.id). \
-                filter(UserRole.role_id == i.id).limit(5).all():
-            user = {
+        auths = []
+        for j in AuthModule.query.join(RoleAuth, RoleAuth.auth_id == AuthModule.id). \
+                filter(RoleAuth.role_id == i.id).all():
+            auth = {
                 "id": j.id,
-                "name": j.name
+                "name": j.name,
+                "module": j.module,
             }
-            users.append(user)
+            auths.append(auth)
         role = {
             "id": i.id,
             "name": i.name,
-            "users": users,
+            "auths": auths,
             "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S")
         }
         roles.append(role)
@@ -130,7 +131,6 @@ def edit_role():
                 db.session.add(RoleAuth(role_id=role.role_id, auth_id=i))
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
-
 
 # @role.route("/view")
 # @login_required

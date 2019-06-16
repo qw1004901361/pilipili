@@ -115,8 +115,8 @@ def add_user():
 def edit_user():
     """编辑用户"""
     form = AdminEditUserForm().validate_for_api()
-    baseuser = form.obj
-    user = User.query.filter(User.id == baseuser.id).first()
+    baseuser = form.baseuser
+    user = form.user
     try:
         if form.name.data:
             baseuser.name = form.name.data
