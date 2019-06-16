@@ -215,6 +215,7 @@ def list_uploadvideo():
     for i in page_data.items:
         tag = Tag.query.filter(Tag.id == i.tag_id).first()
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
+        verification = Verification.query.filter(Verification.video_id == i.id).first()
         one = {
             "id": i.id,
             "name": i.name,
@@ -229,7 +230,8 @@ def list_uploadvideo():
                 "id": baseuser.id if baseuser else "未知",
                 "name": baseuser.name if baseuser else "未知",
             },
-            "upload_time": i.upload_time
+            "status": verification.status,
+            "upload_time": i.upload_time.strftime("%Y-%m-%d %H:%M:%S"),
         }
         uploadvideos.append(one)
     r = {
