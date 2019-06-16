@@ -69,7 +69,7 @@ def list_tag():
     page_data = Tag.query
     if form.q.data:
         page_data = page_data.filter(or_(Tag.id == form.q.data, Tag.name.like("%" + form.q.data + "%")))
-    page_data = page_data.filter(Tag.parent_id != None).order_by(Tag.create_time.desc()). \
+    page_data = page_data.filter(Tag.parent_id == 0).order_by(Tag.create_time.desc()). \
         paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     tags = []
     for i in page_data.items:
