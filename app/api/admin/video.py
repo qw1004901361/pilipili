@@ -244,21 +244,25 @@ def list_uploadvideo():
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
 
 
-@video.route("/edit_uploadvideo")
+@video.route("/edit_uploadvideo", methods=["POST"])
 @login_required
 @swag_from("../../yml/admin/video/edit_uploadvideo.yml")
 def edit_uploadvideo():
     """编辑审核状态"""
     form = VerificationForm().validate_for_api()
     verification = form.verification
-    uploadvideo = form.uploadvideo
-    with db.auto_commit():
+    try:
         verification.status = form.status.data
         verification.admin_id = current_user.id
         db.session.add(verification)
+        db.session.commit()
+    except Exception as e:
+        print(e)
+        db.session.rollback()
+    uploadvideo = form.uploadvideo
     if verification.status == 1:
         # 审核通过
-        with db.auto_commit():
+        try:
             # 审核通过，添加到视频表
             video = Video()
             video.user_id = uploadvideo.user_id
@@ -288,5 +292,8 @@ def edit_uploadvideo():
 
             video.release_time = datetime.now()
             db.session.add(video)
+        except Exception as e:
+            print(e)
+            db.session.rollback()
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
