@@ -422,6 +422,7 @@ def upload_video():
         return ReturnObj.get_response(ReturnEnum.ADD_UPLOADVIDE0_ERROR.value, "上传视频失败")
     try:
         # 添加审核状态
+        uploadvideo = UploadVideo.query.filter(UploadVideo.name == uploadvideo.name).first()
         verification = Verification()
         verification.video_id = uploadvideo.id
         db.session.add(uploadvideo)

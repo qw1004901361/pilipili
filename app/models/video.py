@@ -169,7 +169,7 @@ class Bangumi(Base):
     # 更新时间（星期几，1-7）（默认当前时间）
     update_weekday = Column(SmallInteger, default=datetime.datetime.now().isoweekday())
     # 集数
-    episodes = Column(Integer)
+    episodes = Column(Integer, default=0)
     # 是否完结（默认连载中）
     is_finish = Column(SmallInteger, default=FinishEnum.UNFINISH.value)
     # 季节（默认春季新番）
@@ -177,7 +177,7 @@ class Bangumi(Base):
     # 地区（默认为日本）
     area = Column(String(100), default="日本")
     # 最新话
-    new_piece = Column(SmallInteger, default=1)
+    new_piece = Column(SmallInteger, default=0)
     # 标签（日漫还是国产）
     tag_id = Column(Integer)
     # 用户点评分数
