@@ -7,6 +7,9 @@
       in: query
       description: 番剧ID
       required: true
+    - name: status
+      in: query
+      description: 番剧状态（1为上架，0为下架，默认为1）
   responses:
     200:
       description: login message, include data, request, msg and error_code

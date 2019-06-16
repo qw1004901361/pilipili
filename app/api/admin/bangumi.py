@@ -118,8 +118,8 @@ def list_bangumi():
             "staff": i.staff,
             "score": i.score,
             "info": i.info,
-            "start_date": i.start_date,
-            "update_time": i.update_time.strftime("%Y-%m-%d %H:%M:%S"),
+            "start_date": i.start_date.strftime("%Y-%m-%d"),
+            "update_time": i.update_time.strftime("%H:%M:%S"),
             "update_weekday": i.update_weekday,
             "is_finish": i.is_finish,
             "season": i.season,
@@ -194,7 +194,10 @@ def del_bangumi():
     bangumi = Bangumi.query.get_or_404(form.id.data, "找不到该番剧")
     with db.auto_commit():
         # 将状态设为0，下架
-        bangumi.status = 0
+        if form.status.data == 1:
+            bangumi.status = 1
+        elif form.status.data == 0:
+            bangumi.status = 0
         db.session.add(bangumi)
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")

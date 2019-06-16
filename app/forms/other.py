@@ -12,6 +12,7 @@ from app.models.video import Tag, Video, Animation, Comment, Bangumi
 class IdForm(BaseForm):
     """所有使用ID的查询"""
     id = StringField("id", validators=[DataRequired("id不能为空")])
+    status = IntegerField("状态", default=1)
 
 
 class PageForm(BaseForm):
@@ -274,6 +275,7 @@ class BangumiEditForm(BaseForm):
     area = StringField("地区")
     # 1为国产 2为日漫 3为其他
     tag_id = IntegerField("类别（日漫or国产or其他）")
+    status = IntegerField("状态")
 
     obj = None
 
