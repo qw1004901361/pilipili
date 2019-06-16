@@ -18,7 +18,7 @@
       type: string
     - name: gender
       in: formData
-      description: 用户性别（0为未知，1为男性，2为女性）
+      description: 用户性别（0为未知，1为男性，2为女性，默认为0）
       type: integer
     - name: email
       in: formData

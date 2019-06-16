@@ -163,6 +163,7 @@ def register_user(form):
         baseuser.account = form.account.data
         baseuser.pwd = form.pwd.data
         baseuser.name = form.name.data
+        baseuser.gender = form.gender.data
         db.session.add(baseuser)
         db.session.commit()
     except Exception as e:
@@ -174,6 +175,22 @@ def register_user(form):
         # 用户其他信息
         user = User()
         user.id = baseuser.id
+        if form.phone.data:
+            user.phone = form.phone.data
+        if form.email.data:
+            user.email = form.email.data
+        if form.info.data:
+            user.info = form.info.data
+        try:
+            file = request.files[form.face.name]
+            if not allowed_image_file(file.filename):
+                return ReturnObj.get_response(ReturnEnum.IMAGE_TYPE_ERROR.value, "只允许上传png jpg jpeg gif格式")
+            file_face = secure_filename(file.filename)
+            face = change_filename(file_face)
+            file.save(os.path.join(current_app.config["FACE_DIR"], face))
+            user.face = urljoin(current_app.config["FACE_PATH"], face)
+        except BadRequestKeyError as e:
+            pass
         db.session.add(user)
         db.session.commit()
     except Exception as e:

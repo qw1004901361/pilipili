@@ -126,6 +126,11 @@ class AdminAddUserForm(BaseForm):
     name = StringField("名字", validators=[DataRequired("名字不能为空！")])
     account = StringField("帐号", validators=[DataRequired("帐号不能为空！")])
     pwd = StringField("密码", default="pilipili")
+    gender = StringField("性别",default=0)
+    email = StringField("邮箱", validators=[Optional(), Email("非法的电子邮箱")])
+    phone = StringField("电话号码", validators=[Optional(), Regexp(r"0?(13|14|15|18|17)[0-9]{9}", message="非法的手机号码")])
+    info = StringField("用户简介")
+    face = FileField("用户头像")
 
     def validate_account(self, field):
         # 帐号值只含有英文和数字
@@ -139,6 +144,23 @@ class AdminAddUserForm(BaseForm):
         user = BaseUser.query.filter(BaseUser.name == field.data).first()
         if user:
             raise ValidationError("该名称已被使用")
+
+    def validate_email(self, field):
+        user = User.query.filter(User.email == field.data).first()
+        if user:
+            raise ValidationError("该邮箱已被使用")
+
+    def validate_phone(self, field):
+        user = User.query.filter(User.phone == field.data).first()
+        if user:
+            raise ValidationError("该电话号码已被使用")
+
+    def validate_gender(self, field):
+        if field.data:
+            try:
+                GenderEnum(int(field.data))
+            except ValueError:
+                raise ValidationError("性别错误")
 
 
 class AdminEditUserForm(BaseForm):

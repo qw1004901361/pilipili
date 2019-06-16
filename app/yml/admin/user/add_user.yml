@@ -17,6 +17,25 @@
       description: 名字
       required: true
       type: string
+    - name: gender
+      in: formData
+      description: 用户性别（0为未知，1为男性，2为女性，默认为0）
+      type: integer
+    - name: email
+      in: formData
+      description: 用户邮箱
+      type: string
+    - name: phone
+      in: formData
+      description: 用户电话
+      type: integer
+    - name: info
+      in: formData
+      description: 用户简介
+    - name: face
+      in: formData
+      description: 用户头像
+      type: file
   responses:
     200:
       description: register message, include data, request, msg and error_code
