@@ -39,7 +39,7 @@ ADMIN_PER_MODULE_PAGE = 10
 # 管理严界面每页标签数
 ADMIN_PER_TAG_PAGE = 10
 
-path = "http://http://134.175.93.183:5000/"
+path = "http://134.175.93.183:5000/"
 # video资源路径
 VIDEO_PATH = path + "static/video/"
 # logo资源路径

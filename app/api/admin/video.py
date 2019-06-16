@@ -30,7 +30,6 @@ from app.view_models.return_obj import ReturnObj
 列出视频
 编辑视频
 删除视频
-查询视频
 查看审核视频
 更改审核状态
 """
