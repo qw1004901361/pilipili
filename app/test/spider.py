@@ -348,7 +348,6 @@ def writevideo_2db():
             except Exception as e:
                 print(e)
                 session.rollback()
-            start += 1
             try:
                 video = Video()
                 video.name = data["name"]
@@ -368,6 +367,9 @@ def writevideo_2db():
             except Exception as e:
                 print(e)
                 session.rollback()
+
+            print(start)
+            start += 1
 
 
 if __name__ == "__main__":

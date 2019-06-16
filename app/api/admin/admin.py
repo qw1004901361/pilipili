@@ -32,10 +32,9 @@ admin = Redprint("admin")
 def list_admin():
     """分页列出管理员的信息"""
     form = PageForm().validate_for_api()
-    page_data = BaseUser.query
+    page_data = BaseUser.query.join(Admin, Admin.id == BaseUser.id)
     if form.q.data:
-        page_data = page_data.join(Admin, Admin.id == BaseUser.id). \
-            filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
+        page_data = page_data.filter(or_(BaseUser.id == form.q.data, BaseUser.name.like("%" + form.q.data + "%")))
     page_data = page_data.order_by(BaseUser.create_time.desc()). \
         paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     admins = []
