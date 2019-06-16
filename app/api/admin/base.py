@@ -113,11 +113,17 @@ def edit():
 @swag_from("../../yml/admin/base/info.yml")
 def info():
     """获取当前登录管理员信息"""
+    roles_id = [i.id for i in
+                Role.query.join(UserRole, UserRole.role_id == Role.id).filter(UserRole.user_id == admin.id).all()]
+    auths = AuthModule.query.join(RoleAuth, RoleAuth.auth_id == AuthModule.id). \
+        filter(RoleAuth.role_id.in_(roles_id)).all()
+    auths = [i.module for i in auths]
     r = {
         "id": current_user.id,
         "name": current_user.name,
         "gender": current_user.gender,
-        "account": current_user.account
+        "account": current_user.account,
+        "auths": auths
     }
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
 

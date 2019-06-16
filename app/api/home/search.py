@@ -54,7 +54,7 @@ def search_video():
         select = select.filter(Video.tag_id == form.tag_id.data)
     page_data = select.filter(
         or_(Video.name.like("%" + form.q.data + "%"), Video.id == form.q.data.lower().replace("av", ""))).order_by(
-        order).paginate(error_out=False,page=int(form.page.data), per_page=20)
+        order).paginate(error_out=False, page=int(form.page.data), per_page=20)
     videos = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -86,26 +86,32 @@ def search_video():
 def search_bangumi():
     """根据名字搜索番剧"""
     form = SearchForm().validate_for_api()
-    page_data = Bangumi.query.filter(Bangumi.name.like("%" + form.q.data + "%")). \
-        paginate(error_out=False,page=int(form.page.data), per_page=20)
+    page_data = Bangumi.query.filter(or_(Bangumi.id == form.q.data, Bangumi.name.like("%" + form.q.data + "%"))). \
+        paginate(error_out=False, page=int(form.page.data), per_page=20)
     bangumis = []
     for i in page_data.items:
-        tag = Tag.query.filter(Tag.id == i.tag_id).first()
+        episodes = []
+        for j in Episode.query.filter(Episode.bangumi_id == i.id).all():
+            video = Video.query.filter(Video.id == j.video_id).first()
+            episode = {
+                "piece": j.piece,
+                "video": {
+                    "id": video.id,
+                    "url": video.url,
+                } if video else None
+            }
+            episodes.append(episode)
         bangumi = {
             "id": i.id,
             "name": i.name,
             "info": i.info,
             "logo": i.logo,
-            "tag": {
-                "id": tag.id if tag else "未知",
-                "name": tag.name if tag else "未知",
-            },
-            "release_time": i.release_time.strftime("%Y-%m-%d %H:%M:%S"),
             "start_date": i.start_date.strftime("%Y-%m-%d"),
             "area": i.area,
             "grade": i.grade,
-            "episodes": i.episodes,
-            "voice_actors": i.voice_actors
+            "episodes": episodes,
+            "voice_actors": i.voice_actors,
+            "tag": "国产" if i.tag_id == 1 else ("日漫" if i.tag_id == 2 else "其他")
         }
         bangumis.append(bangumi)
     r = {
@@ -124,7 +130,7 @@ def search_user():
     """搜索用户"""
     form = SearchForm().validate_for_api()
     page_data = BaseUser.query.filter(BaseUser.name.like("%" + form.q.data + "%")). \
-        paginate(error_out=False,page=int(form.page.data), per_page=20)
+        paginate(error_out=False, page=int(form.page.data), per_page=20)
     baseusers = []
     for i in page_data.items:
         user = User.query.filter(User.id == i.id).first()
