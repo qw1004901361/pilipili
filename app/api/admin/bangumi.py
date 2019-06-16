@@ -119,7 +119,7 @@ def list_bangumi():
             "score": i.score,
             "info": i.info,
             "start_date": i.start_date,
-            "update_time": i.update_time,
+            "update_time": i.update_time.strftime("%Y-%m-%d %H:%M:%S"),
             "update_weekday": i.update_weekday,
             "is_finish": i.is_finish,
             "season": i.season,
