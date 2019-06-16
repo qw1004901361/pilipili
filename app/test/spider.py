@@ -202,30 +202,29 @@ def get_animation():
     engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
     Session = sessionmaker(bind=engine)
     session = Session()
-    urls_1 = [  # {"url": "https://www.bilibili.com", "tag_id": 0},
-        {"url": "https://www.bilibili.com/v/douga", "tag_id": 1},
-        {"url": "https://www.bilibili.com/v/music", "tag_id": 4},
-        {"url": "https://www.bilibili.com/v/dance", "tag_id": 5},
-        {"url": "https://www.bilibili.com/v/game", "tag_id": 6},
-        {"url": "https://www.bilibili.com/v/technology", "tag_id": 7},
-        {"url": "https://www.bilibili.com/v/digital", "tag_id": 8},
-        {"url": "https://www.bilibili.com/v/life", "tag_id": 9},
-        {"url": "https://www.bilibili.com/v/kichiku", "tag_id": 10},
-        {"url": "https://www.bilibili.com/v/fashion", "tag_id": 11},
-        {"url": "https://www.bilibili.com/v/ent", "tag_id": 12},
-        {"url": "https://www.bilibili.com/v/cinephile", "tag_id": 13}]
+    url_list = [
+        {"ids": 52, "name": "douga", "tag_id": 1},
+        {"ids": 58, "name": "music", "tag_id": 4},
+        {"ids": 64, "name": "dance", "tag_id": 5},
+        {"ids": 70, "name": "game", "tag_id": 6},
+        {"ids": 76, "name": "technology", "tag_id": 7},
+        {"ids": 2977, "name": "digital", "tag_id": 8},
+        {"ids": 88, "name": "life", "tag_id": 9},
+        {"ids": 100, "name": "kichiku", "tag_id": 10},
+        {"ids": 94, "name": "fashion", "tag_id": 11},
+        {"ids": 82, "name": "ent", "tag_id": 12},
+        {"ids": 2211, "name": "cinephile", "tag_id": 13},
+        # {"ids": 1634, "name": "放映室","tag_id":},
+    ]
     recommend_list = []
     url = "https://api.bilibili.com/x/web-show/res/locs?jsonp=jsonp&ids={}"
-    url_list = [
-        {"ids": 70, "name": "游戏", "tag_id": 6}
-    ]
     for i in url_list:
-        url = url.format(i["ids"])
+        tmp_url = url.format(i["ids"])
         headers = {
             "Referer": "https://www.bilibili.com/",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36"
         }
-        result = requests.get(url=url, headers=headers)
+        result = requests.get(url=tmp_url, headers=headers)
         result = json.loads(result.text)
         data = result["data"][str(i["ids"])]
         for j in data:
@@ -233,16 +232,16 @@ def get_animation():
             animation.tag_id = i["tag_id"]
             animation.name = j["name"]
             animation.logo = j["pic"]
-            animation.url = j["url"]
+            animation.url = j["url"] if len(j["url"]) < 500 else None
             recommend_list.append(animation)
 
     for i in recommend_list:
-        try:
-            session.add(i)
-            session.commit()
-        except Exception as e:
-            print(e)
-            session.rollback()
+        session.add(i)
+    try:
+        session.commit()
+    except Exception as e:
+        print(e)
+        session.rollback()
 
 
 def LoadUserAgents(uafile):
@@ -264,6 +263,7 @@ def get_every_top_video():
                 'https://www.bilibili.com/ranking/all/119/0/3', 'https://www.bilibili.com/ranking/all/155/0/3',
                 'https://www.bilibili.com/ranking/all/5/0/3', 'https://www.bilibili.com/ranking/all/181/0/3']
     # url_list = ['https://www.bilibili.com/ranking/all/1/0/3']
+
     av_list = []
     for i in url_list:
         html = requests.get(url=i)
@@ -273,6 +273,7 @@ def get_every_top_video():
         for i in content:
             av_list.append(i.replace("//www.bilibili.com/video/av", "").replace("/", ""))
     uas = LoadUserAgents("user_agents.txt")
+    num = 1
     for i in av_list:
         ua = random.choice(uas)
         headers = {
@@ -282,8 +283,7 @@ def get_every_top_video():
         html = requests.get(start_url, headers=headers).json()
         data = html['data']
         root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_video")
-        file_name = secure_filename(data["title"])
-        with open(os.path.join(root_dir, file_name + ".json"), 'w+', encoding='utf-8')as f:
+        with open(os.path.join(root_dir, str(num) + ".json"), 'w+', encoding='utf-8')as f:
             r = {
                 "name": data["title"],
                 "info": data["desc"],
@@ -292,12 +292,17 @@ def get_every_top_video():
                 "user_face": data["owner"]["face"],
                 "tag": data["tname"],
                 "playnum": data["stat"]["view"],
+                "danmunum": data["stat"]["danmaku"],
                 "commentnum": data["stat"]["reply"],
                 "colnum": data["stat"]["favorite"],
                 "release_time": data["pubdate"],
             }
-            f.write(json.dumps(r))
-        # currentVideoPath = os.path.join(c, 'static', 'bilibili_video', title)  # 下载目录
+            f.write(json.dumps(r, ensure_ascii=False))
+        num += 1
+
+
+def write2db():
+    pass
 
 
 if __name__ == "__main__":
@@ -306,3 +311,4 @@ if __name__ == "__main__":
     # md_list = get_chin_ban()
     # get_bangumi(md_list)
     get_every_top_video()
+    # get_animation()

@@ -37,9 +37,9 @@ class Animation(Base):
     # 标签
     tag_id = Column(Integer)
     # 封面资源链接
-    logo = Column(String(255))
+    logo = Column(String(500))
     # 轮播图跳转链接
-    url = Column(String(255))
+    url = Column(String(500))
 
     def __repr__(self):
         return "<Animation %r>" % self.name

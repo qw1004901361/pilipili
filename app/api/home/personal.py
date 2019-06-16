@@ -39,10 +39,10 @@ def get_user():
             "name": baseuser.name,
             "account": baseuser.account,
             "gender": GenderEnum(baseuser.gender).name,
-            "email": user.email,
-            "phone": user.phone,
-            "info": user.info,
-            "face": user.face,
+            "email": user.email if user else None,
+            "phone": user.phone if user else None,
+            "info": user.info if user else None,
+            "face": user.face if user else None,
             "create_time": baseuser.create_time.strftime("%Y-%m-%d %H:%M:%S")
         },
         "follownum": num_assign(Follow.query.filter(Follow.user_id == current_user.id).count()),
@@ -95,7 +95,7 @@ def get_my_video():
     """获取自己上传的视频"""
     form = PageForm().validate_for_api()
     page_data = Video.query.filter(Video.user_id == current_user.id).order_by(
-        Video.create_time.desc()).paginate(error_out=False,page=int(form.page.data), per_page=20)
+        Video.create_time.desc()).paginate(error_out=False, page=int(form.page.data), per_page=20)
     videos = []
     for i in page_data.items:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -130,7 +130,7 @@ def get_bangumicol():
     """获取番剧订阅"""
     form = PageForm().validate_for_api()
     page_data = BangumiCol.query.filter(BangumiCol.user_id == current_user.id).order_by(
-        BangumiCol.create_time.desc()).paginate(error_out=False,page=int(form.page.data), per_page=15)
+        BangumiCol.create_time.desc()).paginate(error_out=False, page=int(form.page.data), per_page=15)
     bangumis = []
     for i in page_data.items:
         bangumi = Bangumi.query.filter(Bangumi.id == i.bangumi_id).first()
@@ -161,7 +161,7 @@ def get_videocol():
     """获取视频收藏"""
     form = PageForm().validate_for_api()
     page_data = VideoCol.query.filter(VideoCol.user_id == current_user.id).order_by(
-        VideoCol.create_time.desc()).paginate(error_out=False,page=int(form.page.data), per_page=20)
+        VideoCol.create_time.desc()).paginate(error_out=False, page=int(form.page.data), per_page=20)
     videos = []
     for i in page_data.items:
         video = Video.query.filter(Video.id == i.video_id).first()
@@ -277,7 +277,7 @@ def get_view_history():
     """获取观看历史记录"""
     form = PageForm().validate_for_api()
     page_data = ViewLog.query.filter(ViewLog.user_id == current_user.id).order_by(
-        ViewLog.update_time.asc()).paginate(error_out=False,page=int(form.page.data), per_page=20)
+        ViewLog.update_time.asc()).paginate(error_out=False, page=int(form.page.data), per_page=20)
     videos = []
     for i in page_data.items:
         video = Video.query.filter(Video.id == i.video_id).frist()
@@ -312,7 +312,7 @@ def get_com_history():
     """获取评论记录"""
     form = PageForm().validate_for_api()
     page_data = Comment.query.filter(Comment.user_id == current_user.id). \
-        paginate(error_out=False,page=int(form.page.data), per_page=int(current_app.config["PER_PAGE_COM"]))
+        paginate(error_out=False, page=int(form.page.data), per_page=int(current_app.config["PER_PAGE_COM"]))
     comments = []
     for i in page_data.items:
         video = Video.query.filter(Video.id == i.video_id).frist()

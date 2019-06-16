@@ -723,6 +723,7 @@ if __name__ == "__main__":
     # generate_user()
     # generate_follow()
     # generate_comment()
-    test()
+    # test()
     # generate_auth_module()
     # generate_user()
+    generate_comment()

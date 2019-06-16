@@ -52,10 +52,10 @@ def list_user():
             "name": i.name,
             "account": i.account,
             "gender": i.gender,
-            "email": user.email,
-            "phone": user.phone,
-            "info": user.info,
-            "face": user.face,
+            "email": user.email if user else None,
+            "phone": user.phone if user else None,
+            "info": user.info if user else None,
+            "face": user.face if user else None,
             "create_time": i.create_time.strftime("%Y-%m-%d %H:%M:%S"),
         }
         users.append(one)

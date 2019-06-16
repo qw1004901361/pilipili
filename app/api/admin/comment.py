@@ -35,7 +35,8 @@ def list_comment():
     if form.video_id.data:
         page_data = page_data.filter(Comment.video_id == form.video_id.data)
     if form.q.data:
-        page_data = page_data.filter(or_(Comment.id == form.q.data, Comment.content.like("%" + form.q.data + "%")))
+        page_data = page_data.filter(or_(Video.name.like("%" + form.q.data + "%"),
+                                         Comment.id == form.q.data, Comment.content.like("%" + form.q.data + "%")))
     page_data = page_data.order_by(Comment.create_time.desc()). \
         paginate(error_out=False, page=int(form.page.data), per_page=int(form.pagesize.data))
     comments = []
