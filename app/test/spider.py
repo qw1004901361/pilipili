@@ -305,18 +305,92 @@ def get_every_top_video():
 
 
 def get_bangimi_and_guochang():
-    html = requests.get("https://www.bilibili.com/anime")
-    selector = etree.HTML(html.text)
+    # 连接数据库
+    engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    # 番剧
+    urls_1 = ["https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=32",  # 连载动画
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=33",  # 完结动画
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=51",  # 资讯
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=152"  # 官方延伸
+              ]
+    # 国产.
+    urls_2 = ["https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=153",  # 国产动画
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=168",  # 国产原创相关
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=195",  # 动态漫·广播剧
+              "https://api.bilibili.com/x/web-interface/dynamic/region?ps=40&rid=170"  # 资讯
+              ]
+    # uas = LoadUserAgents("user_agents.txt")
+    # num = 1
+    # for url in urls_1:
+    #     ua = random.choice(uas)
+    #     headers = {
+    #         'User-Agent': ua
+    #     }
+    #     html = requests.get(url=url, headers=headers)
+    #     data = json.loads(html.text)
+    #     data = data["data"]["archives"]
+    #     for i in data:
+    #         root_dir = os.path.join(os.path.abspath(
+    #             os.path.dirname(os.path.dirname(__file__))), "static", "tmp_bangumi")
+    #         with open(os.path.join(root_dir, str(num) + ".json"), 'w+', encoding='utf-8')as f:
+    #             tag = session.query(Tag).filter(Tag.name == i["tname"], Tag.parent_id == 2).first()
+    #             r = {
+    #                 "name": i["title"],
+    #                 "info": i["desc"],
+    #                 "logo": i["pic"],
+    #                 "user": i["owner"]["name"],
+    #                 "user_face": i["owner"]["face"],
+    #                 "playnum": i["stat"]["view"],
+    #                 "danmunum": i["stat"]["danmaku"],
+    #                 "commentnum": i["stat"]["reply"],
+    #                 "colnum": i["stat"]["favorite"],
+    #                 "release_time": i["pubdate"],
+    #                 "tag_id": tag.id
+    #             }
+    #             f.write(json.dumps(r, ensure_ascii=False))
+    #         num += 1
 
+    uas = LoadUserAgents("user_agents.txt")
+    num = 1
+    for url in urls_2:
+        ua = random.choice(uas)
+        headers = {
+            'User-Agent': ua
+        }
+        html = requests.get(url=url, headers=headers)
+        data = json.loads(html.text)
+        data = data["data"]["archives"]
+        for i in data:
+            root_dir = os.path.join(os.path.abspath(
+                os.path.dirname(os.path.dirname(__file__))), "static", "tmp_guochuang")
+            with open(os.path.join(root_dir, str(num) + ".json"), 'w+', encoding='utf-8')as f:
+                tag = session.query(Tag).filter(Tag.name == i["tname"], Tag.parent_id == 3).first()
+                r = {
+                    "name": i["title"],
+                    "info": i["desc"],
+                    "logo": i["pic"],
+                    "user": i["owner"]["name"],
+                    "user_face": i["owner"]["face"],
+                    "playnum": i["stat"]["view"],
+                    "danmunum": i["stat"]["danmaku"],
+                    "commentnum": i["stat"]["reply"],
+                    "colnum": i["stat"]["favorite"],
+                    "release_time": i["pubdate"],
+                    "tag_id": tag.id
+                }
+                f.write(json.dumps(r, ensure_ascii=False))
+            num += 1
 
 def writevideo_2db():
     # 连接数据库
     engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
     Session = sessionmaker(bind=engine)
     session = Session()
-    root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_video")
+    root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_bangumi")
     dir_list = os.listdir(root_dir)
-    start = 7000
+    start = 9000
     for i in range(len(dir_list)):
         with open(os.path.join(root_dir, dir_list[i]), encoding="utf-8") as f:
             data = json.load(f)
@@ -347,6 +421,7 @@ def writevideo_2db():
                 session.rollback()
             # 用户角色赋予
             try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
                 userrole = UserRole(user_id=baseuser.id, role_id=1)
                 session.add(userrole)
                 session.commit()
@@ -360,9 +435,7 @@ def writevideo_2db():
                 video.logo = data["logo"]
                 video.playnum = data["playnum"]
                 video.danmunum = data["danmunum"]
-                tag = session.query(Tag).filter(Tag.name == data["tag"]).first()
-                if tag:
-                    video.tag_id = tag.id
+                video.tag_id = data["tag_id"]
                 video.commentnum = data["commentnum"]
                 video.colnum = data["colnum"]
                 video.release_time = datetime.datetime.fromtimestamp(data["release_time"])
@@ -372,10 +445,76 @@ def writevideo_2db():
             except Exception as e:
                 print(e)
                 session.rollback()
-
             print(start)
             start += 1
 
+    root_dir = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "static", "tmp_guochuang")
+    dir_list = os.listdir(root_dir)
+    for i in range(len(dir_list)):
+        with open(os.path.join(root_dir, dir_list[i]), encoding="utf-8") as f:
+            data = json.load(f)
+            try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
+                if not baseuser:
+                    baseuser = BaseUser()
+                    baseuser.id = start
+                    baseuser.name = data["user"]
+                    baseuser.gender = GenderEnum.UNKNOWN.value,
+                    baseuser.account = start
+                    baseuser.pwd = start
+                session.add(baseuser)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            # 用户额外信息
+            try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
+                user = User()
+                user.id = baseuser.id
+                user.face = data["user_face"]
+                session.add(user)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            # 用户角色赋予
+            try:
+                baseuser = session.query(BaseUser).filter(BaseUser.name == data["user"]).first()
+                userrole = UserRole(user_id=baseuser.id, role_id=1)
+                session.add(userrole)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            try:
+                video = Video()
+                video.name = data["name"]
+                video.info = data["info"]
+                video.logo = data["logo"]
+                video.playnum = data["playnum"]
+                video.danmunum = data["danmunum"]
+                video.tag_id = data["tag_id"]
+                video.commentnum = data["commentnum"]
+                video.colnum = data["colnum"]
+                video.release_time = datetime.datetime.fromtimestamp(data["release_time"])
+                video.user_id = baseuser.id
+                session.add(video)
+                session.commit()
+            except Exception as e:
+                print(e)
+                session.rollback()
+            print(start)
+            start += 1
+
+def test():
+    # 连接数据库
+    engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    for i in session.query(Video).filter(Video.tag_id == None).all():
+        print(i)
 
 if __name__ == "__main__":
     # get_recommend()
@@ -384,5 +523,6 @@ if __name__ == "__main__":
     # get_bangumi(md_list)
     # get_every_top_video()
     # get_animation()
-    get_bangimi_and_guochang()
+    # get_bangimi_and_guochang()
     # writevideo_2db()
+    test()

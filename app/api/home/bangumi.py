@@ -23,7 +23,7 @@ bangumi = Redprint("bangumi")
 def get_one():
     """通过bangumi的id获取信息"""
     form = IdForm().validate_for_api()
-    bangumi = Bangumi.query.filter(Bangumi.id == form.id.data, Bangumi.status == 1).\
+    bangumi = Bangumi.query.filter(Bangumi.id == form.id.data, Bangumi.status == 1). \
         first_or_404(description="找不到该番剧")
     videos = [{"video_id": i.video_id, "piece": i.piece} for i in
               Episode.query.filter(Episode.bangumi_id == bangumi.id).all()]
@@ -47,7 +47,9 @@ def get_one():
         "commentnum": num_assign(bangumi.commentnum),
         "colnum": num_assign(bangumi.colnum),
         "fannum": num_assign(bangumi.fannum),
-        "score": bangumi.score,
+        "grade": bangumi.grade,
+        "voice_actors": bangumi.voice_actors,
+        "staff": bangumi.staff,
         "episodes": episodes,
         "is_finish": bangumi.is_finish,
         "start_date": bangumi.start_date.strftime("%Y-%m-%d"),
@@ -173,7 +175,7 @@ def get_index():
     if form.sort.data == 0:
         order = order.desc()
 
-    page_data = select.order_by(order).paginate(error_out=False,page=int(form.page.data), per_page=20)
+    page_data = select.order_by(order).paginate(error_out=False, page=int(form.page.data), per_page=20)
 
     r = {
         "has_next": page_data.has_next,
