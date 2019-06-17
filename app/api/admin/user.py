@@ -34,7 +34,7 @@ user = Redprint("user")
 @user.route("/list")
 @login_required
 @swag_from("../../yml/admin/user/list_user.yml")
-# @user_auth
+@user_auth
 def list_user():
     """列出用户"""
     form = PageForm().validate_for_api()
@@ -74,7 +74,7 @@ def list_user():
 @user.route("/del", methods=["GET"])
 @login_required
 @swag_from("../../yml/admin/user/del_user.yml")
-# @user_auth
+@user_auth
 def del_user():
     """删除用户"""
     form = IdForm().validate_for_api()
@@ -98,7 +98,7 @@ def del_user():
 
 @user.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/user/add_user.yml")
 def add_user():
     """添加用户"""
@@ -111,7 +111,7 @@ def add_user():
 @user.route("/edit", methods=["POST"])
 @login_required
 @swag_from("../../yml/admin/user/edit_user.yml")
-# @user_auth
+@user_auth
 def edit_user():
     """编辑用户"""
     form = AdminEditUserForm().validate_for_api()

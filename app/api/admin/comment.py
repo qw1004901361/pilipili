@@ -26,7 +26,7 @@ comment = Redprint("comment")
 
 @comment.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/comment/list_comment.yml")
 def list_comment():
     """列出评论"""
@@ -71,7 +71,7 @@ def list_comment():
 
 @comment.route("/del")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/comment/del_comment.yml")
 def del_comment():
     """删除评论"""
@@ -85,6 +85,7 @@ def del_comment():
 
 @comment.route("/del_by_video")
 @login_required
+@user_auth
 @swag_from("../../yml/admin/comment/del_by_video.yml")
 def del_by_video():
     """根据视频id删除该视频的所有评论"""

@@ -304,6 +304,11 @@ def get_every_top_video():
         num += 1
 
 
+def get_bangimi_and_guochang():
+    html = requests.get("https://www.bilibili.com/anime")
+    selector = etree.HTML(html.text)
+
+
 def writevideo_2db():
     # 连接数据库
     engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
@@ -379,4 +384,5 @@ if __name__ == "__main__":
     # get_bangumi(md_list)
     # get_every_top_video()
     # get_animation()
-    writevideo_2db()
+    get_bangimi_and_guochang()
+    # writevideo_2db()

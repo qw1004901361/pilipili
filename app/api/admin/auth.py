@@ -35,7 +35,7 @@ auth = Redprint("auth")
 
 @auth.route("/add_module", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/auth/add_module.yml")
 def add_module():
     """添加一个权限模块"""
@@ -51,7 +51,7 @@ def add_module():
 
 @auth.route("/list_module")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/auth/list_module.yml")
 def list_module():
     """列出权限模块"""
@@ -84,7 +84,7 @@ def list_module():
 
 @auth.route("/del_module")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/auth/del_module.yml")
 def del_module():
     """删除权限模块"""
@@ -103,7 +103,7 @@ def del_module():
 
 @auth.route("/edit_module", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/auth/edit_module.yml")
 def edit_module():
     """编辑权限模块"""

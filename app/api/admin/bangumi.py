@@ -34,7 +34,7 @@ bangumi = Redprint("bangumi")
 
 @bangumi.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/bangumi/add_bangumi.yml")
 def add_bangumi():
     form = BangumiAddForm().validate_for_api()
@@ -75,7 +75,7 @@ def add_bangumi():
 
 @bangumi.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/bangumi/list_bangumi.yml")
 def list_bangumi():
     form = PageForm().validate_for_api()
@@ -187,7 +187,7 @@ def edit_bangumi():
 
 @bangumi.route("/del")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/bangumi/del_bangumi.yml")
 def del_bangumi():
     form = IdForm().validate_for_api()
@@ -205,7 +205,7 @@ def del_bangumi():
 
 @bangumi.route("/add_video", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/bangumi/add_video.yml")
 def add_video():
     """添加番剧视频"""

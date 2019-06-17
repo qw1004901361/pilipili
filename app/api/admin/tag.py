@@ -42,8 +42,8 @@ def add_tag():
 
 
 @tag.route("/edit", methods=["POST"])
-# @login_required
-# @user_auth
+@login_required
+@user_auth
 @swag_from("../../yml/admin/tag/edit_tag.yml")
 def edit_tag():
     form = TagEditForm().validate_for_api()
@@ -62,7 +62,7 @@ def edit_tag():
 
 @tag.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/tag/list_tag.yml")
 def list_tag():
     form = PageForm().validate_for_api()
@@ -106,6 +106,7 @@ def list_tag():
 
 @tag.route("/del")
 @login_required
+@user_auth
 @swag_from("../../yml/admin/tag/del_tag.yml")
 def del_tag():
     form = IdForm().validate_for_api()

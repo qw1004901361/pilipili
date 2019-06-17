@@ -58,14 +58,14 @@ class AuthFailed(APIException):
     # 401代表授权失败
     code = 200
     error_code = 1005
-    msg = 'authorization failed'
+    msg = '加载权限失败'
 
 
 class Forbidden(APIException):
     # 403代表权限不够，禁止访问
     code = 200
     error_code = 1004
-    msg = "forbidden, not in scope"
+    msg = "没有权限访问"
 
 
 class DuplicateGift(APIException):

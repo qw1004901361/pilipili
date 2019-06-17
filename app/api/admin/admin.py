@@ -27,7 +27,7 @@ admin = Redprint("admin")
 
 @admin.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/admin/list_admin.yml")
 def list_admin():
     """分页列出管理员的信息"""
@@ -68,7 +68,7 @@ def list_admin():
 
 @admin.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/admin/add_admin.yml", methods=['POST'])
 def add_admin():
     """添加管理员"""
@@ -86,7 +86,7 @@ def add_admin():
 
 @admin.route("/del")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/admin/del_admin.yml")
 def del_admin():
     """删除管理员"""
@@ -113,7 +113,7 @@ def del_admin():
 
 @admin.route("/edit", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/admin/edit_admin.yml", methods=['POST'])
 def edit_admin():
     """编辑管理员"""

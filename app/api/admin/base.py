@@ -161,7 +161,6 @@ def get_all_tag():
 
 @base.route("/get_all_role")
 @login_required
-# @user_auth
 @swag_from("../../yml/admin/base/get_all_role.yml")
 def get_all_role():
     """获得所有的角色"""
@@ -175,7 +174,6 @@ def get_all_role():
 
 @base.route("/get_my_module")
 @login_required
-# @user_auth
 @swag_from("../../yml/admin/base/get_my_module.yml")
 def get_my_module():
     """获得自己所拥有的的权限"""

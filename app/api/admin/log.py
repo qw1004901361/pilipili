@@ -28,7 +28,7 @@ log = Redprint("log")
 
 @log.route("/list_oplog")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/log/list_oplog.yml")
 def list_oplog():
     """列出操作日志"""
@@ -71,7 +71,7 @@ def list_oplog():
 
 @log.route("/list_loginlog")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/log/list_loginlog.yml")
 def list_loginlog():
     """列出登录日志"""
@@ -122,7 +122,7 @@ def list_loginlog():
 
 @log.route("/list_viewlog")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/log/list_viewlog.yml")
 def list_viewlog():
     """列出用户观看日志"""

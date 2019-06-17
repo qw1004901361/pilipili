@@ -20,6 +20,10 @@ class NewForm(BaseForm):
     number = IntegerField("number", default=10)
 
 
+class TagForm(BaseForm):
+    tag_id = IntegerField("tag_id", validators=[DataRequired()])
+
+
 class RankForm(BaseForm):
     tag_id = IntegerField("tag_id", default=-1)
     number = IntegerField("number", default=5)
@@ -57,7 +61,7 @@ class UploadForm(BaseForm):
     # 视频资源路径
     url = FileField("视频")
     # 简介
-    info = StringField(Text,validators=[DataRequired("视频简介不能为空！")])
+    info = StringField(Text, validators=[DataRequired("视频简介不能为空！")])
     # 封面资源路径
     logo = FileField("视频封面")
     # 所属标签

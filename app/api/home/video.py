@@ -8,7 +8,7 @@ from flask_login import current_user
 from sqlalchemy import or_
 
 from app.forms.other import IdForm
-from app.forms.videoform import NormalForm, RankForm, NewForm
+from app.forms.videoform import NormalForm, RankForm, NewForm, TagForm
 from app.libs.enums import ReturnEnum
 from app.libs.redprint import Redprint
 from app.libs.utils import num_assign, write_oplog
@@ -255,7 +255,14 @@ def change_videocol():
 @video.route("/get_relevant")
 def get_relevant():
     """获得视频页面下的相关推荐视频"""
-    videos = Video.query.filter(Video.name.like("%" + "" + "%")).limit(20).all()
+    form = TagForm().validate_for_api()
+    videos = Video.query.filter(Video.tag_id == form.tag_id.data). \
+        order_by(Video.create_time.desc()).limit(30).all()
+    random.shuffle(videos)
+    if len(videos) <= 10:
+        pass
+    else:
+        videos = random.sample(videos, random.randint(len(videos) - random.randint(2, 9), len(videos)))
     tmp = []
     for i in videos:
         baseuser = BaseUser.query.filter(BaseUser.id == i.user_id).first()
@@ -274,7 +281,7 @@ def get_relevant():
         }
         tmp.append(video)
     r = {
-        "total": 20,
+        "total": len(videos),
         "videos": tmp
     }
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)

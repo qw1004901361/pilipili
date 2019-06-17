@@ -39,7 +39,7 @@ video = Redprint("video")
 
 @video.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/video/add_video.yml")
 def add_video():
     form = VideoAddForm()
@@ -89,7 +89,7 @@ def add_video():
 
 @video.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/video/list_video.yml")
 def list_video():
     form = PageForm().validate_for_api()
@@ -137,7 +137,7 @@ def list_video():
 
 @video.route("/edit", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/video/edit_video.yml")
 def edit_video():
     form = VideoEditForm()
@@ -186,7 +186,7 @@ def edit_video():
 
 @video.route("/del")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/video/del_video.yml")
 def del_video():
     form = IdForm().validate_for_api()
@@ -199,6 +199,7 @@ def del_video():
 
 @video.route("/list_uploadvideo")
 @login_required
+@user_auth
 @swag_from("../../yml/admin/video/list_uploadvideo.yml")
 def list_uploadvideo():
     """查看审核视频"""
@@ -248,6 +249,7 @@ def list_uploadvideo():
 
 @video.route("/edit_uploadvideo", methods=["POST"])
 @login_required
+@user_auth
 @swag_from("../../yml/admin/video/edit_uploadvideo.yml")
 def edit_uploadvideo():
     """编辑审核状态"""

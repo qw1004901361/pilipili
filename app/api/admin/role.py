@@ -30,7 +30,7 @@ role = Redprint("role")
 
 @role.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/role/add_role.yml")
 def add_role():
     form = RoleAddForm()
@@ -51,7 +51,7 @@ def add_role():
 
 @role.route("/list")
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/role/list_role.yml")
 def list_role():
     """列出角色列表"""
@@ -93,7 +93,7 @@ def list_role():
 
 @role.route("/del", methods=["GET"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/role/del_role.yml")
 def del_role():
     form = IdForm().validate_for_api()
@@ -113,7 +113,7 @@ def del_role():
 
 @role.route("/edit", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/role/edit_role.yml")
 def edit_role():
     form = RoleEditForm()

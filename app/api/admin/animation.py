@@ -10,6 +10,7 @@ from sqlalchemy import or_
 from werkzeug.utils import secure_filename
 
 from app.forms.other import PageForm, IdForm, SearchForm, AnimationEditForm, AnimationAddForm, AnimationListForm
+from app.libs.auth import user_auth
 from app.libs.enums import ReturnEnum
 from app.libs.redprint import Redprint
 from app.libs.utils import logging, change_filename, allowed_image_file, write_oplog
@@ -30,6 +31,7 @@ animation = Redprint("animation")
 
 @animation.route("/add", methods=["POST"])
 @login_required
+@user_auth
 @swag_from("../../yml/admin/animation/add_animation.yml", methods=['POST'])
 def add_animation():
     """添加轮播图"""
@@ -56,6 +58,7 @@ def add_animation():
 
 @animation.route("/list")
 @login_required
+@user_auth
 @swag_from("../../yml/admin/animation/list_animation.yml")
 def list_animation():
     """列出轮播图"""
@@ -94,6 +97,7 @@ def list_animation():
 
 @animation.route("/del")
 @login_required
+@user_auth
 @swag_from("../../yml/admin/animation/del_animation.yml")
 def del_animation():
     """删除轮播图"""
@@ -107,6 +111,7 @@ def del_animation():
 
 @animation.route("/edit", methods=["POST"])
 @login_required
+@user_auth
 @swag_from("../../yml/admin/animation/edit_animation.yml")
 def edit_animation():
     """编辑轮播图"""
