@@ -126,10 +126,10 @@ def edit_role():
         db.session.add(role)
         if form.auths.data:
             # 删除原来的权限
-            for i in RoleAuth.query.filter(RoleAuth.role_id == role.role_id).all():
+            for i in RoleAuth.query.filter(RoleAuth.role_id == role.id).all():
                 db.session.delete(i)
             # 添加新的权限
             for i in form.auths.data:
-                db.session.add(RoleAuth(role_id=role.role_id, auth_id=i))
+                db.session.add(RoleAuth(role_id=role.id, auth_id=i))
     write_oplog()
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success")
