@@ -3,6 +3,7 @@ import datetime
 import random
 import uuid
 
+from flasgger import swag_from
 from flask import current_app
 from flask_login import current_user
 from sqlalchemy import or_
@@ -22,6 +23,7 @@ video = Redprint("video")
 
 
 @video.route("/get_animation")
+@swag_from("../../yml/home/video/get_animation.yml")
 def get_animation():
     """获取轮播图"""
     form = NormalForm().validate_for_api()
@@ -43,11 +45,10 @@ def get_animation():
 
 
 @video.route("/get_recommend")
+@swag_from("../../yml/home/video/get_recommend.yml")
 def get_recommend():
     """获取首页及分区的推荐视频"""
     form = RankForm().validate_for_api()
-    # 获取标签及其子标签
-    sub_tags = [i.id for i in Tag.query.filter(Tag.parent_id == form.tag_id.data).all()]
     now_time = datetime.datetime.now()
     # now_time = now_time.replace(hour=12, minute=0, second=0)
     if form.tag_id.data == -1:
@@ -55,6 +56,8 @@ def get_recommend():
             Video.release_time.between(now_time - datetime.timedelta(days=form.time.data), now_time)). \
             order_by(Video.score.desc()).limit(form.number.data).all()
     else:
+        # 获取标签及其子标签
+        sub_tags = [i.id for i in Tag.query.filter(Tag.parent_id == form.tag_id.data).all()]
         videos = Video.query.filter(
             Video.release_time.between(now_time - datetime.timedelta(days=form.time.data), now_time),
             or_(Video.tag_id == form.tag_id.data, Video.tag_id.in_(sub_tags))). \
@@ -83,6 +86,7 @@ def get_recommend():
 
 
 @video.route("/get_rank")
+@swag_from("../../yml/home/video/get_rank.yml")
 def get_rank():
     """获取排行榜"""
     form = RankForm().validate_for_api()
@@ -129,6 +133,7 @@ def get_rank():
 
 
 @video.route("/get_one")
+@swag_from("../../yml/home/video/get_one.yml")
 def get_one():
     """通过视频id获取视频信息"""
     form = IdForm().validate_for_api()
@@ -178,6 +183,7 @@ def get_one():
 
 
 @video.route("/get_newest")
+@swag_from("../../yml/home/video/get_newest.yml")
 def get_newest():
     """获取最新动态"""
     form = NewForm().validate_for_api()
@@ -208,6 +214,7 @@ def get_newest():
 
 
 @video.route("/get_latest")
+@swag_from("../../yml/home/video/get_latest.yml")
 def get_latest():
     """获取最新投稿"""
     form = NewForm().validate_for_api()
@@ -238,6 +245,7 @@ def get_latest():
 
 
 @video.route("/change_videocol")
+@swag_from("../../yml/home/video/change_videocol.yml")
 def change_videocol():
     """视频收藏（点击为添加，再点击为取消）"""
     form = IdForm().validate_for_api()
@@ -253,6 +261,7 @@ def change_videocol():
 
 
 @video.route("/get_relevant")
+@swag_from("../../yml/home/video/get_relevant.yml")
 def get_relevant():
     """获得视频页面下的相关推荐视频"""
     form = TagForm().validate_for_api()

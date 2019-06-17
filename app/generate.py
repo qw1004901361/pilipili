@@ -678,15 +678,15 @@ def generate_follow():
 
 def test():
     """给图片加上https://"""
+    engine = create_engine("mysql+pymysql://qw:qw@971230@134.175.93.183:3306/pilipili")
+    Session = sessionmaker(bind=engine)
     session = Session()
-    for i in session.query(Video).all():
-        if i.url.startswith("//") or i.url.startswith("https://") or i.url.startswith("http://"):
-            continue
-        else:
-            i.url = "http://localhost:5000/static/video/" + i.url
-        session.add(i)
+    for i in session.query(Video).filter(Video.url != None).all():
+        if "localhost" in i.url:
+            i.url = i.url.replace("localhost", "134.175.93.183")
+            session.add(i)
     session.commit()
-        # for i in session.query(Bangumi).all():
+    # for i in session.query(Bangumi).all():
     #     if i.logo.startswith("//") or i.logo.startswith("https://") or i.logo.startswith("http://"):
     #         continue
     #     else:
@@ -726,4 +726,4 @@ if __name__ == "__main__":
     # test()
     # generate_auth_module()
     # generate_user()
-    generate_comment()
+    test()

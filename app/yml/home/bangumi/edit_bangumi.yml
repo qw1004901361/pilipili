@@ -1,0 +1,74 @@
+  编辑番剧
+    ---
+  tags:
+    - bangumi(video_admin, super_admin)
+  parameters:
+    - name: id
+      in: formData
+      description: 番剧ID
+      required: true
+      type: string
+    - name: name
+      in: formData
+      description: 番剧名
+      type: string
+    - name: info
+      in: formData
+      description: 番剧简介
+      type: string
+    - name: voice_actors
+      in: formData
+      description: 声优信息
+      type: string
+    - name: staff
+      in: formData
+      description: 职员信息
+      type: string
+    - name: logo
+      in: formData
+      description: 番剧封面
+      type: file
+    - name: start_date
+      in: formData
+      description: 开播日期（如：2019-06-06）
+      type: string
+    - name: update_time
+      in: formData
+      description: 更新时间（如：23:18:18）
+      type: string
+    - name: update_weekday
+      in: formData
+      description: 更新日期（1，2，3，4，5，6，7）星期几
+      type: integer
+    - name: season
+      in: formData
+      description: 季度（1，2，3，4）
+      type: string
+    - name: area
+      in: formData
+      description: 地区（默认为日本）
+      type: string
+    - name: tag_id
+      in: formData
+      description: 类别（1为国产 2为日漫 3为其他）
+      type: integer
+  responses:
+    200:
+      description: register message, include data, request, msg and error_code
+      schema:
+        id: response data
+        properties:
+          data:
+            type: array
+            description: return data
+            items:
+              type: string
+          request:
+            type: string
+            description: The request url
+          msg:
+            type: string
+            description: The detail message
+          error_code:
+            type: string
+            description: The error_code type
