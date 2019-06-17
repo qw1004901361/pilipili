@@ -26,7 +26,7 @@ tag = Redprint("tag")
 
 @tag.route("/add", methods=["POST"])
 @login_required
-# @user_auth
+@user_auth
 @swag_from("../../yml/admin/tag/add_tag.yml")
 def add_tag():
     form = TagAddForm().validate_for_api()
