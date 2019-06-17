@@ -117,7 +117,7 @@ def del_role():
 @swag_from("../../yml/admin/role/edit_role.yml")
 def edit_role():
     form = RoleEditForm()
-    form.auths.choices = [(v.id, v.name) for v in AuthModule.query.all()]
+    form.auths.choices = [(v.id, v.id) for v in AuthModule.query.all()]
     form.validate_for_api()
     role = form.obj
     with db.auto_commit():
