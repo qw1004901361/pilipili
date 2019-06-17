@@ -62,18 +62,24 @@ def get_one():
 @bangumi.route("/get_recommend")
 def get_recommend():
     """获取番剧页面下的推荐番剧"""
-    bangumis = Bangumi.query.filter(Bangumi.status == 1).order_by(Bangumi.score.desc()).limit(20).all()
+    bangumis = Bangumi.query.filter(Bangumi.status == 1).order_by(Bangumi.score.desc()).limit(30).all()
     tmp = []
-    for i in range(5):
-        bangumi = bangumis[random.randint(0, 19)]
+    num = 0
+    while True:
+        bangumi = bangumis[random.randint(0, 29)]
+        if bangumi in tmp:
+            continue
         one = {
             "id": bangumi.id,
             "name": bangumi.name,
             "logo": bangumi.logo
         }
         tmp.append(one)
+        num += 1
+        if num >= 5:
+            break
     r = {
-        "total": 5,
+        "total": len(tmp),
         "bangumis": tmp
     }
     return ReturnObj.get_response(ReturnEnum.SUCCESS.value, "success", data=r)
